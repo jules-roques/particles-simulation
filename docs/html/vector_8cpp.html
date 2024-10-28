@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PROJET C++ (Jules Roques - Zephirin Faure): Référence du fichier src/vector.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">PROJET C++ (Jules Roques - Zephirin Faure)
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier vector.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;<a class="el" href="vector_8hpp_source.html">vector.hpp</a>&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;<a class="el" href="xassert_8hpp_source.html">xassert.hpp</a>&gt;</code><br />
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Graphe des dépendances par inclusion de vector.cpp:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="vector_8cpp__incl.png" border="0" usemap="#asrc_2vector_8cpp" alt=""/></div>
+<map name="asrc_2vector_8cpp" id="asrc_2vector_8cpp">
+<area shape="rect" title=" " alt="" coords="173,5,287,32"/>
+<area shape="rect" href="vector_8hpp.html" title="File for vector calculations." alt="" coords="83,80,174,107"/>
+<area shape="rect" title=" " alt="" coords="199,80,261,107"/>
+<area shape="rect" href="xassert_8hpp.html" title="To define an assert macro." alt="" coords="286,80,385,107"/>
+<area shape="rect" title=" " alt="" coords="5,155,68,181"/>
+<area shape="rect" title=" " alt="" coords="92,155,168,181"/>
+<area shape="rect" title=" " alt="" coords="194,155,274,181"/>
+<area shape="rect" title=" " alt="" coords="298,155,373,181"/>
+<area shape="rect" href="config_8hpp.html" title="Contains constants definitions for preprocessing of the code." alt="" coords="397,155,487,181"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a4df52a75e9234f6f1aa278b8643a1c5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector.html">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vector_8cpp.html#a4df52a75e9234f6f1aa278b8643a1c5f">min</a> (<a class="el" href="classVector.html">Vector</a> v1, <a class="el" href="classVector.html">Vector</a> v2)</td></tr>
+<tr class="separator:a4df52a75e9234f6f1aa278b8643a1c5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07eac1e9df690af3b56939e0f298fd52"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector.html">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vector_8cpp.html#a07eac1e9df690af3b56939e0f298fd52">max</a> (<a class="el" href="classVector.html">Vector</a> v1, <a class="el" href="classVector.html">Vector</a> v2)</td></tr>
+<tr class="separator:a07eac1e9df690af3b56939e0f298fd52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55aed9cff4440379b50ffce93eb732cc"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vector_8cpp.html#a55aed9cff4440379b50ffce93eb732cc">operator&lt;&lt;</a> (std::ostream &amp;strm, const <a class="el" href="classVector.html">Vector</a> &amp;v)</td></tr>
+<tr class="separator:a55aed9cff4440379b50ffce93eb732cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a07eac1e9df690af3b56939e0f298fd52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07eac1e9df690af3b56939e0f298fd52">&#9670;&nbsp;</a></span>max()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVector.html">Vector</a> max </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classVector.html">Vector</a>&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classVector.html">Vector</a>&#160;</td>
+          <td class="paramname"><em>v2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v1</td><td></td></tr>
+    <tr><td class="paramname">v2</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd><a class="el" href="classVector.html" title="Vector class.">Vector</a> </dd></dl>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="vector_8cpp_a07eac1e9df690af3b56939e0f298fd52_icgraph.png" border="0" usemap="#avector_8cpp_a07eac1e9df690af3b56939e0f298fd52_icgraph" alt=""/></div>
+<map name="avector_8cpp_a07eac1e9df690af3b56939e0f298fd52_icgraph" id="avector_8cpp_a07eac1e9df690af3b56939e0f298fd52_icgraph">
+<area shape="rect" title=" " alt="" coords="153,31,204,57"/>
+<area shape="rect" href="visual__generator_8cpp.html#ad2dca9f6ba21f926fd10d7dec748ecd7" title="Write the range for one axe in the script." alt="" coords="5,5,105,32"/>
+<area shape="rect" href="vector__test_8cpp.html#a4d61b9af71b0f427725537c33cd03716" title="Test max function." alt="" coords="28,56,83,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4df52a75e9234f6f1aa278b8643a1c5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4df52a75e9234f6f1aa278b8643a1c5f">&#9670;&nbsp;</a></span>min()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVector.html">Vector</a> min </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classVector.html">Vector</a>&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classVector.html">Vector</a>&#160;</td>
+          <td class="paramname"><em>v2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v1</td><td></td></tr>
+    <tr><td class="paramname">v2</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd><a class="el" href="classVector.html" title="Vector class.">Vector</a> </dd></dl>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="vector_8cpp_a4df52a75e9234f6f1aa278b8643a1c5f_icgraph.png" border="0" usemap="#avector_8cpp_a4df52a75e9234f6f1aa278b8643a1c5f_icgraph" alt=""/></div>
+<map name="avector_8cpp_a4df52a75e9234f6f1aa278b8643a1c5f_icgraph" id="avector_8cpp_a4df52a75e9234f6f1aa278b8643a1c5f_icgraph">
+<area shape="rect" title=" " alt="" coords="153,31,200,57"/>
+<area shape="rect" href="visual__generator_8cpp.html#ad2dca9f6ba21f926fd10d7dec748ecd7" title="Write the range for one axe in the script." alt="" coords="5,5,105,32"/>
+<area shape="rect" href="vector__test_8cpp.html#a9368d568f675703f0eb757470d0883fa" title="Test min function." alt="" coords="28,56,83,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a55aed9cff4440379b50ffce93eb732cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55aed9cff4440379b50ffce93eb732cc">&#9670;&nbsp;</a></span>operator&lt;&lt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>strm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classVector.html">Vector</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strm</td><td></td></tr>
+    <tr><td class="paramname">v</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>std::ostream&amp; </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

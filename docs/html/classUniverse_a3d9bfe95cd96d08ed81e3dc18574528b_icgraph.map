@@ -1,0 +1,5 @@
+<map id="Universe::getNbParticles" name="Universe::getNbParticles">
+<area shape="rect" id="node1" title="Renvoie le nombre de particules dans l&#39;univers." alt="" coords="249,31,432,57"/>
+<area shape="rect" id="node2" href="$classFiniteUniverse.html#ae0fb3a6885254c4b498c88cd37f13ae7" title="Adds a particle into the universe. Give it automaticly a name." alt="" coords="5,5,201,32"/>
+<area shape="rect" id="node3" href="$classUniverse.html#ae0fb3a6885254c4b498c88cd37f13ae7" title="Adds a particle into the universe. Give it automaticly a name." alt="" coords="23,56,184,83"/>
+</map>

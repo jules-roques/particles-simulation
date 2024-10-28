@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PROJET C++ (Jules Roques - Zephirin Faure):  Fichier source de include/particle.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">PROJET C++ (Jules Roques - Zephirin Faure)
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">particle.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="particle_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef _PARTICLE_HPP_</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define _PARTICLE_HPP_</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="vector_8hpp.html">vector.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="interraction_8hpp.html">interraction.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="external__force_8hpp.html">external_force.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classParticle.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="classParticle.html">Particle</a> {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">size_t</span> _dimension;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="classVector.html">Vector</a> _position;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classVector.html">Vector</a> _speed;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="classVector.html">Vector</a> _force;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="classVector.html">Vector</a> _oldForce;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">double</span> _mass;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    std::string _name;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">int</span> _id;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> _particleCount; <span class="comment">// Static variable to count number or created particles</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="classParticle.html#ac51bbd1a009ab89fb20bf57e0b52904c">Particle</a>(<a class="code" href="classVector.html">Vector</a> <a class="code" href="particle__test_8cpp.html#a48e27f8f018f5aa291166cc508f9449d">pos</a>, <a class="code" href="classVector.html">Vector</a> <a class="code" href="particle__test_8cpp.html#acf49aae96324900b0349853513c58530">speed</a>, <span class="keywordtype">double</span> <a class="code" href="particle__test_8cpp.html#a244bf42c46054cf1113be44d55f2156d">mass</a>, std::string <a class="code" href="particle__test_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">// Getters</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classParticle.html#a47391ffc67449ff8fd9753e893cbba60">   45</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span>         <a class="code" href="classParticle.html#a47391ffc67449ff8fd9753e893cbba60">getParticleCount</a>()       { <span class="keywordflow">return</span> _particleCount; }</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classParticle.html#af2e2f1ec5f0289e4fb177912bb149ddf">   46</a></span>&#160;    <span class="keywordtype">size_t</span>             <a class="code" href="classParticle.html#af2e2f1ec5f0289e4fb177912bb149ddf">getDimension</a>    ()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _dimension; }</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classParticle.html#a6923bb50d7f30d7276e2ea2ce6dbef54">   47</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="classVector.html">Vector</a>&amp;      <a class="code" href="classParticle.html#a6923bb50d7f30d7276e2ea2ce6dbef54">getPosition</a>     ()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _position; }</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classParticle.html#ad56f6b4822131b412ca75f93a68b434f">   48</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="classVector.html">Vector</a>&amp;      <a class="code" href="classParticle.html#ad56f6b4822131b412ca75f93a68b434f">getSpeed</a>        ()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _speed; }</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classParticle.html#a728038a705460c6b612d347cf1f8a149">   49</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="classVector.html">Vector</a>&amp;      <a class="code" href="classParticle.html#a728038a705460c6b612d347cf1f8a149">getForce</a>        ()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _force; }</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classParticle.html#aa30c5470e223c63350a9141c3b0b5ecb">   50</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="classVector.html">Vector</a>&amp;      <a class="code" href="classParticle.html#aa30c5470e223c63350a9141c3b0b5ecb">getOldForce</a>     ()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _oldForce; }</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classParticle.html#ad08e7b1d0cc7cb17bd0602caa4a22bc6">   51</a></span>&#160;    <span class="keywordtype">double</span>             <a class="code" href="classParticle.html#ad08e7b1d0cc7cb17bd0602caa4a22bc6">getMass</a>         ()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _mass; }</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classParticle.html#add10984fddeb1c62b11ff58d3c432b70">   52</a></span>&#160;    <span class="keyword">const</span> std::string&amp; <a class="code" href="classParticle.html#add10984fddeb1c62b11ff58d3c432b70">getName</a>         ()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _name; }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">// Setters</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classParticle.html#aa876f744ddd44a8c7cd37a14ac6696f9">setPosCoord</a>   (<span class="keywordtype">size_t</span> coord, <span class="keywordtype">double</span> value);</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classParticle.html#a1bc400f4d8f43408f8508dd8b88a8f50">   56</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classParticle.html#a1bc400f4d8f43408f8508dd8b88a8f50">setPosition</a>   (<span class="keyword">const</span> <a class="code" href="classVector.html">Vector</a>&amp; <a class="code" href="particle__test_8cpp.html#a48e27f8f018f5aa291166cc508f9449d">pos</a>)      { _position = <a class="code" href="particle__test_8cpp.html#a48e27f8f018f5aa291166cc508f9449d">pos</a>; }</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classParticle.html#a580c7fc6f168ff6bcbde502c205e7a76">   57</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classParticle.html#a580c7fc6f168ff6bcbde502c205e7a76">setSpeed</a>      (<span class="keyword">const</span> <a class="code" href="classVector.html">Vector</a>&amp; <a class="code" href="particle__test_8cpp.html#acf49aae96324900b0349853513c58530">speed</a>)    { _speed = <a class="code" href="particle__test_8cpp.html#acf49aae96324900b0349853513c58530">speed</a>; }</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classParticle.html#af6cbfea735b4a661f83c4f0fccda8d82">   58</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classParticle.html#af6cbfea735b4a661f83c4f0fccda8d82">setForce</a>      (<span class="keyword">const</span> <a class="code" href="classVector.html">Vector</a>&amp; force)    { _force = force; }</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classParticle.html#a7979215f1082302b013ccd95d41bc866">   59</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classParticle.html#a7979215f1082302b013ccd95d41bc866">setOldForce</a>   (<span class="keyword">const</span> <a class="code" href="classVector.html">Vector</a>&amp; oldForce) { _oldForce = oldForce; }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classParticle.html#a0f37845fc1564eaf009a6633ba223c91">   65</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classParticle.html#a0f37845fc1564eaf009a6633ba223c91">multiplySpeed</a>(<span class="keywordtype">double</span> scalar) { _speed *= scalar; }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classParticle.html#a01172683c98279750776f2932e8d7c3b">addToForceCoord</a>(<span class="keywordtype">size_t</span> i, <span class="keywordtype">double</span> value);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classParticle.html#adee1ef8d7e51a8cfa2c8281d857f838c">addToForce</a>(<span class="keyword">const</span> <a class="code" href="classVector.html">Vector</a>&amp; vect);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classParticle.html#a68634a42f13afd787f83604a24c1ba32">addToPosition</a>(<span class="keyword">const</span> <a class="code" href="classVector.html">Vector</a>&amp; vect);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classParticle.html#a269fbe488df89ba059ed75960d2caae0">addToSpeed</a>(<span class="keyword">const</span> <a class="code" href="classVector.html">Vector</a>&amp; vect);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classParticle.html#a593299de59755d79699a0b1d19e18008">setForceToZero</a>();</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keyword">friend</span> std::ostream&amp; <a class="code" href="classParticle.html#a82d027f7c04cf9b6206af84760e51c3b">operator&lt;&lt;</a>(std::ostream &amp;strm, <span class="keyword">const</span> <a class="code" href="classParticle.html">Particle</a> &amp;<a class="code" href="particle__test_8cpp.html#aef6a060da4182a13792dcab155a3a1b5">p</a>);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classParticle.html#af77eecfa86d14d593f85e5ccbd875db4">distanceTo</a>(<span class="keyword">const</span> <a class="code" href="classParticle.html">Particle</a> &amp;other) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classParticle.html#afc7298779721dd598dff80f267e812a6">invertSpeed</a>(<span class="keywordtype">size_t</span> i);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classParticle.html#a242e1b6db2023d375f848d426aa4aa96">applyExternalForces</a>(<span class="keyword">const</span> std::list&lt;ExternalForce&gt;&amp; extForces);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classParticle.html#a974ab6e96f49805dd949d5abb3de9104">applyInteractionForcesOn</a>(<a class="code" href="classParticle.html">Particle</a> &amp;other, <span class="keyword">const</span> std::list&lt;Interaction&gt;&amp; interactions) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;};</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// _PARTICLE_HPP_</span></div>
+<div class="ttc" id="aclassParticle_html"><div class="ttname"><a href="classParticle.html">Particle</a></div><div class="ttdef"><b>Definition:</b> particle.hpp:20</div></div>
+<div class="ttc" id="aclassParticle_html_a01172683c98279750776f2932e8d7c3b"><div class="ttname"><a href="classParticle.html#a01172683c98279750776f2932e8d7c3b">Particle::addToForceCoord</a></div><div class="ttdeci">void addToForceCoord(size_t i, double value)</div><div class="ttdoc">Adds to the i th force coordinate the value given.</div><div class="ttdef"><b>Definition:</b> particle.cpp:79</div></div>
+<div class="ttc" id="aclassParticle_html_a0f37845fc1564eaf009a6633ba223c91"><div class="ttname"><a href="classParticle.html#a0f37845fc1564eaf009a6633ba223c91">Particle::multiplySpeed</a></div><div class="ttdeci">void multiplySpeed(double scalar)</div><div class="ttdoc">Multiply the speed by a scalar.</div><div class="ttdef"><b>Definition:</b> particle.hpp:65</div></div>
+<div class="ttc" id="aclassParticle_html_a1bc400f4d8f43408f8508dd8b88a8f50"><div class="ttname"><a href="classParticle.html#a1bc400f4d8f43408f8508dd8b88a8f50">Particle::setPosition</a></div><div class="ttdeci">void setPosition(const Vector &amp;pos)</div><div class="ttdef"><b>Definition:</b> particle.hpp:56</div></div>
+<div class="ttc" id="aclassParticle_html_a242e1b6db2023d375f848d426aa4aa96"><div class="ttname"><a href="classParticle.html#a242e1b6db2023d375f848d426aa4aa96">Particle::applyExternalForces</a></div><div class="ttdeci">void applyExternalForces(const std::list&lt; ExternalForce &gt; &amp;extForces)</div><div class="ttdoc">Apply to a particle the extarnel forces (adds to existing force)</div><div class="ttdef"><b>Definition:</b> particle.cpp:50</div></div>
+<div class="ttc" id="aclassParticle_html_a269fbe488df89ba059ed75960d2caae0"><div class="ttname"><a href="classParticle.html#a269fbe488df89ba059ed75960d2caae0">Particle::addToSpeed</a></div><div class="ttdeci">void addToSpeed(const Vector &amp;vect)</div><div class="ttdoc">Adds to existing speed the vector given.</div><div class="ttdef"><b>Definition:</b> particle.cpp:97</div></div>
+<div class="ttc" id="aclassParticle_html_a47391ffc67449ff8fd9753e893cbba60"><div class="ttname"><a href="classParticle.html#a47391ffc67449ff8fd9753e893cbba60">Particle::getParticleCount</a></div><div class="ttdeci">static int getParticleCount()</div><div class="ttdef"><b>Definition:</b> particle.hpp:45</div></div>
+<div class="ttc" id="aclassParticle_html_a580c7fc6f168ff6bcbde502c205e7a76"><div class="ttname"><a href="classParticle.html#a580c7fc6f168ff6bcbde502c205e7a76">Particle::setSpeed</a></div><div class="ttdeci">void setSpeed(const Vector &amp;speed)</div><div class="ttdef"><b>Definition:</b> particle.hpp:57</div></div>
+<div class="ttc" id="aclassParticle_html_a593299de59755d79699a0b1d19e18008"><div class="ttname"><a href="classParticle.html#a593299de59755d79699a0b1d19e18008">Particle::setForceToZero</a></div><div class="ttdeci">void setForceToZero()</div><div class="ttdoc">Set the force of particle to zero.</div><div class="ttdef"><b>Definition:</b> particle.cpp:103</div></div>
+<div class="ttc" id="aclassParticle_html_a68634a42f13afd787f83604a24c1ba32"><div class="ttname"><a href="classParticle.html#a68634a42f13afd787f83604a24c1ba32">Particle::addToPosition</a></div><div class="ttdeci">void addToPosition(const Vector &amp;vect)</div><div class="ttdoc">Adds to existing position the vector given.</div><div class="ttdef"><b>Definition:</b> particle.cpp:91</div></div>
+<div class="ttc" id="aclassParticle_html_a6923bb50d7f30d7276e2ea2ce6dbef54"><div class="ttname"><a href="classParticle.html#a6923bb50d7f30d7276e2ea2ce6dbef54">Particle::getPosition</a></div><div class="ttdeci">const Vector &amp; getPosition() const</div><div class="ttdef"><b>Definition:</b> particle.hpp:47</div></div>
+<div class="ttc" id="aclassParticle_html_a728038a705460c6b612d347cf1f8a149"><div class="ttname"><a href="classParticle.html#a728038a705460c6b612d347cf1f8a149">Particle::getForce</a></div><div class="ttdeci">const Vector &amp; getForce() const</div><div class="ttdef"><b>Definition:</b> particle.hpp:49</div></div>
+<div class="ttc" id="aclassParticle_html_a7979215f1082302b013ccd95d41bc866"><div class="ttname"><a href="classParticle.html#a7979215f1082302b013ccd95d41bc866">Particle::setOldForce</a></div><div class="ttdeci">void setOldForce(const Vector &amp;oldForce)</div><div class="ttdef"><b>Definition:</b> particle.hpp:59</div></div>
+<div class="ttc" id="aclassParticle_html_a82d027f7c04cf9b6206af84760e51c3b"><div class="ttname"><a href="classParticle.html#a82d027f7c04cf9b6206af84760e51c3b">Particle::operator&lt;&lt;</a></div><div class="ttdeci">friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;strm, const Particle &amp;p)</div><div class="ttdoc">Overrides the &lt;&lt; operator.</div><div class="ttdef"><b>Definition:</b> particle.cpp:32</div></div>
+<div class="ttc" id="aclassParticle_html_a974ab6e96f49805dd949d5abb3de9104"><div class="ttname"><a href="classParticle.html#a974ab6e96f49805dd949d5abb3de9104">Particle::applyInteractionForcesOn</a></div><div class="ttdeci">void applyInteractionForcesOn(Particle &amp;other, const std::list&lt; Interaction &gt; &amp;interactions) const</div><div class="ttdoc">Apply to a particle the force implied by calling particle (adds to existing force)</div><div class="ttdef"><b>Definition:</b> particle.cpp:57</div></div>
+<div class="ttc" id="aclassParticle_html_aa30c5470e223c63350a9141c3b0b5ecb"><div class="ttname"><a href="classParticle.html#aa30c5470e223c63350a9141c3b0b5ecb">Particle::getOldForce</a></div><div class="ttdeci">const Vector &amp; getOldForce() const</div><div class="ttdef"><b>Definition:</b> particle.hpp:50</div></div>
+<div class="ttc" id="aclassParticle_html_aa876f744ddd44a8c7cd37a14ac6696f9"><div class="ttname"><a href="classParticle.html#aa876f744ddd44a8c7cd37a14ac6696f9">Particle::setPosCoord</a></div><div class="ttdeci">void setPosCoord(size_t coord, double value)</div><div class="ttdef"><b>Definition:</b> particle.cpp:73</div></div>
+<div class="ttc" id="aclassParticle_html_ac51bbd1a009ab89fb20bf57e0b52904c"><div class="ttname"><a href="classParticle.html#ac51bbd1a009ab89fb20bf57e0b52904c">Particle::Particle</a></div><div class="ttdeci">Particle(Vector pos, Vector speed, double mass, std::string name)</div><div class="ttdoc">Construct a new Particle object.</div><div class="ttdef"><b>Definition:</b> particle.cpp:17</div></div>
+<div class="ttc" id="aclassParticle_html_ad08e7b1d0cc7cb17bd0602caa4a22bc6"><div class="ttname"><a href="classParticle.html#ad08e7b1d0cc7cb17bd0602caa4a22bc6">Particle::getMass</a></div><div class="ttdeci">double getMass() const</div><div class="ttdef"><b>Definition:</b> particle.hpp:51</div></div>
+<div class="ttc" id="aclassParticle_html_ad56f6b4822131b412ca75f93a68b434f"><div class="ttname"><a href="classParticle.html#ad56f6b4822131b412ca75f93a68b434f">Particle::getSpeed</a></div><div class="ttdeci">const Vector &amp; getSpeed() const</div><div class="ttdef"><b>Definition:</b> particle.hpp:48</div></div>
+<div class="ttc" id="aclassParticle_html_add10984fddeb1c62b11ff58d3c432b70"><div class="ttname"><a href="classParticle.html#add10984fddeb1c62b11ff58d3c432b70">Particle::getName</a></div><div class="ttdeci">const std::string &amp; getName() const</div><div class="ttdef"><b>Definition:</b> particle.hpp:52</div></div>
+<div class="ttc" id="aclassParticle_html_adee1ef8d7e51a8cfa2c8281d857f838c"><div class="ttname"><a href="classParticle.html#adee1ef8d7e51a8cfa2c8281d857f838c">Particle::addToForce</a></div><div class="ttdeci">void addToForce(const Vector &amp;vect)</div><div class="ttdoc">Adds to existing force the vector given.</div><div class="ttdef"><b>Definition:</b> particle.cpp:85</div></div>
+<div class="ttc" id="aclassParticle_html_af2e2f1ec5f0289e4fb177912bb149ddf"><div class="ttname"><a href="classParticle.html#af2e2f1ec5f0289e4fb177912bb149ddf">Particle::getDimension</a></div><div class="ttdeci">size_t getDimension() const</div><div class="ttdef"><b>Definition:</b> particle.hpp:46</div></div>
+<div class="ttc" id="aclassParticle_html_af6cbfea735b4a661f83c4f0fccda8d82"><div class="ttname"><a href="classParticle.html#af6cbfea735b4a661f83c4f0fccda8d82">Particle::setForce</a></div><div class="ttdeci">void setForce(const Vector &amp;force)</div><div class="ttdef"><b>Definition:</b> particle.hpp:58</div></div>
+<div class="ttc" id="aclassParticle_html_af77eecfa86d14d593f85e5ccbd875db4"><div class="ttname"><a href="classParticle.html#af77eecfa86d14d593f85e5ccbd875db4">Particle::distanceTo</a></div><div class="ttdeci">double distanceTo(const Particle &amp;other) const</div><div class="ttdoc">Calculates distance from this particle to the other.</div><div class="ttdef"><b>Definition:</b> particle.cpp:43</div></div>
+<div class="ttc" id="aclassParticle_html_afc7298779721dd598dff80f267e812a6"><div class="ttname"><a href="classParticle.html#afc7298779721dd598dff80f267e812a6">Particle::invertSpeed</a></div><div class="ttdeci">void invertSpeed(size_t i)</div><div class="ttdoc">invert the speed coordinate i</div><div class="ttdef"><b>Definition:</b> particle.cpp:67</div></div>
+<div class="ttc" id="aclassVector_html"><div class="ttname"><a href="classVector.html">Vector</a></div><div class="ttdoc">Vector class.</div><div class="ttdef"><b>Definition:</b> vector.hpp:18</div></div>
+<div class="ttc" id="aexternal__force_8hpp_html"><div class="ttname"><a href="external__force_8hpp.html">external_force.hpp</a></div></div>
+<div class="ttc" id="ainterraction_8hpp_html"><div class="ttname"><a href="interraction_8hpp.html">interraction.hpp</a></div><div class="ttdoc">to define an interraction between two particles</div></div>
+<div class="ttc" id="aparticle__test_8cpp_html_a244bf42c46054cf1113be44d55f2156d"><div class="ttname"><a href="particle__test_8cpp.html#a244bf42c46054cf1113be44d55f2156d">mass</a></div><div class="ttdeci">double mass</div><div class="ttdef"><b>Definition:</b> particle_test.cpp:24</div></div>
+<div class="ttc" id="aparticle__test_8cpp_html_a48e27f8f018f5aa291166cc508f9449d"><div class="ttname"><a href="particle__test_8cpp.html#a48e27f8f018f5aa291166cc508f9449d">pos</a></div><div class="ttdeci">Vector pos({1.0, 2.0, 3.0})</div><div class="ttdoc">Test particle setup for all tests.</div></div>
+<div class="ttc" id="aparticle__test_8cpp_html_a9b45b3e13bd9167aab02e17e08916231"><div class="ttname"><a href="particle__test_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definition:</b> particle_test.cpp:25</div></div>
+<div class="ttc" id="aparticle__test_8cpp_html_acf49aae96324900b0349853513c58530"><div class="ttname"><a href="particle__test_8cpp.html#acf49aae96324900b0349853513c58530">speed</a></div><div class="ttdeci">Vector speed({0.1, 0.2, 0.3})</div></div>
+<div class="ttc" id="aparticle__test_8cpp_html_aef6a060da4182a13792dcab155a3a1b5"><div class="ttname"><a href="particle__test_8cpp.html#aef6a060da4182a13792dcab155a3a1b5">p</a></div><div class="ttdeci">Particle p(pos, speed, mass, name)</div></div>
+<div class="ttc" id="avector_8hpp_html"><div class="ttname"><a href="vector_8hpp.html">vector.hpp</a></div><div class="ttdoc">File for vector calculations.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

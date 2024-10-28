@@ -1,0 +1,28 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title=" " alt="" coords="5,360,60,387"/>
+<area shape="rect" id="node2" href="$classUniverse.html#a443d91d2812df129408d213ba92d14c2" title="Adds interaction between two particles in the universe. The force function must compute the force app..." alt="" coords="126,56,309,83"/>
+<area shape="rect" id="node3" href="$classUniverse.html#a7d0276a639153e952689e3660f4fa1de" title="Adds a particle into the universe." alt="" coords="137,107,298,133"/>
+<area shape="rect" id="node6" href="$classVisualGenerator.html#a5538d2cf26c546e0e6d2d6bd93f38dd5" title="Generates a video (multiple images) of the past states the universe has been into." alt="" coords="121,418,314,459"/>
+<area shape="rect" id="node7" href="$forces_8hpp.html#a98da424bb69057444ed08d763a4c91cb" title="Computes the gravitational force applied by source on target particle." alt="" coords="130,208,305,235"/>
+<area shape="rect" id="node13" href="$classVisualGenerator.html#a05dc02a69141ab30d457c6db7808ed4e" title="Set the size of the points for the plots." alt="" coords="110,484,325,511"/>
+<area shape="rect" id="node14" href="$classVisualGenerator.html#af63af219975ad6b8d7116df753ce01f8" title="Set the shape of the points plotted Accepts NO_SYMBOL, PLUS, CROSS, STAR, BOX, BOX_F,..." alt="" coords="108,535,327,561"/>
+<area shape="rect" id="node15" href="$classUniverse.html#aa17a814ab1cc87fd4897874ce8b88201" title="Simulates the movement of particles in the universe using the Störmer&#45;Verlet method." alt="" coords="119,353,316,394"/>
+<area shape="rect" id="node4" href="$classUniverse.html#a5decd709201dcff98e77e8efc6cf8393" title="Get the dimension of the universe." alt="" coords="381,5,560,32"/>
+<area shape="rect" id="node5" href="$classVector.html#afacfb2fc482d43c34913c095921f8af5" title=" " alt="" coords="643,95,806,121"/>
+<area shape="rect" id="node8" href="$classParticle.html#adee1ef8d7e51a8cfa2c8281d857f838c" title="Adds to existing force the vector given." alt="" coords="395,107,547,133"/>
+<area shape="rect" id="node9" href="$classParticle.html#af77eecfa86d14d593f85e5ccbd875db4" title="Calculates distance from this particle to the other." alt="" coords="397,157,545,184"/>
+<area shape="rect" id="node11" href="$classParticle.html#ad08e7b1d0cc7cb17bd0602caa4a22bc6" title=" " alt="" coords="657,360,792,387"/>
+<area shape="rect" id="node12" href="$classParticle.html#a6923bb50d7f30d7276e2ea2ce6dbef54" title=" " alt="" coords="649,259,801,285"/>
+<area shape="rect" id="node10" href="$classVector.html#a26da0e9b7cd83fcd64b1d3bfc76089a3" title="give the norm of the vector i.e. square root of sum of squares" alt="" coords="671,171,778,197"/>
+<area shape="rect" id="node16" href="$classParticle.html#a728038a705460c6b612d347cf1f8a149" title=" " alt="" coords="657,512,792,539"/>
+<area shape="rect" id="node17" href="$classParticle.html#a7979215f1082302b013ccd95d41bc866" title=" " alt="" coords="393,411,549,437"/>
+<area shape="rect" id="node18" href="$classProgressbar.html#a63dd660d5679ced720707e5f533a3869" title=" " alt="" coords="395,461,547,488"/>
+<area shape="rect" id="node19" href="$classUniverse.html#ae866b39063e8c084d921e1f26787ddd9" title="Updates forces applied on particles in the universe. (Forces from interactions and external forces)" alt="" coords="383,613,558,640"/>
+<area shape="rect" id="node22" href="$classUniverse.html#a22e629bac5b692a63b20bf4aeba72f1a" title="Updates particles positions in Stormer Verlet algorithm." alt="" coords="375,512,567,539"/>
+<area shape="rect" id="node24" href="$universe_8cpp.html#a32a239d2d697a761c657f94dcda3f1e5" title=" " alt="" coords="427,259,514,285"/>
+<area shape="rect" id="node26" href="$universe_8cpp.html#a486c654c3672e56c3194e6df464942f1" title=" " alt="" coords="415,309,527,336"/>
+<area shape="rect" id="node20" href="$classUniverse.html#a2332ccc32a19ae609225c10cffc854d9" title="Applies external forces on particles in the universe. Linear complexity." alt="" coords="615,588,835,615"/>
+<area shape="rect" id="node21" href="$classUniverse.html#a6f0e4eae6b46d41b98aed4f29ff4fa66" title="Applies forces between particles in the universe. Quadratic complexity." alt="" coords="627,639,822,681"/>
+<area shape="rect" id="node23" href="$classParticle.html#ad56f6b4822131b412ca75f93a68b434f" title=" " alt="" coords="655,436,795,463"/>
+<area shape="rect" id="node25" href="$classVector.html#a60e33e77bf00e6f8baa941fecc496d03" title=" " alt="" coords="663,309,787,336"/>
+</map>

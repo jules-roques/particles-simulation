@@ -1,0 +1,5 @@
+<map id="Universe::addParticle" name="Universe::addParticle">
+<area shape="rect" id="node1" title="Adds a particle into the universe." alt="" coords="5,31,167,57"/>
+<area shape="rect" id="node2" href="$classUniverse.html#a5decd709201dcff98e77e8efc6cf8393" title="Get the dimension of the universe." alt="" coords="215,5,393,32"/>
+<area shape="rect" id="node3" href="$classVector.html#afacfb2fc482d43c34913c095921f8af5" title=" " alt="" coords="223,56,385,83"/>
+</map>

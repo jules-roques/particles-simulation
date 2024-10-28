@@ -1,0 +1,4 @@
+<map id="FiniteUniverse::applyExternalForces" name="FiniteUniverse::applyExternalForces">
+<area shape="rect" id="node1" title="Applies external forces on particles in the universe. Linear complexity. Deal with limits forces." alt="" coords="5,5,219,47"/>
+<area shape="rect" id="node2" href="$classUniverse.html#a2332ccc32a19ae609225c10cffc854d9" title="Applies external forces on particles in the universe. Linear complexity." alt="" coords="267,13,487,39"/>
+</map>

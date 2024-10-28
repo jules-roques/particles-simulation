@@ -1,0 +1,5 @@
+<map id="FiniteUniverse::removeOutOfBoundsParticles" name="FiniteUniverse::removeOutOfBoundsParticles">
+<area shape="rect" id="Node000001" title="Removes particles outside of the bounds of the finite universe." alt="" coords="260,5,437,46"/>
+<area shape="rect" id="Node000002" href="$class_finite_universe.html#a5a7c8611593d07b6b5b9823704c384d8" title="Updates particles positions in Stormer Verlet algorithm. Handles cases about being outside of the fin..." alt="" coords="5,13,212,39"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="244,28,212,28,212,23,244,23"/>
+</map>

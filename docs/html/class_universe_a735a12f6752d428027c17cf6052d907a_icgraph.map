@@ -1,0 +1,13 @@
+<map id="Universe::getParticles" name="Universe::getParticles">
+<area shape="rect" id="Node000001" title="Get list of particles reference." alt="" coords="485,78,635,104"/>
+<area shape="rect" id="Node000002" href="$class_finite_universe.html#a2e5291edbf32086d93eb30132e888cf3" title="Reflect particles outside of the bounds of the finite universe." alt="" coords="263,5,434,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="501,76,416,49,418,44,502,71"/>
+<area shape="rect" id="Node000004" href="$class_finite_universe.html#a83eb8e120ea72c26939578255e744bc3" title="Removes particles outside of the bounds of the finite universe." alt="" coords="260,71,437,111"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="469,94,437,94,437,88,469,88"/>
+<area shape="rect" id="Node000005" href="$class_finite_universe.html#aa6e08c7a024cfc091556eae78417314e" title="Teleport particles outside of the bounds of the finite universe to the other side like if they travel..." alt="" coords="270,136,427,177"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="502,111,418,138,416,133,501,106"/>
+<area shape="rect" id="Node000003" href="$class_finite_universe.html#a5a7c8611593d07b6b5b9823704c384d8" title="Updates particles positions in Stormer Verlet algorithm. Handles cases about being outside of the fin..." alt="" coords="5,78,212,104"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="257,53,159,80,158,75,256,48"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="244,94,212,94,212,88,244,88"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="256,134,158,107,159,102,257,129"/>
+</map>

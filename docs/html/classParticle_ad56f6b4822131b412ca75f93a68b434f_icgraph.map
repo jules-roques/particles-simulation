@@ -1,0 +1,11 @@
+<map id="Particle::getSpeed" name="Particle::getSpeed">
+<area shape="rect" id="node1" title=" " alt="" coords="799,81,939,108"/>
+<area shape="rect" id="node2" href="$classExternBorderCell.html#a511406886e21ccb7909e0c66ac01874c" title="Copies particles from the _copyCell." alt="" coords="524,5,751,32"/>
+<area shape="rect" id="node3" href="$particle__test_8cpp.html#aa8021214e4986368f85ddc6fb657e69c" title="Test the invertSpeed function." alt="" coords="610,56,665,83"/>
+<area shape="rect" id="node4" href="$classUniverse.html#a22e629bac5b692a63b20bf4aeba72f1a" title="Updates particles positions in Stormer Verlet algorithm." alt="" coords="541,157,733,184"/>
+<area shape="rect" id="node9" href="$universe_8cpp.html#a486c654c3672e56c3194e6df464942f1" title=" " alt="" coords="581,107,693,133"/>
+<area shape="rect" id="node5" href="$classUniverse.html#aa17a814ab1cc87fd4897874ce8b88201" title="Simulates the movement of particles in the universe using the Störmer&#45;Verlet method." alt="" coords="264,99,461,141"/>
+<area shape="rect" id="node8" href="$classFiniteUniverse.html#a5a7c8611593d07b6b5b9823704c384d8" title="Updates particles positions in Stormer Verlet algorithm. Handles cases about being outside of the fin..." alt="" coords="249,165,476,192"/>
+<area shape="rect" id="node6" href="$solar__system__tp2_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="76,77,131,104"/>
+<area shape="rect" id="node7" href="$classGriddedUniverse.html#aa095174cf0b5a4bb9ae3a3143a9b9d21" title="Simulates the movement of particles in the universe using the Störmer&#45;Verlet method Before simulation..." alt="" coords="5,129,201,170"/>
+</map>

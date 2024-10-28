@@ -1,0 +1,17 @@
+<map id="Universe::simulateStormerVerlet" name="Universe::simulateStormerVerlet">
+<area shape="rect" id="node1" title="Simulates the movement of particles in the universe using the Störmer&#45;Verlet method." alt="" coords="5,150,203,191"/>
+<area shape="rect" id="node2" href="$classParticle.html#a728038a705460c6b612d347cf1f8a149" title=" " alt="" coords="533,5,668,32"/>
+<area shape="rect" id="node3" href="$classParticle.html#a7979215f1082302b013ccd95d41bc866" title=" " alt="" coords="269,208,425,235"/>
+<area shape="rect" id="node4" href="$classProgressbar.html#a63dd660d5679ced720707e5f533a3869" title=" " alt="" coords="271,259,423,285"/>
+<area shape="rect" id="node5" href="$classUniverse.html#ae866b39063e8c084d921e1f26787ddd9" title="Updates forces applied on particles in the universe. (Forces from interactions and external forces)" alt="" coords="259,309,434,336"/>
+<area shape="rect" id="node8" href="$classUniverse.html#a22e629bac5b692a63b20bf4aeba72f1a" title="Updates particles positions in Stormer Verlet algorithm." alt="" coords="251,56,443,83"/>
+<area shape="rect" id="node11" href="$universe_8cpp.html#a32a239d2d697a761c657f94dcda3f1e5" title=" " alt="" coords="303,157,390,184"/>
+<area shape="rect" id="node15" href="$universe_8cpp.html#a486c654c3672e56c3194e6df464942f1" title=" " alt="" coords="291,107,403,133"/>
+<area shape="rect" id="node6" href="$classUniverse.html#a2332ccc32a19ae609225c10cffc854d9" title="Applies external forces on particles in the universe. Linear complexity." alt="" coords="491,309,711,336"/>
+<area shape="rect" id="node7" href="$classUniverse.html#a6f0e4eae6b46d41b98aed4f29ff4fa66" title="Applies forces between particles in the universe. Quadratic complexity." alt="" coords="503,361,698,402"/>
+<area shape="rect" id="node9" href="$classParticle.html#ad08e7b1d0cc7cb17bd0602caa4a22bc6" title=" " alt="" coords="533,56,668,83"/>
+<area shape="rect" id="node10" href="$classParticle.html#ad56f6b4822131b412ca75f93a68b434f" title=" " alt="" coords="531,107,671,133"/>
+<area shape="rect" id="node12" href="$classVector.html#a60e33e77bf00e6f8baa941fecc496d03" title=" " alt="" coords="539,157,663,184"/>
+<area shape="rect" id="node13" href="$classParticle.html#a6923bb50d7f30d7276e2ea2ce6dbef54" title=" " alt="" coords="525,208,677,235"/>
+<area shape="rect" id="node14" href="$classVector.html#a26da0e9b7cd83fcd64b1d3bfc76089a3" title="give the norm of the vector i.e. square root of sum of squares" alt="" coords="547,259,654,285"/>
+</map>

@@ -1,0 +1,48 @@
+<map id="FiniteUniverse::updatePositions" name="FiniteUniverse::updatePositions">
+<area shape="rect" id="Node000001" title="Updates particles positions in Stormer Verlet algorithm. Handles cases about being outside of the fin..." alt="" coords="5,292,212,318"/>
+<area shape="rect" id="Node000002" href="$class_finite_universe.html#a2e5291edbf32086d93eb30132e888cf3" title="Reflect particles outside of the bounds of the finite universe." alt="" coords="263,150,434,191"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,289,296,196,299,201,135,294"/>
+<area shape="rect" id="Node000012" href="$class_finite_universe.html#a83eb8e120ea72c26939578255e744bc3" title="Removes particles outside of the bounds of the finite universe." alt="" coords="260,317,437,357"/>
+<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="210,316,245,320,244,326,209,321"/>
+<area shape="rect" id="Node000013" href="$class_finite_universe.html#aa6e08c7a024cfc091556eae78417314e" title="Teleport particles outside of the bounds of the finite universe to the other side like if they travel..." alt="" coords="270,251,427,292"/>
+<area shape="poly" id="edge16_Node000001_Node000013" title=" " alt="" coords="205,289,254,282,255,287,206,294"/>
+<area shape="rect" id="Node000014" href="$class_universe.html#a22e629bac5b692a63b20bf4aeba72f1a" title="Updates particles positions in Stormer Verlet algorithm." alt="" coords="261,457,436,483"/>
+<area shape="poly" id="edge22_Node000001_Node000014" title=" " alt="" coords="130,316,317,446,314,451,127,320"/>
+<area shape="rect" id="Node000003" href="$class_universe.html#a5decd709201dcff98e77e8efc6cf8393" title="Get the dimension of the universe." alt="" coords="711,208,873,234"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="378,147,427,120,484,98,535,86,575,80,616,83,664,98,699,117,730,142,775,194,771,197,726,146,696,122,662,103,615,89,576,86,536,91,486,103,429,125,381,152"/>
+<area shape="rect" id="Node000004" href="$class_universe.html#a735a12f6752d428027c17cf6052d907a" title="Get list of particles reference." alt="" coords="499,359,649,384"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="385,189,413,211,439,238,455,268,461,296,468,321,487,346,490,348,487,352,483,349,463,323,456,297,450,270,435,241,409,215,382,193"/>
+<area shape="rect" id="Node000005" href="$class_particle.html#a30e8bb59c29db55035bac0e1b3f858c9" title=" " alt="" coords="723,259,861,284"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="398,147,456,128,525,116,561,114,597,118,632,127,665,143,678,154,686,166,692,193,696,219,702,232,713,244,719,249,716,253,710,248,698,235,691,221,686,194,681,168,674,157,662,147,630,132,596,123,561,120,525,121,457,134,399,152"/>
+<area shape="rect" id="Node000006" href="$class_particle.html#afc7298779721dd598dff80f267e812a6" title="invert the speed coordinate i" alt="" coords="503,5,645,31"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="367,147,417,98,449,72,484,48,510,35,513,40,486,52,452,76,420,102,370,151"/>
+<area shape="rect" id="Node000007" href="$class_finite_universe.html#ac49341350b70485b6b701d14bc625ed2" title="Says if particle is in the bounds of the universe." alt="" coords="485,309,663,335"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="382,189,542,298,539,303,379,193"/>
+<area shape="rect" id="Node000011" href="$class_particle.html#aa876f744ddd44a8c7cd37a14ac6696f9" title=" " alt="" coords="500,157,649,183"/>
+<area shape="poly" id="edge12_Node000002_Node000011" title=" " alt="" coords="434,168,484,168,484,173,434,173"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="595,306,647,276,710,244,728,237,730,242,712,249,649,281,598,311"/>
+<area shape="poly" id="edge9_Node000007_Node000005" title=" " alt="" coords="632,306,718,286,720,291,633,311"/>
+<area shape="rect" id="Node000008" href="$class_particle.html#af2e2f1ec5f0289e4fb177912bb149ddf" title=" " alt="" coords="715,309,869,335"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="664,320,700,320,700,325,664,325"/>
+<area shape="rect" id="Node000009" href="$class_vector.html#a8ea79719016f6ab4586b3985ad53543b" title="Tell if a vector is in a certain cubic space." alt="" coords="726,359,858,384"/>
+<area shape="poly" id="edge10_Node000007_Node000009" title=" " alt="" coords="635,333,718,352,717,357,634,338"/>
+<area shape="rect" id="Node000010" href="$class_vector.html#ab569bc2ee929c1b583bd1bd31ae26c08" title="Tell for each dimension if the coords of the calling vector is greater than the other vector given." alt="" coords="921,359,1106,384"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="858,369,905,369,905,374,858,374"/>
+<area shape="poly" id="edge14_Node000012_Node000004" title=" " alt="" coords="438,348,484,355,483,360,437,353"/>
+<area shape="poly" id="edge15_Node000012_Node000007" title=" " alt="" coords="437,328,469,326,470,332,437,334"/>
+<area shape="poly" id="edge17_Node000013_Node000003" title=" " alt="" coords="427,258,485,250,696,227,696,233,485,255,427,263"/>
+<area shape="poly" id="edge18_Node000013_Node000004" title=" " alt="" coords="414,290,438,303,453,314,463,325,472,335,486,345,497,350,494,355,484,350,469,339,459,328,449,318,436,307,411,295"/>
+<area shape="poly" id="edge19_Node000013_Node000005" title=" " alt="" coords="427,269,707,269,707,274,427,274"/>
+<area shape="poly" id="edge20_Node000013_Node000007" title=" " alt="" coords="428,286,499,303,498,308,427,292"/>
+<area shape="poly" id="edge21_Node000013_Node000011" title=" " alt="" coords="386,248,484,200,517,186,519,191,486,205,388,253"/>
+<area shape="rect" id="Node000015" href="$class_particle.html#a68634a42f13afd787f83604a24c1ba32" title="Adds to existing position the vector given." alt="" coords="497,408,652,434"/>
+<area shape="poly" id="edge23_Node000014_Node000015" title=" " alt="" coords="410,454,497,435,498,440,411,459"/>
+<area shape="rect" id="Node000017" href="$class_particle.html#afd9f1652d0391a9a0d7a7ca37ffdd99b" title=" " alt="" coords="512,457,636,483"/>
+<area shape="poly" id="edge25_Node000014_Node000017" title=" " alt="" coords="436,468,496,468,496,473,436,473"/>
+<area shape="rect" id="Node000018" href="$class_particle.html#ad08e7b1d0cc7cb17bd0602caa4a22bc6" title=" " alt="" coords="513,507,636,532"/>
+<area shape="poly" id="edge26_Node000014_Node000018" title=" " alt="" coords="411,481,498,500,497,505,410,486"/>
+<area shape="rect" id="Node000019" href="$class_particle.html#a9d17c62157a8069b980edd2077c91b91" title=" " alt="" coords="510,556,638,582"/>
+<area shape="poly" id="edge27_Node000014_Node000019" title=" " alt="" coords="371,481,422,511,486,542,503,548,501,553,484,547,420,516,369,486"/>
+<area shape="rect" id="Node000016" href="$class_vector.html#afacfb2fc482d43c34913c095921f8af5" title=" " alt="" coords="718,408,866,434"/>
+<area shape="poly" id="edge24_Node000015_Node000016" title=" " alt="" coords="652,418,703,418,703,424,652,424"/>
+</map>

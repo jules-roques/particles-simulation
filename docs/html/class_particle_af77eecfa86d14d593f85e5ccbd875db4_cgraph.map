@@ -1,0 +1,5 @@
+<map id="Particle::distanceTo" name="Particle::distanceTo">
+<area shape="rect" id="Node000001" title="Calculates distance from this particle to the other." alt="" coords="5,5,142,31"/>
+<area shape="rect" id="Node000002" href="$class_vector.html#a26da0e9b7cd83fcd64b1d3bfc76089a3" title="give the norm of the vector i.e. square root of sum of squares" alt="" coords="190,5,286,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,16,174,16,174,21,142,21"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="FiniteUniverse::teleportOutOfBoundsParticles" name="FiniteUniverse::teleportOutOfBoundsParticles">
+<area shape="rect" id="node1" title="Teleport particles outside of the bounds of the finite universe to the other side." alt="" coords="5,99,180,141"/>
+<area shape="rect" id="node2" href="$classUniverse.html#a5decd709201dcff98e77e8efc6cf8393" title="Get the dimension of the universe." alt="" coords="471,5,649,32"/>
+<area shape="rect" id="node3" href="$classUniverse.html#a6bcfaadf4170ba440bc9101be39630ed" title="Get list of particles reference." alt="" coords="243,157,408,184"/>
+<area shape="rect" id="node4" href="$classParticle.html#a6923bb50d7f30d7276e2ea2ce6dbef54" title=" " alt="" coords="484,56,636,83"/>
+<area shape="rect" id="node5" href="$classFiniteUniverse.html#ac49341350b70485b6b701d14bc625ed2" title="Says if particle is in the bounds of the universe." alt="" coords="228,107,423,133"/>
+<area shape="rect" id="node9" href="$classParticle.html#aa876f744ddd44a8c7cd37a14ac6696f9" title=" " alt="" coords="245,208,405,235"/>
+<area shape="rect" id="node6" href="$classParticle.html#af2e2f1ec5f0289e4fb177912bb149ddf" title=" " alt="" coords="475,107,645,133"/>
+<area shape="rect" id="node7" href="$classVector.html#a8ea79719016f6ab4586b3985ad53543b" title="Tell if a vector is in a certain cubic space." alt="" coords="489,157,631,184"/>
+<area shape="rect" id="node8" href="$classVector.html#ab569bc2ee929c1b583bd1bd31ae26c08" title="Tell for each dimension if the coords of the calling vector is greater than the other vector given." alt="" coords="697,157,901,184"/>
+</map>

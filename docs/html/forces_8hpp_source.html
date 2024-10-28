@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PROJET C++ (Jules Roques - Zephirin Faure):  Fichier source de include/forces.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">PROJET C++ (Jules Roques - Zephirin Faure)
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">forces.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="forces_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef _FORCES_HPP_</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define _FORCES_HPP_</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="vector_8hpp.html">vector.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="particle_8hpp.html">particle.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="xassert_8hpp.html">xassert.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keywordtype">void</span> <a class="code" href="forces_8hpp.html#a98da424bb69057444ed08d763a4c91cb">gravitationalInteraction</a>(<span class="keyword">const</span> <a class="code" href="classParticle.html">Particle</a> &amp;source, <a class="code" href="classParticle.html">Particle</a>&amp; target);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keywordtype">void</span> <a class="code" href="forces_8hpp.html#ae49d2de1b78a18e17f253fb9d8814d1c">lennardJonesInteraction</a>(<span class="keyword">const</span> <a class="code" href="classParticle.html">Particle</a>&amp; source, <a class="code" href="classParticle.html">Particle</a>&amp; target,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                           <span class="keywordtype">double</span> epsilon, <span class="keywordtype">double</span> sigma);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">void</span> <a class="code" href="forces_8hpp.html#a0c9eb3d307a5dab27dcabeb275d60aa5">gravitationalForce</a>(<a class="code" href="classParticle.html">Particle</a>&amp; target, <span class="keywordtype">double</span> G);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">void</span> <a class="code" href="forces_8hpp.html#aaf6fd8a2e3f6aaaec45d4cead961793a">wallsForce</a>(<a class="code" href="classParticle.html">Particle</a>&amp; target, <a class="code" href="classVector.html">Vector</a> lowerBound, <a class="code" href="classVector.html">Vector</a> upperBound, <span class="keywordtype">double</span> epsilon, <span class="keywordtype">double</span> sigma);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// _FORCES_HPP_</span></div>
+<div class="ttc" id="aclassParticle_html"><div class="ttname"><a href="classParticle.html">Particle</a></div><div class="ttdef"><b>Definition:</b> particle.hpp:20</div></div>
+<div class="ttc" id="aclassVector_html"><div class="ttname"><a href="classVector.html">Vector</a></div><div class="ttdoc">Vector class.</div><div class="ttdef"><b>Definition:</b> vector.hpp:18</div></div>
+<div class="ttc" id="aforces_8hpp_html_a0c9eb3d307a5dab27dcabeb275d60aa5"><div class="ttname"><a href="forces_8hpp.html#a0c9eb3d307a5dab27dcabeb275d60aa5">gravitationalForce</a></div><div class="ttdeci">void gravitationalForce(Particle &amp;target, double G)</div><div class="ttdoc">Adds the gravitational force applied on a particle to the existing force. The gravitational field is ...</div><div class="ttdef"><b>Definition:</b> forces.cpp:27</div></div>
+<div class="ttc" id="aforces_8hpp_html_a98da424bb69057444ed08d763a4c91cb"><div class="ttname"><a href="forces_8hpp.html#a98da424bb69057444ed08d763a4c91cb">gravitationalInteraction</a></div><div class="ttdeci">void gravitationalInteraction(const Particle &amp;source, Particle &amp;target)</div><div class="ttdoc">Computes the gravitational force applied by source on target particle.</div><div class="ttdef"><b>Definition:</b> forces.cpp:7</div></div>
+<div class="ttc" id="aforces_8hpp_html_aaf6fd8a2e3f6aaaec45d4cead961793a"><div class="ttname"><a href="forces_8hpp.html#aaf6fd8a2e3f6aaaec45d4cead961793a">wallsForce</a></div><div class="ttdeci">void wallsForce(Particle &amp;target, Vector lowerBound, Vector upperBound, double epsilon, double sigma)</div><div class="ttdoc">Applies on the particle the strength of the walls (c.f. TP6)</div><div class="ttdef"><b>Definition:</b> forces.cpp:40</div></div>
+<div class="ttc" id="aforces_8hpp_html_ae49d2de1b78a18e17f253fb9d8814d1c"><div class="ttname"><a href="forces_8hpp.html#ae49d2de1b78a18e17f253fb9d8814d1c">lennardJonesInteraction</a></div><div class="ttdeci">void lennardJonesInteraction(const Particle &amp;source, Particle &amp;target, double epsilon, double sigma)</div><div class="ttdoc">Computes the Lennard Jones force applied by source on target particle.</div><div class="ttdef"><b>Definition:</b> forces.cpp:16</div></div>
+<div class="ttc" id="aparticle_8hpp_html"><div class="ttname"><a href="particle_8hpp.html">particle.hpp</a></div></div>
+<div class="ttc" id="avector_8hpp_html"><div class="ttname"><a href="vector_8hpp.html">vector.hpp</a></div><div class="ttdoc">File for vector calculations.</div></div>
+<div class="ttc" id="axassert_8hpp_html"><div class="ttname"><a href="xassert_8hpp.html">xassert.hpp</a></div><div class="ttdoc">To define an assert macro.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

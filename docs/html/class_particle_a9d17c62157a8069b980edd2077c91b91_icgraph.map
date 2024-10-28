@@ -1,0 +1,18 @@
+<map id="Particle::getSpeed" name="Particle::getSpeed">
+<area shape="rect" id="Node000001" title=" " alt="" coords="579,80,708,106"/>
+<area shape="rect" id="Node000002" href="$particle__test_8cpp.html#a49bce9dbd3401a31e9c9595f8f62bea2" title="Test the addToSpeed function." alt="" coords="417,5,472,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="601,75,530,45,471,27,473,22,532,40,603,70"/>
+<area shape="rect" id="Node000003" href="$particle__test_8cpp.html#aa8021214e4986368f85ddc6fb657e69c" title="Test the invertSpeed function." alt="" coords="417,55,472,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="563,85,472,74,472,68,564,80"/>
+<area shape="rect" id="Node000004" href="$class_universe.html#a22e629bac5b692a63b20bf4aeba72f1a" title="Updates particles positions in Stormer Verlet algorithm." alt="" coords="357,153,531,179"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="603,115,532,145,499,155,497,150,530,140,601,110"/>
+<area shape="rect" id="Node000008" href="$universe_8cpp.html#a486c654c3672e56c3194e6df464942f1" title=" " alt="" coords="393,104,496,130"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="564,105,497,113,496,108,564,100"/>
+<area shape="rect" id="Node000005" href="$class_universe.html#aa17a814ab1cc87fd4897874ce8b88201" title="Simule le mouvement des particules dans l&#39;univers en utilisant la méthode de Störmer&#45;Verlet." alt="" coords="118,97,294,137"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="363,152,294,138,295,132,364,147"/>
+<area shape="rect" id="Node000007" href="$class_finite_universe.html#a5a7c8611593d07b6b5b9823704c384d8" title="Updates particles positions in Stormer Verlet algorithm. Handles cases about being outside of the fin..." alt="" coords="103,161,309,187"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="341,172,310,173,309,168,341,167"/>
+<area shape="rect" id="Node000006" href="$solar__system__tp2_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,104,55,130"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="102,120,55,120,55,114,102,114"/>
+<area shape="poly" id="edge8_Node000008_Node000005" title=" " alt="" coords="377,120,294,120,294,114,377,114"/>
+</map>

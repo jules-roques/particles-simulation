@@ -1,0 +1,414 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PROJET C++ (Jules Roques - Zephirin Faure): Référence du fichier src/forces.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">PROJET C++ (Jules Roques - Zephirin Faure)
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier forces.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="forces_8hpp_source.html">forces.hpp</a>&quot;</code><br />
+<code>#include &lt;<a class="el" href="vector_8hpp_source.html">vector.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="particle_8hpp_source.html">particle.hpp</a>&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;<a class="el" href="xassert_8hpp_source.html">xassert.hpp</a>&gt;</code><br />
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Graphe des dépendances par inclusion de forces.cpp:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="forces_8cpp__incl.png" border="0" usemap="#asrc_2forces_8cpp" alt=""/></div>
+<map name="asrc_2forces_8cpp" id="asrc_2forces_8cpp">
+<area shape="rect" title=" " alt="" coords="573,5,685,32"/>
+<area shape="rect" href="forces_8hpp.html" title="File containing different forces functions." alt="" coords="501,80,592,107"/>
+<area shape="rect" href="vector_8hpp.html" title="File for vector calculations." alt="" coords="465,304,556,331"/>
+<area shape="rect" href="particle_8hpp.html" title=" " alt="" coords="377,155,476,181"/>
+<area shape="rect" title=" " alt="" coords="574,155,637,181"/>
+<area shape="rect" href="xassert_8hpp.html" title="To define an assert macro." alt="" coords="661,155,760,181"/>
+<area shape="rect" title=" " alt="" coords="433,379,495,405"/>
+<area shape="rect" title=" " alt="" coords="519,379,595,405"/>
+<area shape="rect" title=" " alt="" coords="323,229,381,256"/>
+<area shape="rect" title=" " alt="" coords="405,229,448,256"/>
+<area shape="rect" href="interraction_8hpp.html" title="to define an interraction between two particles" alt="" coords="5,229,131,256"/>
+<area shape="rect" href="external__force_8hpp.html" title=" " alt="" coords="155,229,299,256"/>
+<area shape="rect" title=" " alt="" coords="105,304,191,331"/>
+<area shape="rect" title=" " alt="" coords="573,229,653,256"/>
+<area shape="rect" title=" " alt="" coords="677,229,752,256"/>
+<area shape="rect" href="config_8hpp.html" title="Contains constants definitions for preprocessing of the code." alt="" coords="776,229,867,256"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a98da424bb69057444ed08d763a4c91cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forces_8cpp.html#a98da424bb69057444ed08d763a4c91cb">gravitationalInteraction</a> (const <a class="el" href="classParticle.html">Particle</a> &amp;source, <a class="el" href="classParticle.html">Particle</a> &amp;target)</td></tr>
+<tr class="memdesc:a98da424bb69057444ed08d763a4c91cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the gravitational force applied by source on target particle.  <a href="forces_8cpp.html#a98da424bb69057444ed08d763a4c91cb">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a98da424bb69057444ed08d763a4c91cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae49d2de1b78a18e17f253fb9d8814d1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forces_8cpp.html#ae49d2de1b78a18e17f253fb9d8814d1c">lennardJonesInteraction</a> (const <a class="el" href="classParticle.html">Particle</a> &amp;source, <a class="el" href="classParticle.html">Particle</a> &amp;target, double epsilon, double sigma)</td></tr>
+<tr class="memdesc:ae49d2de1b78a18e17f253fb9d8814d1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the Lennard Jones force applied by source on target particle.  <a href="forces_8cpp.html#ae49d2de1b78a18e17f253fb9d8814d1c">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ae49d2de1b78a18e17f253fb9d8814d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c9eb3d307a5dab27dcabeb275d60aa5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forces_8cpp.html#a0c9eb3d307a5dab27dcabeb275d60aa5">gravitationalForce</a> (<a class="el" href="classParticle.html">Particle</a> &amp;target, double G)</td></tr>
+<tr class="memdesc:a0c9eb3d307a5dab27dcabeb275d60aa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the gravitational force applied on a particle to the existing force. The gravitational field is applied on the last dimension ot the particle.  <a href="forces_8cpp.html#a0c9eb3d307a5dab27dcabeb275d60aa5">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a0c9eb3d307a5dab27dcabeb275d60aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf6fd8a2e3f6aaaec45d4cead961793a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forces_8cpp.html#aaf6fd8a2e3f6aaaec45d4cead961793a">wallsForce</a> (<a class="el" href="classParticle.html">Particle</a> &amp;target, <a class="el" href="classVector.html">Vector</a> lowerBound, <a class="el" href="classVector.html">Vector</a> upperBound, double epsilon, double sigma)</td></tr>
+<tr class="memdesc:aaf6fd8a2e3f6aaaec45d4cead961793a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies on the particle the strength of the walls (c.f. TP6)  <a href="forces_8cpp.html#aaf6fd8a2e3f6aaaec45d4cead961793a">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aaf6fd8a2e3f6aaaec45d4cead961793a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a0c9eb3d307a5dab27dcabeb275d60aa5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c9eb3d307a5dab27dcabeb275d60aa5">&#9670;&nbsp;</a></span>gravitationalForce()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gravitationalForce </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classParticle.html">Particle</a> &amp;&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>G</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds the gravitational force applied on a particle to the existing force. The gravitational field is applied on the last dimension ot the particle. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td></td></tr>
+    <tr><td class="paramname">target</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Voici le graphe d'appel pour cette fonction :</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="forces_8cpp_a0c9eb3d307a5dab27dcabeb275d60aa5_cgraph.png" border="0" usemap="#aforces_8cpp_a0c9eb3d307a5dab27dcabeb275d60aa5_cgraph" alt=""/></div>
+<map name="aforces_8cpp_a0c9eb3d307a5dab27dcabeb275d60aa5_cgraph" id="aforces_8cpp_a0c9eb3d307a5dab27dcabeb275d60aa5_cgraph">
+<area shape="rect" title="Adds the gravitational force applied on a particle to the existing force. The gravitational field is ..." alt="" coords="5,56,145,83"/>
+<area shape="rect" href="classParticle.html#a01172683c98279750776f2932e8d7c3b" title="Adds to the i th force coordinate the value given." alt="" coords="193,5,384,32"/>
+<area shape="rect" href="classParticle.html#af2e2f1ec5f0289e4fb177912bb149ddf" title=" " alt="" coords="203,56,374,83"/>
+<area shape="rect" href="classParticle.html#ad08e7b1d0cc7cb17bd0602caa4a22bc6" title=" " alt="" coords="221,107,356,133"/>
+</map>
+</div>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="forces_8cpp_a0c9eb3d307a5dab27dcabeb275d60aa5_icgraph.png" border="0" usemap="#aforces_8cpp_a0c9eb3d307a5dab27dcabeb275d60aa5_icgraph" alt=""/></div>
+<map name="aforces_8cpp_a0c9eb3d307a5dab27dcabeb275d60aa5_icgraph" id="aforces_8cpp_a0c9eb3d307a5dab27dcabeb275d60aa5_icgraph">
+<area shape="rect" title="Adds the gravitational force applied on a particle to the existing force. The gravitational field is ..." alt="" coords="108,5,248,32"/>
+<area shape="rect" href="src_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,5,60,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a98da424bb69057444ed08d763a4c91cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98da424bb69057444ed08d763a4c91cb">&#9670;&nbsp;</a></span>gravitationalInteraction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gravitationalInteraction </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classParticle.html">Particle</a> &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classParticle.html">Particle</a> &amp;&#160;</td>
+          <td class="paramname"><em>target</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Computes the gravitational force applied by source on target particle. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td></td></tr>
+    <tr><td class="paramname">target</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd><a class="el" href="classVector.html" title="Vector class.">Vector</a> </dd></dl>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Voici le graphe d'appel pour cette fonction :</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="forces_8cpp_a98da424bb69057444ed08d763a4c91cb_cgraph.png" border="0" usemap="#aforces_8cpp_a98da424bb69057444ed08d763a4c91cb_cgraph" alt=""/></div>
+<map name="aforces_8cpp_a98da424bb69057444ed08d763a4c91cb_cgraph" id="aforces_8cpp_a98da424bb69057444ed08d763a4c91cb_cgraph">
+<area shape="rect" title="Computes the gravitational force applied by source on target particle." alt="" coords="5,81,180,108"/>
+<area shape="rect" href="classParticle.html#adee1ef8d7e51a8cfa2c8281d857f838c" title="Adds to existing force the vector given." alt="" coords="228,5,380,32"/>
+<area shape="rect" href="classParticle.html#af77eecfa86d14d593f85e5ccbd875db4" title="Calculates distance from this particle to the other." alt="" coords="230,56,378,83"/>
+<area shape="rect" href="classParticle.html#ad08e7b1d0cc7cb17bd0602caa4a22bc6" title=" " alt="" coords="237,107,371,133"/>
+<area shape="rect" href="classParticle.html#a6923bb50d7f30d7276e2ea2ce6dbef54" title=" " alt="" coords="228,157,380,184"/>
+<area shape="rect" href="classVector.html#afacfb2fc482d43c34913c095921f8af5" title=" " alt="" coords="428,5,591,32"/>
+<area shape="rect" href="classVector.html#a26da0e9b7cd83fcd64b1d3bfc76089a3" title="give the norm of the vector i.e. square root of sum of squares" alt="" coords="456,56,563,83"/>
+</map>
+</div>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="forces_8cpp_a98da424bb69057444ed08d763a4c91cb_icgraph.png" border="0" usemap="#aforces_8cpp_a98da424bb69057444ed08d763a4c91cb_icgraph" alt=""/></div>
+<map name="aforces_8cpp_a98da424bb69057444ed08d763a4c91cb_icgraph" id="aforces_8cpp_a98da424bb69057444ed08d763a4c91cb_icgraph">
+<area shape="rect" title="Computes the gravitational force applied by source on target particle." alt="" coords="108,5,283,32"/>
+<area shape="rect" href="solar__system__tp2_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,5,60,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae49d2de1b78a18e17f253fb9d8814d1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae49d2de1b78a18e17f253fb9d8814d1c">&#9670;&nbsp;</a></span>lennardJonesInteraction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lennardJonesInteraction </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classParticle.html">Particle</a> &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classParticle.html">Particle</a> &amp;&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>epsilon</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>sigma</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Computes the Lennard Jones force applied by source on target particle. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td></td></tr>
+    <tr><td class="paramname">target</td><td></td></tr>
+    <tr><td class="paramname">epsilon</td><td></td></tr>
+    <tr><td class="paramname">sigma</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd><a class="el" href="classVector.html" title="Vector class.">Vector</a> </dd></dl>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Voici le graphe d'appel pour cette fonction :</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="forces_8cpp_ae49d2de1b78a18e17f253fb9d8814d1c_cgraph.png" border="0" usemap="#aforces_8cpp_ae49d2de1b78a18e17f253fb9d8814d1c_cgraph" alt=""/></div>
+<map name="aforces_8cpp_ae49d2de1b78a18e17f253fb9d8814d1c_cgraph" id="aforces_8cpp_ae49d2de1b78a18e17f253fb9d8814d1c_cgraph">
+<area shape="rect" title="Computes the Lennard Jones force applied by source on target particle." alt="" coords="5,56,181,83"/>
+<area shape="rect" href="classParticle.html#adee1ef8d7e51a8cfa2c8281d857f838c" title="Adds to existing force the vector given." alt="" coords="229,5,381,32"/>
+<area shape="rect" href="classParticle.html#af77eecfa86d14d593f85e5ccbd875db4" title="Calculates distance from this particle to the other." alt="" coords="231,56,379,83"/>
+<area shape="rect" href="classParticle.html#a6923bb50d7f30d7276e2ea2ce6dbef54" title=" " alt="" coords="229,107,381,133"/>
+<area shape="rect" href="classVector.html#afacfb2fc482d43c34913c095921f8af5" title=" " alt="" coords="429,5,592,32"/>
+<area shape="rect" href="classVector.html#a26da0e9b7cd83fcd64b1d3bfc76089a3" title="give the norm of the vector i.e. square root of sum of squares" alt="" coords="457,56,564,83"/>
+</map>
+</div>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="forces_8cpp_ae49d2de1b78a18e17f253fb9d8814d1c_icgraph.png" border="0" usemap="#aforces_8cpp_ae49d2de1b78a18e17f253fb9d8814d1c_icgraph" alt=""/></div>
+<map name="aforces_8cpp_ae49d2de1b78a18e17f253fb9d8814d1c_icgraph" id="aforces_8cpp_ae49d2de1b78a18e17f253fb9d8814d1c_icgraph">
+<area shape="rect" title="Computes the Lennard Jones force applied by source on target particle." alt="" coords="108,5,284,32"/>
+<area shape="rect" href="src_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,5,60,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aaf6fd8a2e3f6aaaec45d4cead961793a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf6fd8a2e3f6aaaec45d4cead961793a">&#9670;&nbsp;</a></span>wallsForce()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wallsForce </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classParticle.html">Particle</a> &amp;&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classVector.html">Vector</a>&#160;</td>
+          <td class="paramname"><em>lowerBound</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classVector.html">Vector</a>&#160;</td>
+          <td class="paramname"><em>upperBound</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>epsilon</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>sigma</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Applies on the particle the strength of the walls (c.f. TP6) </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target</td><td></td></tr>
+    <tr><td class="paramname">lowerBound</td><td></td></tr>
+    <tr><td class="paramname">upperBound</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Voici le graphe d'appel pour cette fonction :</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="forces_8cpp_aaf6fd8a2e3f6aaaec45d4cead961793a_cgraph.png" border="0" usemap="#aforces_8cpp_aaf6fd8a2e3f6aaaec45d4cead961793a_cgraph" alt=""/></div>
+<map name="aforces_8cpp_aaf6fd8a2e3f6aaaec45d4cead961793a_cgraph" id="aforces_8cpp_aaf6fd8a2e3f6aaaec45d4cead961793a_cgraph">
+<area shape="rect" title="Applies on the particle the strength of the walls (c.f. TP6)" alt="" coords="5,107,96,133"/>
+<area shape="rect" href="classParticle.html#a01172683c98279750776f2932e8d7c3b" title="Adds to the i th force coordinate the value given." alt="" coords="144,5,335,32"/>
+<area shape="rect" href="classParticle.html#af2e2f1ec5f0289e4fb177912bb149ddf" title=" " alt="" coords="154,56,325,83"/>
+<area shape="rect" href="classVector.html#afacfb2fc482d43c34913c095921f8af5" title=" " alt="" coords="158,107,321,133"/>
+<area shape="rect" href="classParticle.html#a6923bb50d7f30d7276e2ea2ce6dbef54" title=" " alt="" coords="163,157,315,184"/>
+<area shape="rect" href="classVector.html#a8ea79719016f6ab4586b3985ad53543b" title="Tell if a vector is in a certain cubic space." alt="" coords="168,208,311,235"/>
+<area shape="rect" href="classVector.html#ab569bc2ee929c1b583bd1bd31ae26c08" title="Tell for each dimension if the coords of the calling vector is greater than the other vector given." alt="" coords="383,208,587,235"/>
+</map>
+</div>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Voici le graphe des appelants de cette fonction :</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="forces_8cpp_aaf6fd8a2e3f6aaaec45d4cead961793a_icgraph.png" border="0" usemap="#aforces_8cpp_aaf6fd8a2e3f6aaaec45d4cead961793a_icgraph" alt=""/></div>
+<map name="aforces_8cpp_aaf6fd8a2e3f6aaaec45d4cead961793a_icgraph" id="aforces_8cpp_aaf6fd8a2e3f6aaaec45d4cead961793a_icgraph">
+<area shape="rect" title="Applies on the particle the strength of the walls (c.f. TP6)" alt="" coords="229,13,320,39"/>
+<area shape="rect" href="classFiniteUniverse.html#a1be9aefe24841bcf042e69c0c6ab2db8" title="Activate reflexion mode with a repulsing force from the walls." alt="" coords="5,5,181,47"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

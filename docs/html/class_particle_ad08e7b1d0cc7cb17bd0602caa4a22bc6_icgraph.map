@@ -1,0 +1,21 @@
+<map id="Particle::getMass" name="Particle::getMass">
+<area shape="rect" id="Node000001" title=" " alt="" coords="579,81,703,107"/>
+<area shape="rect" id="Node000002" href="$forces_8hpp.html#a0c9eb3d307a5dab27dcabeb275d60aa5" title="Adds the gravitational force applied on a particle to the existing force. The gravitational field is ..." alt="" coords="382,5,506,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="593,78,530,53,481,34,483,29,532,48,595,73"/>
+<area shape="rect" id="Node000004" href="$forces_8hpp.html#a98da424bb69057444ed08d763a4c91cb" title="Computes the gravitational force applied by source on target particle." alt="" coords="130,55,282,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="564,92,282,75,283,69,564,87"/>
+<area shape="rect" id="Node000006" href="$class_universe.html#a22e629bac5b692a63b20bf4aeba72f1a" title="Updates particles positions in Stormer Verlet algorithm." alt="" coords="357,156,531,182"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="602,117,532,147,499,158,498,153,530,142,600,112"/>
+<area shape="rect" id="Node000009" href="$universe_8cpp.html#a486c654c3672e56c3194e6df464942f1" title=" " alt="" coords="393,107,496,132"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="564,107,497,116,496,110,564,101"/>
+<area shape="rect" id="Node000003" href="$src_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="181,5,231,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="367,21,231,21,231,16,367,16"/>
+<area shape="rect" id="Node000005" href="$solar__system__tp2_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,84,55,110"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="114,85,56,95,55,90,114,80"/>
+<area shape="rect" id="Node000007" href="$class_universe.html#aa17a814ab1cc87fd4897874ce8b88201" title="Simule le mouvement des particules dans l&#39;univers en utilisant la méthode de Störmer&#45;Verlet." alt="" coords="118,105,294,145"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="355,155,294,144,295,139,356,150"/>
+<area shape="rect" id="Node000008" href="$class_finite_universe.html#a5a7c8611593d07b6b5b9823704c384d8" title="Updates particles positions in Stormer Verlet algorithm. Handles cases about being outside of the fin..." alt="" coords="103,169,309,195"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="341,177,310,179,309,174,341,172"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="102,111,55,103,56,98,103,106"/>
+<area shape="poly" id="edge10_Node000009_Node000007" title=" " alt="" coords="377,124,294,126,294,120,377,118"/>
+</map>

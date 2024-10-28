@@ -1,0 +1,5 @@
+<map id="Universe::updateForces" name="Universe::updateForces">
+<area shape="rect" id="node1" title="Updates forces applied on particles in the universe. (Forces from interactions and external forces)" alt="" coords="5,35,180,61"/>
+<area shape="rect" id="node2" href="$classUniverse.html#a2332ccc32a19ae609225c10cffc854d9" title="Applies external forces on particles in the universe. Linear complexity." alt="" coords="228,5,448,32"/>
+<area shape="rect" id="node3" href="$classUniverse.html#a6f0e4eae6b46d41b98aed4f29ff4fa66" title="Applies forces between particles in the universe. Quadratic complexity." alt="" coords="241,57,435,98"/>
+</map>

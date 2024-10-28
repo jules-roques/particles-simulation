@@ -1,0 +1,5 @@
+<map id="FiniteUniverse" name="FiniteUniverse">
+<area shape="rect" id="Node000001" title="Universe with bounds." alt="" coords="5,479,209,824"/>
+<area shape="rect" id="Node000002" href="$class_universe.html" title="Represents an universe containing particles. Can be in dimension 1, 2, or 3." alt="" coords="9,5,205,431"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,445,110,479,105,479,105,445"/>
+</map>

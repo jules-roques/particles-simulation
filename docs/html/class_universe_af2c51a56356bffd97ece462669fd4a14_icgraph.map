@@ -1,0 +1,5 @@
+<map id="Universe::getInteractions" name="Universe::getInteractions">
+<area shape="rect" id="Node000001" title="Get the universe interactions." alt="" coords="236,5,403,31"/>
+<area shape="rect" id="Node000002" href="$class_cell.html#aa40f0223edc22ff6e82b27881b7c8a68" title="applies forces by neighours on all particles in the cell (adds to existing forces)" alt="" coords="5,5,188,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="220,21,188,21,188,16,220,16"/>
+</map>

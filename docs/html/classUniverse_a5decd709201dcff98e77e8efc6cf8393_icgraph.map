@@ -1,0 +1,13 @@
+<map id="Universe::getDimension" name="Universe::getDimension">
+<area shape="rect" id="node1" title="Get the dimension of the universe." alt="" coords="1005,195,1184,221"/>
+<area shape="rect" id="node2" href="$classUniverse.html#a7d0276a639153e952689e3660f4fa1de" title="Adds a particle into the universe." alt="" coords="779,81,941,108"/>
+<area shape="rect" id="node6" href="$classFiniteUniverse.html#ac49341350b70485b6b701d14bc625ed2" title="Says if particle is in the bounds of the universe." alt="" coords="763,227,957,253"/>
+<area shape="rect" id="node7" href="$classFiniteUniverse.html#a2e5291edbf32086d93eb30132e888cf3" title="Reflect particles outside of the bounds of the finite universe." alt="" coords="523,158,711,199"/>
+<area shape="rect" id="node11" href="$classFiniteUniverse.html#aa6e08c7a024cfc091556eae78417314e" title="Teleport particles outside of the bounds of the finite universe to the other side." alt="" coords="529,289,704,330"/>
+<area shape="rect" id="node3" href="$classUniverse.html#a23678850af21d714481398fc8730d057" title="Adds a particle into the universe." alt="" coords="536,5,697,32"/>
+<area shape="rect" id="node4" href="$classFiniteUniverse.html#a7e4fba08b9d1730d1dc6a98e2756f041" title="Adds a particle to the gridded universe." alt="" coords="519,56,715,83"/>
+<area shape="rect" id="node5" href="$solar__system__tp2_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="589,107,644,133"/>
+<area shape="rect" id="node10" href="$classFiniteUniverse.html#a83eb8e120ea72c26939578255e744bc3" title="Removes particles outside of the bounds of the finite universe." alt="" coords="519,223,715,265"/>
+<area shape="rect" id="node8" href="$classFiniteUniverse.html#a31c1ce476f4e8d46be9f611c9571396a" title="Handle out of bounds particles." alt="" coords="280,223,471,265"/>
+<area shape="rect" id="node9" href="$classFiniteUniverse.html#a5a7c8611593d07b6b5b9823704c384d8" title="Updates particles positions in Stormer Verlet algorithm. Handles cases about being outside of the fin..." alt="" coords="5,231,232,257"/>
+</map>

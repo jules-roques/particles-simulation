@@ -1,0 +1,15 @@
+<map id="FiniteUniverse::handleOutOfBoundsParticles" name="FiniteUniverse::handleOutOfBoundsParticles">
+<area shape="rect" id="node1" title="Handle out of bounds particles." alt="" coords="5,231,196,272"/>
+<area shape="rect" id="node2" href="$classFiniteUniverse.html#a2e5291edbf32086d93eb30132e888cf3" title="Reflect particles outside of the bounds of the finite universe." alt="" coords="248,138,436,179"/>
+<area shape="rect" id="node12" href="$classFiniteUniverse.html#a83eb8e120ea72c26939578255e744bc3" title="Removes particles outside of the bounds of the finite universe." alt="" coords="244,296,440,338"/>
+<area shape="rect" id="node13" href="$classFiniteUniverse.html#aa6e08c7a024cfc091556eae78417314e" title="Teleport particles outside of the bounds of the finite universe to the other side." alt="" coords="255,231,429,272"/>
+<area shape="rect" id="node3" href="$classUniverse.html#a5decd709201dcff98e77e8efc6cf8393" title="Get the dimension of the universe." alt="" coords="731,196,909,222"/>
+<area shape="rect" id="node4" href="$classUniverse.html#a6bcfaadf4170ba440bc9101be39630ed" title="Get list of particles reference." alt="" coords="503,348,668,374"/>
+<area shape="rect" id="node5" href="$classParticle.html#a6923bb50d7f30d7276e2ea2ce6dbef54" title=" " alt="" coords="744,246,896,273"/>
+<area shape="rect" id="node6" href="$classParticle.html#afc7298779721dd598dff80f267e812a6" title="invert the speed coordinate i" alt="" coords="507,44,664,70"/>
+<area shape="rect" id="node7" href="$classFiniteUniverse.html#ac49341350b70485b6b701d14bc625ed2" title="Says if particle is in the bounds of the universe." alt="" coords="488,297,683,324"/>
+<area shape="rect" id="node11" href="$classParticle.html#aa876f744ddd44a8c7cd37a14ac6696f9" title=" " alt="" coords="505,145,665,172"/>
+<area shape="rect" id="node8" href="$classParticle.html#af2e2f1ec5f0289e4fb177912bb149ddf" title=" " alt="" coords="735,297,905,324"/>
+<area shape="rect" id="node9" href="$classVector.html#a8ea79719016f6ab4586b3985ad53543b" title="Tell if a vector is in a certain cubic space." alt="" coords="749,348,891,374"/>
+<area shape="rect" id="node10" href="$classVector.html#ab569bc2ee929c1b583bd1bd31ae26c08" title="Tell for each dimension if the coords of the calling vector is greater than the other vector given." alt="" coords="957,348,1161,374"/>
+</map>

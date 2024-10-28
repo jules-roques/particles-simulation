@@ -1,0 +1,9 @@
+<map id="Universe::updatePositions" name="Universe::updatePositions">
+<area shape="rect" id="Node000001" title="Updates particles positions in Stormer Verlet algorithm." alt="" coords="357,42,531,68"/>
+<area shape="rect" id="Node000002" href="$class_universe.html#aa17a814ab1cc87fd4897874ce8b88201" title="Simule le mouvement des particules dans l&#39;univers en utilisant la méthode de Störmer&#45;Verlet." alt="" coords="118,5,294,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="341,45,294,39,295,34,342,40"/>
+<area shape="rect" id="Node000004" href="$class_finite_universe.html#a5a7c8611593d07b6b5b9823704c384d8" title="Updates particles positions in Stormer Verlet algorithm. Handles cases about being outside of the fin..." alt="" coords="103,70,309,96"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="342,70,310,73,309,68,341,64"/>
+<area shape="rect" id="Node000003" href="$solar__system__tp2_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,13,55,39"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="102,28,55,28,55,23,102,23"/>
+</map>

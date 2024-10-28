@@ -1,0 +1,4 @@
+<map id="FiniteUniverse::applyLimitinterractionForces" name="FiniteUniverse::applyLimitinterractionForces">
+<area shape="rect" id="node1" title="Deal with limits forces, for exple when the universe is PERIODIC." alt="" coords="283,5,549,47"/>
+<area shape="rect" id="node2" href="$classFiniteUniverse.html#aaf0111bbdd57a1d2f52c2ce1e8ccccee" title="Applies forces between particles in the universe. Quadratic complexity." alt="" coords="5,5,235,47"/>
+</map>

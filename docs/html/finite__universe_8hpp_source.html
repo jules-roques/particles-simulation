@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PROJET C++ (Jules Roques - Zephirin Faure):  Fichier source de include/finite_universe.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">PROJET C++ (Jules Roques - Zephirin Faure)
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">finite_universe.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="finite__universe_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef _FINITE_UNIVERSE_HPP_</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define _FINITE_UNIVERSE_HPP_</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="universe_8hpp.html">universe.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">/* Enum type to define how</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">   particles react when overpassing</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">   bounds of universe */</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="finite__universe_8hpp.html#ab68755a60ae72af55ddd44cbb040b382">   17</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="finite__universe_8hpp.html#ab68755a60ae72af55ddd44cbb040b382">OOBBehavior</a> {</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="finite__universe_8hpp.html#ab68755a60ae72af55ddd44cbb040b382ae4379d044711537d9ce3b3b58c575c58">   18</a></span>&#160;    <a class="code" href="finite__universe_8hpp.html#ab68755a60ae72af55ddd44cbb040b382ae4379d044711537d9ce3b3b58c575c58">PERIODIC</a>,</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="finite__universe_8hpp.html#ab68755a60ae72af55ddd44cbb040b382ad0cf677f789887f9275f29f9229d8ab1">   19</a></span>&#160;    <a class="code" href="finite__universe_8hpp.html#ab68755a60ae72af55ddd44cbb040b382ad0cf677f789887f9275f29f9229d8ab1">REFLEXION</a>,</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="finite__universe_8hpp.html#ab68755a60ae72af55ddd44cbb040b382ab905e5a221e4def183b7bf4c1aa26d46">ABSORPTION</a></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="finite__universe_8hpp.html#ab68755a60ae72af55ddd44cbb040b382ab905e5a221e4def183b7bf4c1aa26d46">   21</a></span>&#160;};</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classFiniteUniverse.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="classFiniteUniverse.html">FiniteUniverse</a> : <span class="keyword">public</span> <a class="code" href="classUniverse.html">Universe</a> {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">// Bounds of the universe</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="classVector.html">Vector</a> _lowerBound;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="classVector.html">Vector</a> _upperBound;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">/* How particles will react passing bounds (oob = out of bouds) */</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="finite__universe_8hpp.html#ab68755a60ae72af55ddd44cbb040b382">OOBBehavior</a> _oobbehavior = <a class="code" href="finite__universe_8hpp.html#ab68755a60ae72af55ddd44cbb040b382ab905e5a221e4def183b7bf4c1aa26d46">ABSORPTION</a>; <span class="comment">// ABSORPTION by default</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">/* Repulsing force from the walls if needed */</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="classExternalForce.html">ExternalForce</a> _wallsForce;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">bool</span> _applyWallsForce = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> applyWallsForces();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> applyForeignNeighboursForces();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// Getters</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classFiniteUniverse.html#a4df1eb2d628ec23090c0770e79d9d2f7">   58</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="classVector.html">Vector</a>&amp;             <a class="code" href="classFiniteUniverse.html#a4df1eb2d628ec23090c0770e79d9d2f7">getLowerBound</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _lowerBound; }</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classFiniteUniverse.html#a900ff6bcb37915b02566421e67e15551">   59</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="classVector.html">Vector</a>&amp;             <a class="code" href="classFiniteUniverse.html#a900ff6bcb37915b02566421e67e15551">getUpperBound</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _upperBound; }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    std::pair&lt;Vector, Vector&gt; <a class="code" href="classFiniteUniverse.html#a51f67f89a672748ab3f51b5484912415">getBounds</a>()     <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classFiniteUniverse.html#a83eb8e120ea72c26939578255e744bc3">removeOutOfBoundsParticles</a>();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classFiniteUniverse.html#a2e5291edbf32086d93eb30132e888cf3">reflectOutOfBoundsParticles</a>();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classFiniteUniverse.html#aa6e08c7a024cfc091556eae78417314e">teleportOutOfBoundsParticles</a>();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classFiniteUniverse.html#a31c1ce476f4e8d46be9f611c9571396a">handleOutOfBoundsParticles</a>();</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classFiniteUniverse.html#a6e3f0904bc4feba4e2b136c0546fa2d9">   85</a></span>&#160;    <a class="code" href="finite__universe_8hpp.html#ab68755a60ae72af55ddd44cbb040b382">OOBBehavior</a> <a class="code" href="classFiniteUniverse.html#a6e3f0904bc4feba4e2b136c0546fa2d9">getoobbehavior</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _oobbehavior; }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="classFiniteUniverse.html#ae5dc7da05efb8c8976319b8428b29729">   87</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classFiniteUniverse.html#ae5dc7da05efb8c8976319b8428b29729">setApplyWallsForces</a>(<span class="keywordtype">bool</span> apply) { _applyWallsForce = apply; }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classFiniteUniverse.html#a564541cd04cf1e9a7f73676e1131d2a7">applyExternalForces</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="classFiniteUniverse.html#aaf0111bbdd57a1d2f52c2ce1e8ccccee">applyInteractionForces</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classFiniteUniverse.html#a2f15fc5b3d0af6be46216d20bf9c0fcf">applyInternInterractionsForces</a>();</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="classFiniteUniverse.html#a3b4f3d91874c8af93644579202014f89">applyLimitinterractionForces</a>();</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <a class="code" href="classFiniteUniverse.html#a6b018d165856dcdd63d3425a8359aa71">FiniteUniverse</a>(<a class="code" href="classVector.html">Vector</a> lowerBound, <a class="code" href="classVector.html">Vector</a> upperBound);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="comment">/* So the following function addParticle don&#39;t hide</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment">       The Universe::addParticle function with different signature */</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keyword">using</span> <a class="code" href="classUniverse.html#a7d0276a639153e952689e3660f4fa1de">Universe::addParticle</a>;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classFiniteUniverse.html#a7d0276a639153e952689e3660f4fa1de">addParticle</a>(<a class="code" href="classVector.html">Vector</a> posCoords,</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                     <a class="code" href="classVector.html">Vector</a> speedCoords,</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                     <span class="keywordtype">double</span> <a class="code" href="particle__test_8cpp.html#a244bf42c46054cf1113be44d55f2156d">mass</a>, std::string <a class="code" href="particle__test_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classFiniteUniverse.html#a938df1a28e4c7a308ca0fcfc302d1277">setOOBBehavior</a>(<a class="code" href="finite__universe_8hpp.html#ab68755a60ae72af55ddd44cbb040b382">OOBBehavior</a> lb);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classFiniteUniverse.html#ac49341350b70485b6b701d14bc625ed2">isInBounds</a>(<span class="keyword">const</span> <a class="code" href="classParticle.html">Particle</a>&amp; <a class="code" href="particle__test_8cpp.html#aef6a060da4182a13792dcab155a3a1b5">p</a>);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classFiniteUniverse.html#a5a7c8611593d07b6b5b9823704c384d8">updatePositions</a>(<span class="keywordtype">double</span> timeStep) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classFiniteUniverse.html#a1be9aefe24841bcf042e69c0c6ab2db8">activateReflexionWithForces</a>(<span class="keywordtype">double</span> epsilon, <span class="keywordtype">double</span> sigma);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keyword">friend</span> std::ostream&amp; <a class="code" href="classFiniteUniverse.html#a7615620f6502058e3535b68b45566028">operator&lt;&lt;</a>(std::ostream&amp; strm, <a class="code" href="classFiniteUniverse.html">FiniteUniverse</a> universe);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;};</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// _FINITE_UNIVERSE_HPP_</span></div>
+<div class="ttc" id="aclassExternalForce_html"><div class="ttname"><a href="classExternalForce.html">ExternalForce</a></div><div class="ttdoc">Stores a function that rules a force applied on particles.</div><div class="ttdef"><b>Definition:</b> external_force.hpp:21</div></div>
+<div class="ttc" id="aclassFiniteUniverse_html"><div class="ttname"><a href="classFiniteUniverse.html">FiniteUniverse</a></div><div class="ttdoc">Universe with bounds.</div><div class="ttdef"><b>Definition:</b> finite_universe.hpp:26</div></div>
+<div class="ttc" id="aclassFiniteUniverse_html_a1be9aefe24841bcf042e69c0c6ab2db8"><div class="ttname"><a href="classFiniteUniverse.html#a1be9aefe24841bcf042e69c0c6ab2db8">FiniteUniverse::activateReflexionWithForces</a></div><div class="ttdeci">void activateReflexionWithForces(double epsilon, double sigma)</div><div class="ttdoc">Activate reflexion mode with a repulsing force from the walls.</div><div class="ttdef"><b>Definition:</b> finite_universe.cpp:180</div></div>
+<div class="ttc" id="aclassFiniteUniverse_html_a2e5291edbf32086d93eb30132e888cf3"><div class="ttname"><a href="classFiniteUniverse.html#a2e5291edbf32086d93eb30132e888cf3">FiniteUniverse::reflectOutOfBoundsParticles</a></div><div class="ttdeci">void reflectOutOfBoundsParticles()</div><div class="ttdoc">Reflect particles outside of the bounds of the finite universe.</div><div class="ttdef"><b>Definition:</b> finite_universe.cpp:71</div></div>
+<div class="ttc" id="aclassFiniteUniverse_html_a2f15fc5b3d0af6be46216d20bf9c0fcf"><div class="ttname"><a href="classFiniteUniverse.html#a2f15fc5b3d0af6be46216d20bf9c0fcf">FiniteUniverse::applyInternInterractionsForces</a></div><div class="ttdeci">virtual void applyInternInterractionsForces()</div><div class="ttdoc">Applies forces between particles in the universe, but not limit interractions (like for PERIODIC)</div><div class="ttdef"><b>Definition:</b> finite_universe.cpp:38</div></div>
+<div class="ttc" id="aclassFiniteUniverse_html_a31c1ce476f4e8d46be9f611c9571396a"><div class="ttname"><a href="classFiniteUniverse.html#a31c1ce476f4e8d46be9f611c9571396a">FiniteUniverse::handleOutOfBoundsParticles</a></div><div class="ttdeci">void handleOutOfBoundsParticles()</div><div class="ttdoc">Handle out of bounds particles.</div><div class="ttdef"><b>Definition:</b> finite_universe.cpp:104</div></div>
+<div class="ttc" id="aclassFiniteUniverse_html_a3b4f3d91874c8af93644579202014f89"><div class="ttname"><a href="classFiniteUniverse.html#a3b4f3d91874c8af93644579202014f89">FiniteUniverse::applyLimitinterractionForces</a></div><div class="ttdeci">void applyLimitinterractionForces()</div><div class="ttdoc">Deal with limits forces, for exple when the universe is PERIODIC.</div><div class="ttdef"><b>Definition:</b> finite_universe.cpp:44</div></div>
+<div class="ttc" id="aclassFiniteUniverse_html_a4df1eb2d628ec23090c0770e79d9d2f7"><div class="ttname"><a href="classFiniteUniverse.html#a4df1eb2d628ec23090c0770e79d9d2f7">FiniteUniverse::getLowerBound</a></div><div class="ttdeci">const Vector &amp; getLowerBound() const</div><div class="ttdef"><b>Definition:</b> finite_universe.hpp:58</div></div>
+<div class="ttc" id="aclassFiniteUniverse_html_a51f67f89a672748ab3f51b5484912415"><div class="ttname"><a href="classFiniteUniverse.html#a51f67f89a672748ab3f51b5484912415">FiniteUniverse::getBounds</a></div><div class="ttdeci">std::pair&lt; Vector, Vector &gt; getBounds() const override</div><div class="ttdoc">Get the bounds of the universe, i.e. the min and max vectors of all past particles (not present parti...</div><div class="ttdef"><b>Definition:</b> finite_universe.cpp:53</div></div>
+<div class="ttc" id="aclassFiniteUniverse_html_a564541cd04cf1e9a7f73676e1131d2a7"><div class="ttname"><a href="classFiniteUniverse.html#a564541cd04cf1e9a7f73676e1131d2a7">FiniteUniverse::applyExternalForces</a></div><div class="ttdeci">void applyExternalForces() override</div><div class="ttdoc">Applies external forces on particles in the universe. Linear complexity. Deal with limits forces.</div><div class="ttdef"><b>Definition:</b> finite_universe.cpp:21</div></div>
+<div class="ttc" id="aclassFiniteUniverse_html_a5a7c8611593d07b6b5b9823704c384d8"><div class="ttname"><a href="classFiniteUniverse.html#a5a7c8611593d07b6b5b9823704c384d8">FiniteUniverse::updatePositions</a></div><div class="ttdeci">virtual void updatePositions(double timeStep) override</div><div class="ttdoc">Updates particles positions in Stormer Verlet algorithm. Handles cases about being outside of the fin...</div><div class="ttdef"><b>Definition:</b> finite_universe.cpp:139</div></div>
+<div class="ttc" id="aclassFiniteUniverse_html_a6b018d165856dcdd63d3425a8359aa71"><div class="ttname"><a href="classFiniteUniverse.html#a6b018d165856dcdd63d3425a8359aa71">FiniteUniverse::FiniteUniverse</a></div><div class="ttdeci">FiniteUniverse(Vector lowerBound, Vector upperBound)</div><div class="ttdef"><b>Definition:</b> finite_universe.cpp:127</div></div>
+<div class="ttc" id="aclassFiniteUniverse_html_a6e3f0904bc4feba4e2b136c0546fa2d9"><div class="ttname"><a href="classFiniteUniverse.html#a6e3f0904bc4feba4e2b136c0546fa2d9">FiniteUniverse::getoobbehavior</a></div><div class="ttdeci">OOBBehavior getoobbehavior() const</div><div class="ttdef"><b>Definition:</b> finite_universe.hpp:85</div></div>
+<div class="ttc" id="aclassFiniteUniverse_html_a7615620f6502058e3535b68b45566028"><div class="ttname"><a href="classFiniteUniverse.html#a7615620f6502058e3535b68b45566028">FiniteUniverse::operator&lt;&lt;</a></div><div class="ttdeci">friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;strm, FiniteUniverse universe)</div><div class="ttdoc">Overrides the &lt;&lt; operator.</div><div class="ttdef"><b>Definition:</b> finite_universe.cpp:148</div></div>
+<div class="ttc" id="aclassFiniteUniverse_html_a7d0276a639153e952689e3660f4fa1de"><div class="ttname"><a href="classFiniteUniverse.html#a7d0276a639153e952689e3660f4fa1de">FiniteUniverse::addParticle</a></div><div class="ttdeci">virtual void addParticle(Vector pos, Vector speed, double mass, std::string name)</div><div class="ttdoc">Adds a particle into the universe.</div><div class="ttdef"><b>Definition:</b> universe.cpp:219</div></div>
+<div class="ttc" id="aclassFiniteUniverse_html_a83eb8e120ea72c26939578255e744bc3"><div class="ttname"><a href="classFiniteUniverse.html#a83eb8e120ea72c26939578255e744bc3">FiniteUniverse::removeOutOfBoundsParticles</a></div><div class="ttdeci">void removeOutOfBoundsParticles()</div><div class="ttdoc">Removes particles outside of the bounds of the finite universe.</div><div class="ttdef"><b>Definition:</b> finite_universe.cpp:58</div></div>
+<div class="ttc" id="aclassFiniteUniverse_html_a900ff6bcb37915b02566421e67e15551"><div class="ttname"><a href="classFiniteUniverse.html#a900ff6bcb37915b02566421e67e15551">FiniteUniverse::getUpperBound</a></div><div class="ttdeci">const Vector &amp; getUpperBound() const</div><div class="ttdef"><b>Definition:</b> finite_universe.hpp:59</div></div>
+<div class="ttc" id="aclassFiniteUniverse_html_a938df1a28e4c7a308ca0fcfc302d1277"><div class="ttname"><a href="classFiniteUniverse.html#a938df1a28e4c7a308ca0fcfc302d1277">FiniteUniverse::setOOBBehavior</a></div><div class="ttdeci">void setOOBBehavior(OOBBehavior lb)</div><div class="ttdoc">Set the Limit Behavior of particles. REFLEXION makes particle stay in, ABSORPTION delete particles,...</div><div class="ttdef"><b>Definition:</b> finite_universe.cpp:174</div></div>
+<div class="ttc" id="aclassFiniteUniverse_html_aa6e08c7a024cfc091556eae78417314e"><div class="ttname"><a href="classFiniteUniverse.html#aa6e08c7a024cfc091556eae78417314e">FiniteUniverse::teleportOutOfBoundsParticles</a></div><div class="ttdeci">void teleportOutOfBoundsParticles()</div><div class="ttdoc">Teleport particles outside of the bounds of the finite universe to the other side.</div><div class="ttdef"><b>Definition:</b> finite_universe.cpp:88</div></div>
+<div class="ttc" id="aclassFiniteUniverse_html_aaf0111bbdd57a1d2f52c2ce1e8ccccee"><div class="ttname"><a href="classFiniteUniverse.html#aaf0111bbdd57a1d2f52c2ce1e8ccccee">FiniteUniverse::applyInteractionForces</a></div><div class="ttdeci">void applyInteractionForces() override</div><div class="ttdoc">Applies forces between particles in the universe. Quadratic complexity.</div><div class="ttdef"><b>Definition:</b> finite_universe.cpp:31</div></div>
+<div class="ttc" id="aclassFiniteUniverse_html_ac49341350b70485b6b701d14bc625ed2"><div class="ttname"><a href="classFiniteUniverse.html#ac49341350b70485b6b701d14bc625ed2">FiniteUniverse::isInBounds</a></div><div class="ttdeci">bool isInBounds(const Particle &amp;p)</div><div class="ttdoc">Says if particle is in the bounds of the universe.</div><div class="ttdef"><b>Definition:</b> finite_universe.cpp:166</div></div>
+<div class="ttc" id="aclassFiniteUniverse_html_ae5dc7da05efb8c8976319b8428b29729"><div class="ttname"><a href="classFiniteUniverse.html#ae5dc7da05efb8c8976319b8428b29729">FiniteUniverse::setApplyWallsForces</a></div><div class="ttdeci">void setApplyWallsForces(bool apply)</div><div class="ttdef"><b>Definition:</b> finite_universe.hpp:87</div></div>
+<div class="ttc" id="aclassParticle_html"><div class="ttname"><a href="classParticle.html">Particle</a></div><div class="ttdef"><b>Definition:</b> particle.hpp:20</div></div>
+<div class="ttc" id="aclassUniverse_html"><div class="ttname"><a href="classUniverse.html">Universe</a></div><div class="ttdoc">Represents an universe containing particles. Can be in dimension 1, 2, or 3.</div><div class="ttdef"><b>Definition:</b> universe.hpp:26</div></div>
+<div class="ttc" id="aclassUniverse_html_a7d0276a639153e952689e3660f4fa1de"><div class="ttname"><a href="classUniverse.html#a7d0276a639153e952689e3660f4fa1de">Universe::addParticle</a></div><div class="ttdeci">virtual void addParticle(Vector pos, Vector speed, double mass, std::string name)</div><div class="ttdoc">Adds a particle into the universe.</div><div class="ttdef"><b>Definition:</b> universe.cpp:219</div></div>
+<div class="ttc" id="aclassVector_html"><div class="ttname"><a href="classVector.html">Vector</a></div><div class="ttdoc">Vector class.</div><div class="ttdef"><b>Definition:</b> vector.hpp:18</div></div>
+<div class="ttc" id="afinite__universe_8hpp_html_ab68755a60ae72af55ddd44cbb040b382"><div class="ttname"><a href="finite__universe_8hpp.html#ab68755a60ae72af55ddd44cbb040b382">OOBBehavior</a></div><div class="ttdeci">OOBBehavior</div><div class="ttdef"><b>Definition:</b> finite_universe.hpp:17</div></div>
+<div class="ttc" id="afinite__universe_8hpp_html_ab68755a60ae72af55ddd44cbb040b382ab905e5a221e4def183b7bf4c1aa26d46"><div class="ttname"><a href="finite__universe_8hpp.html#ab68755a60ae72af55ddd44cbb040b382ab905e5a221e4def183b7bf4c1aa26d46">ABSORPTION</a></div><div class="ttdeci">@ ABSORPTION</div><div class="ttdef"><b>Definition:</b> finite_universe.hpp:20</div></div>
+<div class="ttc" id="afinite__universe_8hpp_html_ab68755a60ae72af55ddd44cbb040b382ad0cf677f789887f9275f29f9229d8ab1"><div class="ttname"><a href="finite__universe_8hpp.html#ab68755a60ae72af55ddd44cbb040b382ad0cf677f789887f9275f29f9229d8ab1">REFLEXION</a></div><div class="ttdeci">@ REFLEXION</div><div class="ttdef"><b>Definition:</b> finite_universe.hpp:19</div></div>
+<div class="ttc" id="afinite__universe_8hpp_html_ab68755a60ae72af55ddd44cbb040b382ae4379d044711537d9ce3b3b58c575c58"><div class="ttname"><a href="finite__universe_8hpp.html#ab68755a60ae72af55ddd44cbb040b382ae4379d044711537d9ce3b3b58c575c58">PERIODIC</a></div><div class="ttdeci">@ PERIODIC</div><div class="ttdef"><b>Definition:</b> finite_universe.hpp:18</div></div>
+<div class="ttc" id="aparticle__test_8cpp_html_a244bf42c46054cf1113be44d55f2156d"><div class="ttname"><a href="particle__test_8cpp.html#a244bf42c46054cf1113be44d55f2156d">mass</a></div><div class="ttdeci">double mass</div><div class="ttdef"><b>Definition:</b> particle_test.cpp:24</div></div>
+<div class="ttc" id="aparticle__test_8cpp_html_a9b45b3e13bd9167aab02e17e08916231"><div class="ttname"><a href="particle__test_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definition:</b> particle_test.cpp:25</div></div>
+<div class="ttc" id="aparticle__test_8cpp_html_aef6a060da4182a13792dcab155a3a1b5"><div class="ttname"><a href="particle__test_8cpp.html#aef6a060da4182a13792dcab155a3a1b5">p</a></div><div class="ttdeci">Particle p(pos, speed, mass, name)</div></div>
+<div class="ttc" id="auniverse_8hpp_html"><div class="ttname"><a href="universe_8hpp.html">universe.hpp</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

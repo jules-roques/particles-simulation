@@ -1,0 +1,4 @@
+<map id="FiniteUniverse::applyInternInterractionsForces" name="FiniteUniverse::applyInternInterractionsForces">
+<area shape="rect" id="node1" title="Applies forces between particles in the universe, but not limit interractions (like for PERIODIC)" alt="" coords="5,5,203,47"/>
+<area shape="rect" id="node2" href="$classUniverse.html#a6f0e4eae6b46d41b98aed4f29ff4fa66" title="Applies forces between particles in the universe. Quadratic complexity." alt="" coords="251,5,445,47"/>
+</map>

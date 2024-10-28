@@ -1,0 +1,9 @@
+<map id="Universe::addParticle" name="Universe::addParticle">
+<area shape="rect" id="Node000001" title="Adds a particle into the universe. Give it automaticly a name." alt="" coords="5,31,152,56"/>
+<area shape="rect" id="Node000002" href="$class_universe.html#a7d0276a639153e952689e3660f4fa1de" title="Adds a particle into the universe." alt="" coords="200,31,346,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,41,185,41,185,46,152,46"/>
+<area shape="rect" id="Node000003" href="$class_universe.html#a5decd709201dcff98e77e8efc6cf8393" title="Get the dimension of the universe." alt="" coords="394,5,555,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="346,32,378,28,379,33,347,37"/>
+<area shape="rect" id="Node000004" href="$class_vector.html#afacfb2fc482d43c34913c095921f8af5" title=" " alt="" coords="401,55,548,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="347,50,386,54,385,60,346,55"/>
+</map>

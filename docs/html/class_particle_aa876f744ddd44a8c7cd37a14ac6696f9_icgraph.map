@@ -1,0 +1,12 @@
+<map id="Particle::setPosCoord" name="Particle::setPosCoord">
+<area shape="rect" id="Node000001" title=" " alt="" coords="478,78,627,104"/>
+<area shape="rect" id="Node000002" href="$class_finite_universe.html#a2e5291edbf32086d93eb30132e888cf3" title="Reflect particles outside of the bounds of the finite universe." alt="" coords="260,5,430,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="494,76,411,49,413,44,496,70"/>
+<area shape="rect" id="Node000004" href="$class_finite_universe.html#aa6e08c7a024cfc091556eae78417314e" title="Teleport particles outside of the bounds of the finite universe to the other side like if they travel..." alt="" coords="267,71,423,111"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="463,94,424,94,424,88,463,88"/>
+<area shape="rect" id="Node000005" href="$particle__test_8cpp.html#a0890a4532e88ec7d2cf9a137fc427432" title="Test the setPosCoord function." alt="" coords="317,136,373,161"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="490,111,373,144,372,138,488,106"/>
+<area shape="rect" id="Node000003" href="$class_finite_universe.html#a5a7c8611593d07b6b5b9823704c384d8" title="Updates particles positions in Stormer Verlet algorithm. Handles cases about being outside of the fin..." alt="" coords="5,46,212,72"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="245,42,205,48,204,43,244,37"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="251,81,208,75,209,70,252,76"/>
+</map>

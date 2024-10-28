@@ -1,0 +1,5 @@
+<map id="FiniteUniverse::teleportOutOfBoundsParticles" name="FiniteUniverse::teleportOutOfBoundsParticles">
+<area shape="rect" id="node1" title="Teleport particles outside of the bounds of the finite universe to the other side." alt="" coords="519,5,693,47"/>
+<area shape="rect" id="node2" href="$classFiniteUniverse.html#a31c1ce476f4e8d46be9f611c9571396a" title="Handle out of bounds particles." alt="" coords="280,5,471,47"/>
+<area shape="rect" id="node3" href="$classFiniteUniverse.html#a5a7c8611593d07b6b5b9823704c384d8" title="Updates particles positions in Stormer Verlet algorithm. Handles cases about being outside of the fin..." alt="" coords="5,13,232,39"/>
+</map>

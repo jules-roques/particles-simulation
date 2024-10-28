@@ -1,0 +1,9 @@
+<map id="Particle::invertSpeed" name="Particle::invertSpeed">
+<area shape="rect" id="Node000001" title="invert the speed coordinate i" alt="" coords="478,42,620,68"/>
+<area shape="rect" id="Node000002" href="$class_finite_universe.html#a2e5291edbf32086d93eb30132e888cf3" title="Reflect particles outside of the bounds of the finite universe." alt="" coords="260,5,430,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="463,45,430,41,431,35,463,40"/>
+<area shape="rect" id="Node000004" href="$particle__test_8cpp.html#aa8021214e4986368f85ddc6fb657e69c" title="Test the invertSpeed function." alt="" coords="317,70,373,96"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="463,69,373,82,373,77,462,64"/>
+<area shape="rect" id="Node000003" href="$class_finite_universe.html#a5a7c8611593d07b6b5b9823704c384d8" title="Updates particles positions in Stormer Verlet algorithm. Handles cases about being outside of the fin..." alt="" coords="5,13,212,39"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="244,28,212,28,212,23,244,23"/>
+</map>

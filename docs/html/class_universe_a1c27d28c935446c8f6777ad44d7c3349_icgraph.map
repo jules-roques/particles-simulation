@@ -1,0 +1,5 @@
+<map id="Universe::getLastAddedParticlePointer" name="Universe::getLastAddedParticlePointer">
+<area shape="rect" id="Node000001" title="Get the Last Particle Pointer Useful in the method addParticle of GriddedUniverse." alt="" coords="245,5,450,46"/>
+<area shape="rect" id="Node000002" href="$class_gridded_universe.html#aab587a40aa54faf66fe762b2fc5f71e7" title="Adds a particle to the gridded universe." alt="" coords="5,13,197,39"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="229,28,197,28,197,23,229,23"/>
+</map>

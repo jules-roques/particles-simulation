@@ -1,0 +1,7 @@
+<map id="Particle::setForceToZero" name="Particle::setForceToZero">
+<area shape="rect" id="Node000001" title="Set the force of particle to zero." alt="" coords="233,31,397,56"/>
+<area shape="rect" id="Node000002" href="$class_universe.html#a61a017b8e52f4b33c1ffeaf7b5c6de41" title="Set all forces applied on particles to zero in the universe;." alt="" coords="5,5,185,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,35,185,31,185,26,217,30"/>
+<area shape="rect" id="Node000003" href="$particle__test_8cpp.html#a7fcc82f284fa2599216c36728fbbb439" title="Test the setForceToZero function." alt="" coords="67,55,123,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="217,57,123,67,123,62,217,52"/>
+</map>

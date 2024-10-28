@@ -1,0 +1,21 @@
+<map id="Particle::getForce" name="Particle::getForce">
+<area shape="rect" id="Node000001" title=" " alt="" coords="579,115,704,141"/>
+<area shape="rect" id="Node000002" href="$class_universe.html#aa17a814ab1cc87fd4897874ce8b88201" title="Simule le mouvement des particules dans l&#39;univers en utilisant la méthode de Störmer&#45;Verlet." alt="" coords="118,177,294,218"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="620,105,582,64,557,45,530,30,483,14,444,8,405,13,358,30,334,44,311,61,271,101,241,143,220,178,215,175,236,140,267,98,307,57,331,40,356,26,403,8,444,3,484,9,532,26,560,40,586,60,624,101"/>
+<area shape="rect" id="Node000004" href="$particle__test_8cpp.html#ad5ad7da23adebad48183269dc0b53da5" title="Test the addToForce function." alt="" coords="417,41,472,66"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="600,111,530,80,471,62,473,57,532,75,603,106"/>
+<area shape="rect" id="Node000005" href="$particle__test_8cpp.html#a363d5a97cb3dca429664811b70a97b21" title="Test the addToForceCoord function." alt="" coords="417,90,472,116"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="564,121,472,109,473,104,564,115"/>
+<area shape="rect" id="Node000006" href="$particle__test_8cpp.html#a7fcc82f284fa2599216c36728fbbb439" title="Test the setForceToZero function." alt="" coords="417,139,472,165"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="564,140,473,151,472,146,564,135"/>
+<area shape="rect" id="Node000007" href="$class_universe.html#a22e629bac5b692a63b20bf4aeba72f1a" title="Updates particles positions in Stormer Verlet algorithm." alt="" coords="357,238,531,264"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="621,154,582,193,533,229,508,240,506,235,530,224,579,189,617,151"/>
+<area shape="rect" id="Node000009" href="$universe_8cpp.html#a32a239d2d697a761c657f94dcda3f1e5" title=" " alt="" coords="406,189,483,214"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="601,150,532,180,484,195,483,190,530,175,599,146"/>
+<area shape="rect" id="Node000003" href="$solar__system__tp2_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,185,55,210"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="102,200,55,200,55,195,102,195"/>
+<area shape="poly" id="edge7_Node000007_Node000002" title=" " alt="" coords="368,237,294,220,295,214,369,231"/>
+<area shape="rect" id="Node000008" href="$class_finite_universe.html#a5a7c8611593d07b6b5b9823704c384d8" title="Updates particles positions in Stormer Verlet algorithm. Handles cases about being outside of the fin..." alt="" coords="103,242,309,268"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="341,255,310,256,310,250,341,250"/>
+<area shape="poly" id="edge10_Node000009_Node000002" title=" " alt="" coords="390,203,294,202,294,196,390,198"/>
+</map>

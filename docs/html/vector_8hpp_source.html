@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PROJET C++ (Jules Roques - Zephirin Faure):  Fichier source de include/vector.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">PROJET C++ (Jules Roques - Zephirin Faure)
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">vector.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="vector_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef _VECTOR_HPP_</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define _VECTOR_HPP_</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;ostream&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classVector.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="classVector.html">Vector</a> {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">size_t</span> _dimension;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    std::vector&lt;double&gt; _data;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">// Constructors</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classVector.html#ac6edb3300b04f821c39321b5bb0d2eff">   25</a></span>&#160;    <a class="code" href="classVector.html#ac6edb3300b04f821c39321b5bb0d2eff">Vector</a>(<span class="keywordtype">size_t</span> size) : _dimension(size), _data(size, 0) {}</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classVector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5">   26</a></span>&#160;    <a class="code" href="classVector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5">Vector</a>() : <a class="code" href="classVector.html">Vector</a>(0) {}</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classVector.html#a8f98c935807ac748c3440bc0c804f0ba">   27</a></span>&#160;    <a class="code" href="classVector.html#a8f98c935807ac748c3440bc0c804f0ba">Vector</a>(std::initializer_list&lt;double&gt; values) : _dimension(values.size()), _data(values) {}</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">// Getters</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classVector.html#a7d31ef4b01ba53ee960aaa2386ab9bca">   30</a></span>&#160;    <span class="keywordtype">double</span>&amp;                    <a class="code" href="classVector.html#a7d31ef4b01ba53ee960aaa2386ab9bca">operator[]</a>(<span class="keywordtype">size_t</span> index)       { <span class="keywordflow">return</span> _data[index]; }</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classVector.html#a081811c4e27f8097cee6adbfd409cf5a">   31</a></span>&#160;    <span class="keywordtype">double</span>                     <a class="code" href="classVector.html#a081811c4e27f8097cee6adbfd409cf5a">operator[]</a>(<span class="keywordtype">size_t</span> index)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _data[index]; }</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classVector.html#a60e33e77bf00e6f8baa941fecc496d03">   32</a></span>&#160;    <span class="keyword">const</span> std::vector&lt;double&gt;&amp; <a class="code" href="classVector.html#a60e33e77bf00e6f8baa941fecc496d03">getData</a>()<span class="keyword">                const </span>{ <span class="keywordflow">return</span> _data; }</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classVector.html#afacfb2fc482d43c34913c095921f8af5">   33</a></span>&#160;    <span class="keywordtype">size_t</span>                     <a class="code" href="classVector.html#afacfb2fc482d43c34913c095921f8af5">getDimension</a>()<span class="keyword">           const </span>{ <span class="keywordflow">return</span> _dimension; }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">// Calculations</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">bool</span>                 <a class="code" href="classVector.html#ad5435d0dbad5336fe4df23e6ab081612">operator==</a>(<span class="keyword">const</span> <a class="code" href="classVector.html">Vector</a> &amp;other) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">bool</span>                 <a class="code" href="classVector.html#a3e5e4749640f1d3bb8eedd31fb94c59e">operator!=</a>(<span class="keyword">const</span> <a class="code" href="classVector.html">Vector</a> &amp;other) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span>                 <a class="code" href="classVector.html#aad6b7dcfd087005378aa64e506cf03d2">operator+=</a>(<span class="keyword">const</span> <a class="code" href="classVector.html">Vector</a> &amp;other);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span>                 <a class="code" href="classVector.html#a1506491648a2d21618f1f87ded8903db">operator-=</a>(<span class="keyword">const</span> <a class="code" href="classVector.html">Vector</a> &amp;other);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span>                 <a class="code" href="classVector.html#acae50ab30b24b0e2f3fff005456c2ced">operator*=</a>(<span class="keywordtype">double</span> scalar);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classVector.html#ab569bc2ee929c1b583bd1bd31ae26c08">areAllCoordsGreater</a>(<span class="keyword">const</span> <a class="code" href="classVector.html">Vector</a> &amp;other) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classVector.html#a8ea79719016f6ab4586b3985ad53543b">isInBounds</a>(<span class="keyword">const</span> <a class="code" href="classVector.html">Vector</a> &amp;lowerBound, <span class="keyword">const</span> <a class="code" href="classVector.html">Vector</a> &amp;upperBound) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">friend</span> <a class="code" href="classVector.html">Vector</a> <a class="code" href="classVector.html#a4df52a75e9234f6f1aa278b8643a1c5f">min</a>(<a class="code" href="classVector.html">Vector</a> v1, <a class="code" href="classVector.html">Vector</a> v2);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">friend</span> <a class="code" href="classVector.html">Vector</a> <a class="code" href="classVector.html#a07eac1e9df690af3b56939e0f298fd52">max</a>(<a class="code" href="classVector.html">Vector</a> v1, <a class="code" href="classVector.html">Vector</a> v2);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classVector.html#a26da0e9b7cd83fcd64b1d3bfc76089a3">norm</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keyword">friend</span> std::ostream&amp; <a class="code" href="classVector.html#a55aed9cff4440379b50ffce93eb732cc">operator&lt;&lt;</a>(std::ostream &amp;strm, <span class="keyword">const</span> <a class="code" href="classVector.html">Vector</a> &amp;v);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;};</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// _VECTOR_HPP_</span></div>
+<div class="ttc" id="aclassVector_html"><div class="ttname"><a href="classVector.html">Vector</a></div><div class="ttdoc">Vector class.</div><div class="ttdef"><b>Definition:</b> vector.hpp:18</div></div>
+<div class="ttc" id="aclassVector_html_a07eac1e9df690af3b56939e0f298fd52"><div class="ttname"><a href="classVector.html#a07eac1e9df690af3b56939e0f298fd52">Vector::max</a></div><div class="ttdeci">friend Vector max(Vector v1, Vector v2)</div><div class="ttdoc">Returns vector with max on each coordinates.</div><div class="ttdef"><b>Definition:</b> vector.cpp:82</div></div>
+<div class="ttc" id="aclassVector_html_a081811c4e27f8097cee6adbfd409cf5a"><div class="ttname"><a href="classVector.html#a081811c4e27f8097cee6adbfd409cf5a">Vector::operator[]</a></div><div class="ttdeci">double operator[](size_t index) const</div><div class="ttdef"><b>Definition:</b> vector.hpp:31</div></div>
+<div class="ttc" id="aclassVector_html_a1506491648a2d21618f1f87ded8903db"><div class="ttname"><a href="classVector.html#a1506491648a2d21618f1f87ded8903db">Vector::operator-=</a></div><div class="ttdeci">void operator-=(const Vector &amp;other)</div><div class="ttdef"><b>Definition:</b> vector.cpp:22</div></div>
+<div class="ttc" id="aclassVector_html_a26da0e9b7cd83fcd64b1d3bfc76089a3"><div class="ttname"><a href="classVector.html#a26da0e9b7cd83fcd64b1d3bfc76089a3">Vector::norm</a></div><div class="ttdeci">double norm() const</div><div class="ttdoc">give the norm of the vector i.e. square root of sum of squares</div><div class="ttdef"><b>Definition:</b> vector.cpp:63</div></div>
+<div class="ttc" id="aclassVector_html_a3e5e4749640f1d3bb8eedd31fb94c59e"><div class="ttname"><a href="classVector.html#a3e5e4749640f1d3bb8eedd31fb94c59e">Vector::operator!=</a></div><div class="ttdeci">bool operator!=(const Vector &amp;other) const</div><div class="ttdef"><b>Definition:</b> vector.cpp:37</div></div>
+<div class="ttc" id="aclassVector_html_a4df52a75e9234f6f1aa278b8643a1c5f"><div class="ttname"><a href="classVector.html#a4df52a75e9234f6f1aa278b8643a1c5f">Vector::min</a></div><div class="ttdeci">friend Vector min(Vector v1, Vector v2)</div><div class="ttdoc">Returns vector with min on each coordinates.</div><div class="ttdef"><b>Definition:</b> vector.cpp:70</div></div>
+<div class="ttc" id="aclassVector_html_a55aed9cff4440379b50ffce93eb732cc"><div class="ttname"><a href="classVector.html#a55aed9cff4440379b50ffce93eb732cc">Vector::operator&lt;&lt;</a></div><div class="ttdeci">friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;strm, const Vector &amp;v)</div><div class="ttdoc">Overrides the &lt;&lt; operator.</div><div class="ttdef"><b>Definition:</b> vector.cpp:95</div></div>
+<div class="ttc" id="aclassVector_html_a60e33e77bf00e6f8baa941fecc496d03"><div class="ttname"><a href="classVector.html#a60e33e77bf00e6f8baa941fecc496d03">Vector::getData</a></div><div class="ttdeci">const std::vector&lt; double &gt; &amp; getData() const</div><div class="ttdef"><b>Definition:</b> vector.hpp:32</div></div>
+<div class="ttc" id="aclassVector_html_a6f80c73b5f18dcf3f8e36065bdc8b9e5"><div class="ttname"><a href="classVector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5">Vector::Vector</a></div><div class="ttdeci">Vector()</div><div class="ttdef"><b>Definition:</b> vector.hpp:26</div></div>
+<div class="ttc" id="aclassVector_html_a7d31ef4b01ba53ee960aaa2386ab9bca"><div class="ttname"><a href="classVector.html#a7d31ef4b01ba53ee960aaa2386ab9bca">Vector::operator[]</a></div><div class="ttdeci">double &amp; operator[](size_t index)</div><div class="ttdef"><b>Definition:</b> vector.hpp:30</div></div>
+<div class="ttc" id="aclassVector_html_a8ea79719016f6ab4586b3985ad53543b"><div class="ttname"><a href="classVector.html#a8ea79719016f6ab4586b3985ad53543b">Vector::isInBounds</a></div><div class="ttdeci">bool isInBounds(const Vector &amp;lowerBound, const Vector &amp;upperBound) const</div><div class="ttdoc">Tell if a vector is in a certain cubic space.</div><div class="ttdef"><b>Definition:</b> vector.cpp:51</div></div>
+<div class="ttc" id="aclassVector_html_a8f98c935807ac748c3440bc0c804f0ba"><div class="ttname"><a href="classVector.html#a8f98c935807ac748c3440bc0c804f0ba">Vector::Vector</a></div><div class="ttdeci">Vector(std::initializer_list&lt; double &gt; values)</div><div class="ttdef"><b>Definition:</b> vector.hpp:27</div></div>
+<div class="ttc" id="aclassVector_html_aad6b7dcfd087005378aa64e506cf03d2"><div class="ttname"><a href="classVector.html#aad6b7dcfd087005378aa64e506cf03d2">Vector::operator+=</a></div><div class="ttdeci">void operator+=(const Vector &amp;other)</div><div class="ttdef"><b>Definition:</b> vector.cpp:16</div></div>
+<div class="ttc" id="aclassVector_html_ab569bc2ee929c1b583bd1bd31ae26c08"><div class="ttname"><a href="classVector.html#ab569bc2ee929c1b583bd1bd31ae26c08">Vector::areAllCoordsGreater</a></div><div class="ttdeci">bool areAllCoordsGreater(const Vector &amp;other) const</div><div class="ttdoc">Tell for each dimension if the coords of the calling vector is greater than the other vector given.</div><div class="ttdef"><b>Definition:</b> vector.cpp:42</div></div>
+<div class="ttc" id="aclassVector_html_ac6edb3300b04f821c39321b5bb0d2eff"><div class="ttname"><a href="classVector.html#ac6edb3300b04f821c39321b5bb0d2eff">Vector::Vector</a></div><div class="ttdeci">Vector(size_t size)</div><div class="ttdef"><b>Definition:</b> vector.hpp:25</div></div>
+<div class="ttc" id="aclassVector_html_acae50ab30b24b0e2f3fff005456c2ced"><div class="ttname"><a href="classVector.html#acae50ab30b24b0e2f3fff005456c2ced">Vector::operator*=</a></div><div class="ttdeci">void operator*=(double scalar)</div><div class="ttdef"><b>Definition:</b> vector.cpp:10</div></div>
+<div class="ttc" id="aclassVector_html_ad5435d0dbad5336fe4df23e6ab081612"><div class="ttname"><a href="classVector.html#ad5435d0dbad5336fe4df23e6ab081612">Vector::operator==</a></div><div class="ttdeci">bool operator==(const Vector &amp;other) const</div><div class="ttdef"><b>Definition:</b> vector.cpp:28</div></div>
+<div class="ttc" id="aclassVector_html_afacfb2fc482d43c34913c095921f8af5"><div class="ttname"><a href="classVector.html#afacfb2fc482d43c34913c095921f8af5">Vector::getDimension</a></div><div class="ttdeci">size_t getDimension() const</div><div class="ttdef"><b>Definition:</b> vector.hpp:33</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

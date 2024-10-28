@@ -1,0 +1,5 @@
+<map id="Cell" name="Cell">
+<area shape="rect" id="node1" title="Cells are elementary bricks forming a grid of the universe." alt="" coords="125,5,336,200"/>
+<area shape="rect" id="node2" href="$classExternBorderCell.html" title="Limits Cells contains copies of particles of a foreign cell, neighbour for a PERIDIC point of view...." alt="" coords="5,263,216,384"/>
+<area shape="rect" id="node3" href="$classInternCell.html" title="Limits Cells are contains copies of the cellule of same coordinates, with a position offset." alt="" coords="240,248,464,399"/>
+</map>

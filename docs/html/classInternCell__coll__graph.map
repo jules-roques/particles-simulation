@@ -1,0 +1,4 @@
+<map id="InternCell" name="InternCell">
+<area shape="rect" id="node1" title="Limits Cells are contains copies of the cellule of same coordinates, with a position offset." alt="" coords="5,248,229,399"/>
+<area shape="rect" id="node2" href="$classCell.html" title="Cells are elementary bricks forming a grid of the universe." alt="" coords="12,5,223,200"/>
+</map>

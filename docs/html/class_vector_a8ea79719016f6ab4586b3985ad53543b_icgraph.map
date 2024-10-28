@@ -1,0 +1,23 @@
+<map id="Vector::isInBounds" name="Vector::isInBounds">
+<area shape="rect" id="Node000001" title="Tell if a vector is in a certain cubic space." alt="" coords="725,128,858,154"/>
+<area shape="rect" id="Node000002" href="$class_finite_universe.html#a7e4fba08b9d1730d1dc6a98e2756f041" title="Adds a particle to the gridded universe." alt="" coords="499,43,677,68"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="744,124,620,71,622,66,746,119"/>
+<area shape="rect" id="Node000004" href="$class_finite_universe.html#ac49341350b70485b6b701d14bc625ed2" title="Says if particle is in the bounds of the universe." alt="" coords="499,128,677,154"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="710,144,678,144,678,138,710,138"/>
+<area shape="rect" id="Node000009" href="$forces_8hpp.html#aaf6fd8a2e3f6aaaec45d4cead961793a" title="Applies on the particle the strength of the walls (c.f. TP6)" alt="" coords="546,213,630,239"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="746,162,622,215,620,210,744,158"/>
+<area shape="rect" id="Node000003" href="$class_gridded_universe.html#aab587a40aa54faf66fe762b2fc5f71e7" title="Adds a particle to the gridded universe." alt="" coords="260,5,451,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="488,42,439,34,440,29,489,37"/>
+<area shape="rect" id="Node000005" href="$class_finite_universe.html#a2e5291edbf32086d93eb30132e888cf3" title="Reflect particles outside of the bounds of the finite universe." alt="" coords="270,55,441,96"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="524,126,430,99,431,94,526,121"/>
+<area shape="rect" id="Node000007" href="$class_finite_universe.html#a83eb8e120ea72c26939578255e744bc3" title="Removes particles outside of the bounds of the finite universe." alt="" coords="267,121,444,161"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="483,144,444,144,444,138,483,138"/>
+<area shape="rect" id="Node000008" href="$class_finite_universe.html#aa6e08c7a024cfc091556eae78417314e" title="Teleport particles outside of the bounds of the finite universe to the other side like if they travel..." alt="" coords="277,186,434,227"/>
+<area shape="poly" id="edge8_Node000004_Node000008" title=" " alt="" coords="526,161,431,188,430,183,524,156"/>
+<area shape="rect" id="Node000006" href="$class_finite_universe.html#a5a7c8611593d07b6b5b9823704c384d8" title="Updates particles positions in Stormer Verlet algorithm. Handles cases about being outside of the fin..." alt="" coords="5,128,212,154"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="262,103,161,130,159,125,261,98"/>
+<area shape="poly" id="edge7_Node000007_Node000006" title=" " alt="" coords="251,144,212,144,212,138,251,138"/>
+<area shape="poly" id="edge9_Node000008_Node000006" title=" " alt="" coords="261,184,159,157,161,152,263,179"/>
+<area shape="rect" id="Node000010" href="$src_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="331,251,380,276"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="531,238,381,262,380,257,530,233"/>
+</map>

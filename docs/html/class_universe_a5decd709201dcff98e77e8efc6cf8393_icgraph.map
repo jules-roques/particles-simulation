@@ -1,0 +1,29 @@
+<map id="Universe::getDimension" name="Universe::getDimension">
+<area shape="rect" id="Node000001" title="Get the dimension of the universe." alt="" coords="712,240,874,266"/>
+<area shape="rect" id="Node000002" href="$class_universe.html#a7d0276a639153e952689e3660f4fa1de" title="Adds a particle into the universe." alt="" coords="502,104,648,130"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="756,234,596,132,599,128,759,229"/>
+<area shape="rect" id="Node000008" href="$class_finite_universe.html#ac49341350b70485b6b701d14bc625ed2" title="Says if particle is in the bounds of the universe." alt="" coords="486,272,664,298"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="698,270,665,274,664,269,697,264"/>
+<area shape="rect" id="Node000009" href="$class_finite_universe.html#a2e5291edbf32086d93eb30132e888cf3" title="Reflect particles outside of the bounds of the finite universe." alt="" coords="264,203,434,244"/>
+<area shape="poly" id="edge14_Node000001_Node000009" title=" " alt="" coords="696,249,434,232,435,226,697,244"/>
+<area shape="rect" id="Node000012" href="$class_finite_universe.html#aa6e08c7a024cfc091556eae78417314e" title="Teleport particles outside of the bounds of the finite universe to the other side like if they travel..." alt="" coords="271,334,427,375"/>
+<area shape="poly" id="edge15_Node000001_Node000012" title=" " alt="" coords="755,276,713,295,665,313,604,328,541,339,428,352,427,347,540,334,603,323,664,308,711,291,753,271"/>
+<area shape="rect" id="Node000003" href="$class_universe.html#a2ff7ba16db9d91fec012f3b0df43b4e6" title="Adds a particle into the universe. Give it automaticly a name." alt="" coords="276,5,422,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="539,98,492,71,437,45,406,34,408,29,439,40,494,66,542,93"/>
+<area shape="rect" id="Node000004" href="$class_universe.html#a23678850af21d714481398fc8730d057" title="Adds a particle into the universe." alt="" coords="276,55,422,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="497,103,411,84,412,78,498,97"/>
+<area shape="rect" id="Node000005" href="$class_finite_universe.html#a7e4fba08b9d1730d1dc6a98e2756f041" title="Adds a particle to the gridded universe." alt="" coords="260,104,438,130"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="487,120,438,120,438,114,487,114"/>
+<area shape="rect" id="Node000007" href="$solar__system__tp2_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="324,153,374,179"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="498,136,375,164,373,158,497,131"/>
+<area shape="rect" id="Node000006" href="$class_gridded_universe.html#aab587a40aa54faf66fe762b2fc5f71e7" title="Adds a particle to the gridded universe." alt="" coords="13,104,204,130"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="244,120,205,120,205,114,244,114"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="509,270,426,247,427,242,511,265"/>
+<area shape="rect" id="Node000011" href="$class_finite_universe.html#a83eb8e120ea72c26939578255e744bc3" title="Removes particles outside of the bounds of the finite universe." alt="" coords="260,269,438,309"/>
+<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="470,289,438,290,438,285,470,284"/>
+<area shape="poly" id="edge12_Node000008_Node000012" title=" " alt="" coords="517,305,419,336,417,331,515,300"/>
+<area shape="rect" id="Node000010" href="$class_finite_universe.html#a5a7c8611593d07b6b5b9823704c384d8" title="Updates particles positions in Stormer Verlet algorithm. Handles cases about being outside of the fin..." alt="" coords="5,276,212,302"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="258,251,160,278,158,273,256,246"/>
+<area shape="poly" id="edge11_Node000011_Node000010" title=" " alt="" coords="245,292,212,292,212,286,245,286"/>
+<area shape="poly" id="edge13_Node000012_Node000010" title=" " alt="" coords="256,332,158,305,160,300,258,327"/>
+</map>

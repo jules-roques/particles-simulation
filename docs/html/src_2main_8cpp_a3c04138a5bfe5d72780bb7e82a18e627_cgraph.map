@@ -1,0 +1,17 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title=" " alt="" coords="5,187,60,213"/>
+<area shape="rect" id="node2" href="$classVisualGenerator.html#a5538d2cf26c546e0e6d2d6bd93f38dd5" title="Generates a video (multiple images) of the past states the universe has been into." alt="" coords="121,41,314,82"/>
+<area shape="rect" id="node3" href="$forces_8hpp.html#a0c9eb3d307a5dab27dcabeb275d60aa5" title="Adds the gravitational force applied on a particle to the existing force. The gravitational field is ..." alt="" coords="147,107,287,133"/>
+<area shape="rect" id="node7" href="$forces_8hpp.html#ae49d2de1b78a18e17f253fb9d8814d1c" title="Computes the Lennard Jones force applied by source on target particle." alt="" coords="129,157,305,184"/>
+<area shape="rect" id="node13" href="$classVisualGenerator.html#a97bfa670fb0667197a1a8cee9dd73902" title="Set the sizes for images that will be created." alt="" coords="119,209,315,250"/>
+<area shape="rect" id="node14" href="$classVisualGenerator.html#a05dc02a69141ab30d457c6db7808ed4e" title="Set the size of the points for the plots." alt="" coords="110,275,325,301"/>
+<area shape="rect" id="node15" href="$classVisualGenerator.html#af63af219975ad6b8d7116df753ce01f8" title="Set the shape of the points plotted Accepts NO_SYMBOL, PLUS, CROSS, STAR, BOX, BOX_F,..." alt="" coords="108,325,327,352"/>
+<area shape="rect" id="node4" href="$classParticle.html#a01172683c98279750776f2932e8d7c3b" title="Adds to the i th force coordinate the value given." alt="" coords="375,5,565,32"/>
+<area shape="rect" id="node5" href="$classParticle.html#af2e2f1ec5f0289e4fb177912bb149ddf" title=" " alt="" coords="385,56,555,83"/>
+<area shape="rect" id="node6" href="$classParticle.html#ad08e7b1d0cc7cb17bd0602caa4a22bc6" title=" " alt="" coords="403,107,537,133"/>
+<area shape="rect" id="node8" href="$classParticle.html#adee1ef8d7e51a8cfa2c8281d857f838c" title="Adds to existing force the vector given." alt="" coords="394,157,546,184"/>
+<area shape="rect" id="node10" href="$classParticle.html#af77eecfa86d14d593f85e5ccbd875db4" title="Calculates distance from this particle to the other." alt="" coords="396,208,544,235"/>
+<area shape="rect" id="node12" href="$classParticle.html#a6923bb50d7f30d7276e2ea2ce6dbef54" title=" " alt="" coords="394,259,546,285"/>
+<area shape="rect" id="node9" href="$classVector.html#afacfb2fc482d43c34913c095921f8af5" title=" " alt="" coords="613,157,776,184"/>
+<area shape="rect" id="node11" href="$classVector.html#a26da0e9b7cd83fcd64b1d3bfc76089a3" title="give the norm of the vector i.e. square root of sum of squares" alt="" coords="641,208,748,235"/>
+</map>

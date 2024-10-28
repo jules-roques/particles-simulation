@@ -1,0 +1,4 @@
+<map id="FiniteUniverse::addParticle" name="FiniteUniverse::addParticle">
+<area shape="rect" id="node1" title="Adds a particle into the universe. Give it automaticly a name." alt="" coords="5,5,201,32"/>
+<area shape="rect" id="node2" href="$classUniverse.html#a3d9bfe95cd96d08ed81e3dc18574528b" title="Renvoie le nombre de particules dans l&#39;univers." alt="" coords="249,5,432,32"/>
+</map>

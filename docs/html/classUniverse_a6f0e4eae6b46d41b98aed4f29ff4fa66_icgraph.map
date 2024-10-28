@@ -1,0 +1,9 @@
+<map id="Universe::applyInteractionForces" name="Universe::applyInteractionForces">
+<area shape="rect" id="node1" title="Applies forces between particles in the universe. Quadratic complexity." alt="" coords="772,39,967,80"/>
+<area shape="rect" id="node2" href="$classFiniteUniverse.html#a2f15fc5b3d0af6be46216d20bf9c0fcf" title="Applies forces between particles in the universe, but not limit interractions (like for PERIODIC)" alt="" coords="527,8,724,49"/>
+<area shape="rect" id="node4" href="$classUniverse.html#ae866b39063e8c084d921e1f26787ddd9" title="Updates forces applied on particles in the universe. (Forces from interactions and external forces)" alt="" coords="538,75,713,102"/>
+<area shape="rect" id="node3" href="$classFiniteUniverse.html#aaf0111bbdd57a1d2f52c2ce1e8ccccee" title="Applies forces between particles in the universe. Quadratic complexity." alt="" coords="249,5,479,47"/>
+<area shape="rect" id="node5" href="$classUniverse.html#aa17a814ab1cc87fd4897874ce8b88201" title="Simulates the movement of particles in the universe using the Störmer&#45;Verlet method." alt="" coords="265,71,463,112"/>
+<area shape="rect" id="node6" href="$solar__system__tp2_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="76,49,131,75"/>
+<area shape="rect" id="node7" href="$classGriddedUniverse.html#aa095174cf0b5a4bb9ae3a3143a9b9d21" title="Simulates the movement of particles in the universe using the Störmer&#45;Verlet method Before simulation..." alt="" coords="5,100,201,141"/>
+</map>

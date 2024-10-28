@@ -1,0 +1,7 @@
+<map id="Universe" name="Universe">
+<area shape="rect" id="Node000001" title="Represents an universe containing particles. Can be in dimension 1, 2, or 3." alt="" coords="9,5,205,431"/>
+<area shape="rect" id="Node000002" href="$class_finite_universe.html" title="Universe with bounds." alt="" coords="5,479,209,824"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,445,110,479,105,479,105,445"/>
+<area shape="rect" id="Node000003" href="$class_gridded_universe.html" title="A GriddedUniverse is a finite universe, separated into cells. Extends Universe." alt="" coords="43,872,171,1057"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="110,839,110,872,105,872,105,839"/>
+</map>

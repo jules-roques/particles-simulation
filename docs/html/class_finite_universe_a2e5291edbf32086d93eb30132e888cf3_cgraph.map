@@ -1,0 +1,23 @@
+<map id="FiniteUniverse::reflectOutOfBoundsParticles" name="FiniteUniverse::reflectOutOfBoundsParticles">
+<area shape="rect" id="Node000001" title="Reflect particles outside of the bounds of the finite universe." alt="" coords="5,123,176,164"/>
+<area shape="rect" id="Node000002" href="$class_universe.html#a5decd709201dcff98e77e8efc6cf8393" title="Get the dimension of the universe." alt="" coords="450,5,611,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,120,165,89,223,61,276,45,331,33,434,20,434,25,332,38,277,50,225,66,168,94,120,125"/>
+<area shape="rect" id="Node000003" href="$class_universe.html#a735a12f6752d428027c17cf6052d907a" title="Get list of particles reference." alt="" coords="238,155,388,180"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="176,150,222,155,222,160,176,155"/>
+<area shape="rect" id="Node000004" href="$class_particle.html#a30e8bb59c29db55035bac0e1b3f858c9" title=" " alt="" coords="462,56,600,82"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="136,120,177,104,223,90,280,80,339,73,446,66,446,72,339,78,281,85,224,95,179,109,138,125"/>
+<area shape="rect" id="Node000005" href="$class_particle.html#afc7298779721dd598dff80f267e812a6" title="invert the speed coordinate i" alt="" coords="242,204,384,230"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="145,162,225,190,245,197,244,202,223,195,143,167"/>
+<area shape="rect" id="Node000006" href="$class_finite_universe.html#ac49341350b70485b6b701d14bc625ed2" title="Says if particle is in the bounds of the universe." alt="" coords="224,105,402,131"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="176,131,208,127,208,133,176,136"/>
+<area shape="rect" id="Node000010" href="$class_particle.html#aa876f744ddd44a8c7cd37a14ac6696f9" title=" " alt="" coords="238,253,388,279"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="116,162,164,202,225,240,237,245,235,250,222,245,161,206,112,166"/>
+<area shape="poly" id="edge7_Node000006_Node000002" title=" " alt="" coords="334,103,385,73,449,41,467,34,469,39,451,46,388,77,337,107"/>
+<area shape="poly" id="edge8_Node000006_Node000004" title=" " alt="" coords="372,102,455,83,457,88,374,107"/>
+<area shape="rect" id="Node000007" href="$class_particle.html#af2e2f1ec5f0289e4fb177912bb149ddf" title=" " alt="" coords="454,105,607,131"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="402,116,438,116,438,121,402,121"/>
+<area shape="rect" id="Node000008" href="$class_vector.html#a8ea79719016f6ab4586b3985ad53543b" title="Tell if a vector is in a certain cubic space." alt="" coords="465,155,597,180"/>
+<area shape="poly" id="edge9_Node000006_Node000008" title=" " alt="" coords="374,129,457,148,455,153,372,134"/>
+<area shape="rect" id="Node000009" href="$class_vector.html#ab569bc2ee929c1b583bd1bd31ae26c08" title="Tell for each dimension if the coords of the calling vector is greater than the other vector given." alt="" coords="659,155,845,180"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="597,165,644,165,644,170,597,170"/>
+</map>

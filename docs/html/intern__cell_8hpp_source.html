@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PROJET C++ (Jules Roques - Zephirin Faure):  Fichier source de include/intern_cell.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">PROJET C++ (Jules Roques - Zephirin Faure)
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">intern_cell.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="intern__cell_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef _INTERN_CELLS_HPP_</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define _INTERN_CELLS_HPP_</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="cell_8hpp.html">cell.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="xassert_8hpp.html">xassert.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span><a class="code" href="classGriddedUniverse.html">GriddedUniverse</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classInternCell.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="classInternCell.html">InternCell</a> : <span class="keyword">public</span> <a class="code" href="classCell.html">Cell</a> {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">/* Store in list (doubly linked list) because</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">      particles of the universe will be deleted</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">      and added when travelling through cells.</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">      We need constant time complexity</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">      for deletion and insertion. */</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;   std::list&lt;Particle*&gt; _particles;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;   <span class="keywordtype">void</span> applyForceOnParticle(<a class="code" href="classParticle.html">Particle</a>* <a class="code" href="particle__test_8cpp.html#aef6a060da4182a13792dcab155a3a1b5">p</a>) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="classInternCell.html#acbd10f245df9ac8709bcc75d3d6ab42b">InternCell</a>(<span class="keywordtype">size_t</span> dimension, <a class="code" href="classGriddedUniverse.html">GriddedUniverse</a>* universe, std::vector&lt;int&gt; coordinates);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classInternCell.html#a3707454a62b193893180bf11e1033892">   36</a></span>&#160;    <span class="keyword">const</span> std::list&lt;Particle*&gt; <a class="code" href="classInternCell.html#a3707454a62b193893180bf11e1033892">getParticles</a>()<span class="keyword"> const  </span>{ <span class="keywordflow">return</span> _particles; }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classInternCell.html#abf66f3b4cba5f2815140c8cfe297fcaa">computeInternInterractions</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classInternCell.html#a42832eba8d253f1b54f41c06c324f31d">addParticle</a>(<a class="code" href="classParticle.html">Particle</a>* <a class="code" href="particle__test_8cpp.html#aef6a060da4182a13792dcab155a3a1b5">p</a>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classInternCell.html#af3ed9ecc16165a4ce9ef1d5d50a98543">applyForceOnNeighbours</a>()<span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classInternCell.html#a63c09f4e9ec67ebdc40c7333023e78fb">clearParticles</a>()              <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// _INTERN_CELLS_HPP_</span></div>
+<div class="ttc" id="acell_8hpp_html"><div class="ttname"><a href="cell_8hpp.html">cell.hpp</a></div><div class="ttdoc">Les cellules sont les cases élémentaires formant un maillage de l'univers.</div></div>
+<div class="ttc" id="aclassCell_html"><div class="ttname"><a href="classCell.html">Cell</a></div><div class="ttdoc">Cells are elementary bricks forming a grid of the universe.</div><div class="ttdef"><b>Definition:</b> cell.hpp:27</div></div>
+<div class="ttc" id="aclassGriddedUniverse_html"><div class="ttname"><a href="classGriddedUniverse.html">GriddedUniverse</a></div><div class="ttdoc">A GriddedUniverse is a finite universe, separated into cells. Extends Universe.</div><div class="ttdef"><b>Definition:</b> gridded_universe.hpp:22</div></div>
+<div class="ttc" id="aclassInternCell_html"><div class="ttname"><a href="classInternCell.html">InternCell</a></div><div class="ttdoc">Limits Cells are contains copies of the cellule of same coordinates, with a position offset.</div><div class="ttdef"><b>Definition:</b> intern_cell.hpp:22</div></div>
+<div class="ttc" id="aclassInternCell_html_a3707454a62b193893180bf11e1033892"><div class="ttname"><a href="classInternCell.html#a3707454a62b193893180bf11e1033892">InternCell::getParticles</a></div><div class="ttdeci">const std::list&lt; Particle * &gt; getParticles() const</div><div class="ttdef"><b>Definition:</b> intern_cell.hpp:36</div></div>
+<div class="ttc" id="aclassInternCell_html_a42832eba8d253f1b54f41c06c324f31d"><div class="ttname"><a href="classInternCell.html#a42832eba8d253f1b54f41c06c324f31d">InternCell::addParticle</a></div><div class="ttdeci">void addParticle(Particle *p)</div><div class="ttdoc">Adds a cell to the neighbours Dimensions must match.</div><div class="ttdef"><b>Definition:</b> intern_cell.cpp:44</div></div>
+<div class="ttc" id="aclassInternCell_html_a63c09f4e9ec67ebdc40c7333023e78fb"><div class="ttname"><a href="classInternCell.html#a63c09f4e9ec67ebdc40c7333023e78fb">InternCell::clearParticles</a></div><div class="ttdeci">void clearParticles() override</div><div class="ttdoc">Delete particles.</div><div class="ttdef"><b>Definition:</b> intern_cell.cpp:26</div></div>
+<div class="ttc" id="aclassInternCell_html_abf66f3b4cba5f2815140c8cfe297fcaa"><div class="ttname"><a href="classInternCell.html#abf66f3b4cba5f2815140c8cfe297fcaa">InternCell::computeInternInterractions</a></div><div class="ttdeci">void computeInternInterractions()</div><div class="ttdoc">apply forces between particles in the cell (adds to existing forces)</div><div class="ttdef"><b>Definition:</b> intern_cell.cpp:31</div></div>
+<div class="ttc" id="aclassInternCell_html_acbd10f245df9ac8709bcc75d3d6ab42b"><div class="ttname"><a href="classInternCell.html#acbd10f245df9ac8709bcc75d3d6ab42b">InternCell::InternCell</a></div><div class="ttdeci">InternCell(size_t dimension, GriddedUniverse *universe, std::vector&lt; int &gt; coordinates)</div><div class="ttdef"><b>Definition:</b> intern_cell.cpp:16</div></div>
+<div class="ttc" id="aclassInternCell_html_af3ed9ecc16165a4ce9ef1d5d50a98543"><div class="ttname"><a href="classInternCell.html#af3ed9ecc16165a4ce9ef1d5d50a98543">InternCell::applyForceOnNeighbours</a></div><div class="ttdeci">void applyForceOnNeighbours() const override</div><div class="ttdoc">applies forces on neighours particles (adds to existing forces)</div><div class="ttdef"><b>Definition:</b> intern_cell.cpp:51</div></div>
+<div class="ttc" id="aclassParticle_html"><div class="ttname"><a href="classParticle.html">Particle</a></div><div class="ttdef"><b>Definition:</b> particle.hpp:20</div></div>
+<div class="ttc" id="aparticle__test_8cpp_html_aef6a060da4182a13792dcab155a3a1b5"><div class="ttname"><a href="particle__test_8cpp.html#aef6a060da4182a13792dcab155a3a1b5">p</a></div><div class="ttdeci">Particle p(pos, speed, mass, name)</div></div>
+<div class="ttc" id="axassert_8hpp_html"><div class="ttname"><a href="xassert_8hpp.html">xassert.hpp</a></div><div class="ttdoc">To define an assert macro.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

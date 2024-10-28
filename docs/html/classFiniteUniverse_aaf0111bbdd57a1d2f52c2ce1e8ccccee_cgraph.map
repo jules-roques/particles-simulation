@@ -1,0 +1,6 @@
+<map id="FiniteUniverse::applyInteractionForces" name="FiniteUniverse::applyInteractionForces">
+<area shape="rect" id="node1" title="Applies forces between particles in the universe. Quadratic complexity." alt="" coords="5,39,235,80"/>
+<area shape="rect" id="node2" href="$classFiniteUniverse.html#a2f15fc5b3d0af6be46216d20bf9c0fcf" title="Applies forces between particles in the universe, but not limit interractions (like for PERIODIC)" alt="" coords="317,5,515,47"/>
+<area shape="rect" id="node4" href="$classFiniteUniverse.html#a3b4f3d91874c8af93644579202014f89" title="Deal with limits forces, for exple when the universe is PERIODIC." alt="" coords="283,71,549,112"/>
+<area shape="rect" id="node3" href="$classUniverse.html#a6f0e4eae6b46d41b98aed4f29ff4fa66" title="Applies forces between particles in the universe. Quadratic complexity." alt="" coords="597,5,792,47"/>
+</map>

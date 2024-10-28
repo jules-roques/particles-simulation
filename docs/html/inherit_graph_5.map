@@ -1,0 +1,5 @@
+<map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
+<area shape="rect" id="node1" href="$classUniverse.html" title="Represents an universe containing particles. Can be in dimension 1, 2, or 3." alt="" coords="5,5,85,32"/>
+<area shape="rect" id="node2" href="$classFiniteUniverse.html" title="Universe with bounds." alt="" coords="133,5,248,32"/>
+<area shape="rect" id="node3" href="$classGriddedUniverse.html" title="A GriddedUniverse is a finite universe, separated into cells. Extends Universe." alt="" coords="296,5,427,32"/>
+</map>

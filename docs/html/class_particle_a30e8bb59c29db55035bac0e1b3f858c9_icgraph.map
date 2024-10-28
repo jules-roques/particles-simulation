@@ -1,0 +1,40 @@
+<map id="Particle::getPosition" name="Particle::getPosition">
+<area shape="rect" id="Node000001" title=" " alt="" coords="711,254,850,280"/>
+<area shape="rect" id="Node000002" href="$forces_8hpp.html#a98da424bb69057444ed08d763a4c91cb" title="Computes the gravitational force applied by source on target particle." alt="" coords="272,464,425,489"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="775,295,761,336,739,383,707,430,687,450,665,467,634,482,600,492,532,502,465,500,408,492,408,487,465,495,531,497,599,487,632,477,662,462,684,446,703,426,734,381,756,334,770,294"/>
+<area shape="rect" id="Node000004" href="$class_finite_universe.html#ac49341350b70485b6b701d14bc625ed2" title="Says if particle is in the bounds of the universe." alt="" coords="485,78,663,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="762,242,721,184,693,152,662,125,625,107,628,102,665,121,697,149,725,180,767,239"/>
+<area shape="rect" id="Node000005" href="$class_finite_universe.html#a2e5291edbf32086d93eb30132e888cf3" title="Reflect particles outside of the bounds of the finite universe." alt="" coords="263,5,434,46"/>
+<area shape="poly" id="edge12_Node000001_Node000005" title=" " alt="" coords="769,240,756,200,734,153,703,106,684,85,662,68,608,41,548,26,489,20,434,20,434,14,489,14,549,21,609,36,665,63,687,81,707,102,738,150,761,198,774,239"/>
+<area shape="rect" id="Node000008" href="$class_finite_universe.html#aa6e08c7a024cfc091556eae78417314e" title="Teleport particles outside of the bounds of the finite universe to the other side like if they travel..." alt="" coords="270,136,427,177"/>
+<area shape="poly" id="edge13_Node000001_Node000008" title=" " alt="" coords="758,244,717,203,691,184,662,169,603,153,541,145,481,144,427,148,426,142,480,139,541,140,604,147,664,165,694,180,720,199,761,240"/>
+<area shape="rect" id="Node000009" href="$forces_8hpp.html#ae49d2de1b78a18e17f253fb9d8814d1c" title="Computes the Lennard Jones force applied by source on target particle." alt="" coords="495,377,654,403"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="759,293,718,331,665,368,639,379,637,374,662,363,714,327,755,289"/>
+<area shape="rect" id="Node000011" href="$particle__test_8cpp.html#a0dbdd6da9b272541ecc625e56f6d116d" title="Test the addToPosition function." alt="" coords="547,278,602,304"/>
+<area shape="poly" id="edge14_Node000001_Node000011" title=" " alt="" coords="696,279,603,291,602,285,695,274"/>
+<area shape="rect" id="Node000012" href="$particle__test_8cpp.html#a0890a4532e88ec7d2cf9a137fc427432" title="Test the setPosCoord function." alt="" coords="547,328,602,353"/>
+<area shape="poly" id="edge15_Node000001_Node000012" title=" " alt="" coords="738,289,664,319,603,337,602,331,662,314,736,284"/>
+<area shape="rect" id="Node000013" href="$forces_8hpp.html#aaf6fd8a2e3f6aaaec45d4cead961793a" title="Applies on the particle the strength of the walls (c.f. TP6)" alt="" coords="532,426,616,452"/>
+<area shape="poly" id="edge16_Node000001_Node000013" title=" " alt="" coords="768,295,727,357,698,389,665,417,642,429,617,436,616,431,640,424,662,413,695,386,723,353,763,292"/>
+<area shape="rect" id="Node000014" href="$universe_8cpp.html#a32a239d2d697a761c657f94dcda3f1e5" title=" " alt="" coords="536,180,613,205"/>
+<area shape="poly" id="edge18_Node000001_Node000014" title=" " alt="" coords="737,250,662,219,613,204,614,199,664,214,739,245"/>
+<area shape="rect" id="Node000016" href="$universe_8cpp.html#a486c654c3672e56c3194e6df464942f1" title=" " alt="" coords="523,229,626,255"/>
+<area shape="poly" id="edge21_Node000001_Node000016" title=" " alt="" coords="696,259,626,251,626,245,696,254"/>
+<area shape="rect" id="Node000003" href="$solar__system__tp2_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="84,328,133,353"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="309,458,258,429,131,356,134,351,261,425,312,453"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="512,76,420,49,422,44,513,71"/>
+<area shape="rect" id="Node000007" href="$class_finite_universe.html#a83eb8e120ea72c26939578255e744bc3" title="Removes particles outside of the bounds of the finite universe." alt="" coords="260,71,437,111"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="470,94,438,94,438,88,470,88"/>
+<area shape="poly" id="edge8_Node000004_Node000008" title=" " alt="" coords="513,111,422,138,420,133,512,106"/>
+<area shape="rect" id="Node000006" href="$class_finite_universe.html#a5a7c8611593d07b6b5b9823704c384d8" title="Updates particles positions in Stormer Verlet algorithm. Handles cases about being outside of the fin..." alt="" coords="5,78,212,104"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="257,53,159,80,158,75,256,48"/>
+<area shape="poly" id="edge7_Node000007_Node000006" title=" " alt="" coords="244,94,212,94,212,88,244,88"/>
+<area shape="poly" id="edge9_Node000008_Node000006" title=" " alt="" coords="256,134,158,107,159,102,257,129"/>
+<area shape="rect" id="Node000010" href="$src_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="324,389,373,415"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="479,397,373,403,373,398,479,392"/>
+<area shape="poly" id="edge17_Node000013_Node000010" title=" " alt="" coords="516,432,373,408,374,403,517,427"/>
+<area shape="rect" id="Node000015" href="$class_universe.html#aa17a814ab1cc87fd4897874ce8b88201" title="Simule le mouvement des particules dans l&#39;univers en utilisant la méthode de Störmer&#45;Verlet." alt="" coords="260,221,437,262"/>
+<area shape="poly" id="edge19_Node000014_Node000015" title=" " alt="" coords="521,207,438,225,436,220,520,201"/>
+<area shape="poly" id="edge20_Node000015_Node000003" title=" " alt="" coords="284,271,134,333,132,328,282,266"/>
+<area shape="poly" id="edge22_Node000016_Node000015" title=" " alt="" coords="507,244,437,244,437,239,507,239"/>
+</map>

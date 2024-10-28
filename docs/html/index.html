@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PROJET C++ (Jules Roques - Zephirin Faure): README</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">PROJET C++ (Jules Roques - Zephirin Faure)
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="PageDoc"><div class="header">
+  <div class="headertitle">
+<div class="title">README </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="md_README"></a> Ce projet vise à développer un programme en C++ pour simuler des systèmes de particules.</p>
+<p>Pour lire la documentation Doxygen complète, ouvrir le PDF dans le répertoire <code>docs</code> ou bien exécuter la commande suivant depuis la racine du projet :</p>
+<div class="fragment"><div class="line">open docs/html/index.html</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md6"></a>
+Auteurs</h1>
+<p>Jules Roques (roquesj) <br  />
+ Zephirin Faure (faurez) <br  />
+</p>
+<h1><a class="anchor" id="autotoc_md7"></a>
+Compilation</h1>
+<p>Lancer les commandes suivantes depuis la racine du projet pour le compiler :</p>
+<div class="fragment"><div class="line">mkdir build</div>
+<div class="line">cd build/</div>
+<div class="line">cmake ..</div>
+<div class="line">make</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md8"></a>
+Documentation</h1>
+<p>L'ensemble de la documentation du projet peut être parcourue à l'aide des fichiers générés par Doxygen (cf. intro). <br  />
+ Pour plus d'information concernant la conception du code : /user/4/.base/faurez/home/Cours/2A/C++/tps-cpp/docs/conception.md "Conception". <br  />
+ Pour chaque classe, méthode et attribut, la documentation propose les schémas expliquant les héritages, les appels, etc. <br  />
+</p>
+<h1><a class="anchor" id="autotoc_md9"></a>
+Utilisation</h1>
+<p>L'exécutable du code principal sera généré dans le répertoire <code>build/src</code> et peut être exécuter en effectuant la commande suivante depuis le répertoire <code>build</code> du projet :</p>
+<div class="fragment"><div class="line">./src/main</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md10"></a>
+Définition de l'univers</h2>
+<p>Pour définir le type d'univers et les particules de la simulation, modifier le corps du main dans <code><a class="el" href="src_2main_8cpp.html">src/main.cpp</a></code>. Pourront y être définis :</p>
+<ol type="1">
+<li><p class="startli"><b>Les interactions</b> : Ce sont les forces qui s'exercent entre les particules. Ajouter des interactions entre particules en utilisant la méthode <code>addInteraction</code> de l'objet <code>universeGrid</code>. Par exemple :</p>
+<p class="startli">```cpp universeGrid.addInteraction( [epsilon, sigma](const <a class="el" href="classParticle.html">Particle</a>&amp; source, <a class="el" href="classParticle.html">Particle</a>&amp; target) { lennardJonesInteraction(source, target, epsilon, sigma); } ); ```</p>
+<p class="startli">Interractions possibles :</p><ul>
+<li><code>gravitationalInteraction</code></li>
+<li><code>lennardJonesInteraction</code></li>
+</ul>
+</li>
+<li><p class="startli"><b>Les forces externes</b> : Ce sont les forces qui s'exercent sur les particules individuellement en fonction de leur position dans l'univers. Ajouter une force externe en utilisant la méthode <code>addExternalForce</code>. Par exemple :</p>
+<p class="startli">```cpp universeGrid.addExternalForce( [G](<a class="el" href="classParticle.html">Particle</a>&amp; target) { gravitationalForce(target, G); } ); ```</p>
+<p class="startli">Forces externes possibles :</p><ul>
+<li><code>gravitationalForce</code></li>
+<li><code>wallsForce</code></li>
+</ul>
+</li>
+<li><b>Le type l'univers</b> : Définir les dimensions de l'univers en spécifiant les bornes inférieure et supérieure dans les vecteurs <code>lowerBound</code> et <code>upperBound</code> qui représentent chacun un sommet de l'univers. De plus l'univers peut être de deux types :<ul>
+<li><code>finite_universe</code> : Un univers de taille finie dans lequel toutes les particules interragissent entre elles;</li>
+<li><code>gridded_universe</code> : Un univers de taille finie découpé en une grille de cellules telles que les particules n'interragissent qu'avec celles de la même cellule ou des cellules voisines.</li>
+</ul>
+</li>
+<li><p class="startli"><b>Les particules</b> : Ajouter des particules à l'univers en utilisant la méthode <code>addParticle</code>. Par exemple, pour ajouter des particules dans une région rectangulaire, utiliser une boucle imbriquée comme dans l'exemple suivant pour ajouter des particules rouges :</p>
+<p class="startli">```cpp <a class="el" href="classVector.html" title="Vector class.">Vector</a> bottomLeftCorner({100,60}); for (size_t i = 0; i &lt; red_width; i++) { for (size_t j = 0; j &lt; red_height; j++) { <a class="el" href="classVector.html" title="Vector class.">Vector</a> position = bottomLeftCorner; position += <a class="el" href="classVector.html" title="Vector class.">Vector</a>({i * spaceStep, j * spaceStep}); universeGrid.addParticle(position, red_speed, m); } } ```</p>
+</li>
+<li><b>Les comportements aux limites</b> : Ce sont les conditions qui définissent le comportement des particules au bord de l'univers. Définir le comportement des particules lorsqu'elles atteignent les limites de l'univers avec la méthode <code>setLimitBehavior</code>. Il y a 3 comportements possibles :<ul>
+<li><code>REFLEXION</code> : Les particules rebondissent sur les bords,</li>
+<li><code>ABSORPTION</code> : Les particules disparaissent,</li>
+<li><code>PERIODIC</code> : Les particules reviennent de l'autre côté de l'univers (uniquement pour <code>gridded_universe</code>).</li>
+</ul>
+</li>
+<li><b>La simulation</b> : Configurer et lancer la simulation en utilisant la méthode <code>simulateStormerVerlet</code>, en spécifiant le pas de temps et le temps final de la simulation.</li>
+</ol>
+<p>En suivant ces étapes, l'univers de simulation sera configurer et personnaliser les interactions et les forces appliquées aux particules pourront être personnalisées.</p>
+<h2><a class="anchor" id="autotoc_md11"></a>
+Configuration</h2>
+<p>Le projet peut être configuré via le fichier <code><a class="el" href="config_8hpp.html" title="Contains constants definitions for preprocessing of the code.">include/config.hpp</a></code>. Ce fichier contient les définitions de constantes permettant de personnaliser le comportement du programme en préprocesseur. <br  />
+ Pour activer ou désactiver une fonctionnalité spécifique, commenter ou décommenter les lignes appropriées dans ce fichier. <br  />
+ Voici une explication de chaque configuration : <br  />
+</p>
+<ul>
+<li><code>SHOW_PROGRESS_INFOS</code>: Lorsque activé, permet d'afficher des informations sur l'évolution du programme pendant son exécution.</li>
+<li><code>NDEBUG</code>: Lorsque activé, toutes les assertions du programme sont désactivées, ce qui peut améliorer les performances en éliminant les vérifications supplémentaires pendant l'exécution. Cependant les erreurs potentielles ne seront pas détectées et signalées.</li>
+<li><code>PNG_OUTPUT</code>: Lorsque activé, le programme génère la sortie dans un format d'images PNG, utile pour visualiser les résultats de manière graphique et générer ensuite une vidéo ou un gif.</li>
+<li><code>XML_OUTPUT</code>: Lorsque activé, le programme génère la sortie au format XML, utile pour enregistrer les résultats dans un format structuré et lisible par machine, facilitant ainsi le traitement et l'analyse des données.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md12"></a>
+Sortie</h2>
+<p>Le programme offre deux possibilités pour la sortie des données :</p>
+<ol type="1">
+<li><p class="startli"><b>Sortie PNG</b> <br  />
+</p>
+<p class="startli">Lorsque l'option <code>PNG_OUTPUT</code> est activée dans le fichier de configuration, le programme génère un fichier ASCII <code>build/pastParticles.txt</code>. Ce fichier contient les positions et les forces des particules à chaque instant de la simulation. Ensuite, le programme utilise ces données pour générer un dossier d'images au format PNG <code>build/video</code>. Ce dossier contient 200 images, chacune représentant un instant de l'évolution de l'univers. Ces images peuvent être utilisées pour créer une vidéo ou un GIF animé de l'évolution de l'univers à l'aide de logiciels de montage vidéo ou de création de GIF. <br  />
+</p>
+<p class="startli">Voici les commandes pour générer une vidéo ou un GIF à partir des images :</p>
+<p class="startli">```bash </p>
+</li>
+</ol>
+<h1><a class="anchor" id="autotoc_md13"></a>
+Pour générer une vidéo à partir des images PNG</h1>
+<p>ffmpeg -framerate 30 -pattern_type glob -i 'video/*.png' -c:v libx264 -r 30 -pix_fmt yuv420p output.mp4</p>
+<h1><a class="anchor" id="autotoc_md14"></a>
+Pour générer un GIF à partir des images PNG</h1>
+<p>ffmpeg -i 'video/img%03d.png' -vf "fps=10,scale=320:-1:flags=lanczos" -c:v pam -f image2pipe - | convert -delay 5 - -loop 0 -layers Optimize output.gif ```</p>
+<p>| <img src="img001.png" alt="" class="inline"/> | <img src="img200.png" alt="" class="inline"/> | <img src="img412.png" alt="" class="inline"/> | | ------------------------&mdash; | ------------------------&mdash; | ------------------------&mdash; |</p>
+<ol type="1">
+<li><p class="startli"><b>Sortie XML (VTK)</b> <br  />
+</p>
+<p class="startli">Lorsque l'option <code>XML_OUTPUT</code> est activée dans le fichier de configuration, le programme génère un dossier <code>build/VTKFiles</code>. Ce dossier contient un fichier au format VTK pour chaque pas de temps de la simulation. Chaque fichier VTK représente l'état de l'univers à un instant donné et peut être visualisé à l'aide de logiciels de visualisation de données tels que Paraview. Ces fichiers VTK permettent une analyse détaillée de l'évolution de l'univers et offrent une visualisation 3D interactive de la simulation. <br  />
+</p>
+<p class="startli">Pour visualiser les données avec Paraview, ouvrez le logiciel et ouvrez un fichier <code>.xml</code> à partir du dossier <code>VTKFiles</code>. Vous pouvez ensuite explorer les données, les filtrer et les visualiser de différentes manières pour mieux comprendre l'évolution du système de particules au fil du temps.</p>
+</li>
+</ol>
+<h2><a class="anchor" id="autotoc_md15"></a>
+Tests</h2>
+<p>Pour tester les fonctionnalités de base de notre code, un exécutable de test utilisant Google Test (gtest) est généré dans le répertoire <code>build/test/test</code>. Cet exécutable permet de vérifier le bon fonctionnement des classes <a class="el" href="classVector.html" title="Vector class.">Vector</a> et <a class="el" href="classParticle.html">Particle</a> implémentées.</p>
+<p>Pour exécuter les tests, utiliser la commande suivante depuis le répertoire <code>build</code> du projet :</p>
+<div class="fragment"><div class="line">./test/test</div>
+</div><!-- fragment --> </div></div><!-- PageDoc -->
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

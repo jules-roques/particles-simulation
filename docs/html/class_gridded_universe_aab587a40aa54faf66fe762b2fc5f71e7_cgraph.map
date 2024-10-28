@@ -1,0 +1,17 @@
+<map id="GriddedUniverse::addParticle" name="GriddedUniverse::addParticle">
+<area shape="rect" id="Node000001" title="Adds a particle to the gridded universe." alt="" coords="5,108,197,134"/>
+<area shape="rect" id="Node000002" href="$class_finite_universe.html#a7e4fba08b9d1730d1dc6a98e2756f041" title="Adds a particle to the gridded universe." alt="" coords="258,79,437,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,107,242,101,243,107,198,112"/>
+<area shape="rect" id="Node000008" href="$class_universe.html#a1c27d28c935446c8f6777ad44d7c3349" title="Get the Last Particle Pointer Useful in the method addParticle of GriddedUniverse." alt="" coords="245,129,450,169"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="198,129,229,133,229,138,197,134"/>
+<area shape="rect" id="Node000003" href="$class_universe.html#a7d0276a639153e952689e3660f4fa1de" title="Adds a particle into the universe." alt="" coords="498,55,644,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="436,79,482,74,483,80,437,85"/>
+<area shape="rect" id="Node000006" href="$class_vector.html#a8ea79719016f6ab4586b3985ad53543b" title="Tell if a vector is in a certain cubic space." alt="" coords="505,104,637,130"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="437,99,490,105,489,110,436,104"/>
+<area shape="rect" id="Node000004" href="$class_universe.html#a5decd709201dcff98e77e8efc6cf8393" title="Get the dimension of the universe." alt="" coords="704,5,866,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="630,51,711,32,712,38,631,57"/>
+<area shape="rect" id="Node000005" href="$class_vector.html#afacfb2fc482d43c34913c095921f8af5" title=" " alt="" coords="711,55,859,80"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="645,65,695,65,695,70,645,70"/>
+<area shape="rect" id="Node000007" href="$class_vector.html#ab569bc2ee929c1b583bd1bd31ae26c08" title="Tell for each dimension if the coords of the calling vector is greater than the other vector given." alt="" coords="692,104,878,130"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="638,114,677,114,677,120,638,120"/>
+</map>

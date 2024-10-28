@@ -1,0 +1,5 @@
+<map id="Universe::addParticle" name="Universe::addParticle">
+<area shape="rect" id="Node000001" title="Adds a particle into the universe. Give it automaticly a name." alt="" coords="5,5,152,31"/>
+<area shape="rect" id="Node000002" href="$class_universe.html#a3d9bfe95cd96d08ed81e3dc18574528b" title="Renvoie le nombre de particules dans l&#39;univers." alt="" coords="200,5,367,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,16,184,16,184,21,152,21"/>
+</map>

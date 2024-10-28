@@ -1,0 +1,48 @@
+<map id="Vector::getDimension" name="Vector::getDimension">
+<area shape="rect" id="Node000001" title=" " alt="" coords="829,407,976,432"/>
+<area shape="rect" id="Node000002" href="$class_universe.html#a7d0276a639153e952689e3660f4fa1de" title="Adds a particle into the universe." alt="" coords="609,105,755,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="880,395,691,133,695,130,885,392"/>
+<area shape="rect" id="Node000008" href="$class_particle.html#adee1ef8d7e51a8cfa2c8281d857f838c" title="Adds to existing force the vector given." alt="" coords="611,281,753,307"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="866,400,779,347,709,310,712,305,782,343,869,396"/>
+<area shape="rect" id="Node000013" href="$class_particle.html#a68634a42f13afd787f83604a24c1ba32" title="Adds to existing position the vector given." alt="" coords="604,407,760,432"/>
+<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="813,422,760,422,760,417,813,417"/>
+<area shape="rect" id="Node000018" href="$class_particle.html#a269fbe488df89ba059ed75960d2caae0" title="Adds to existing speed the vector given." alt="" coords="609,555,755,580"/>
+<area shape="poly" id="edge19_Node000001_Node000018" title=" " alt="" coords="885,446,842,497,814,524,782,546,756,557,754,552,779,541,810,519,839,494,881,443"/>
+<area shape="rect" id="Node000020" href="$class_finite_universe.html#a6b018d165856dcdd63d3425a8359aa71" title=" " alt="" coords="583,456,781,482"/>
+<area shape="poly" id="edge21_Node000001_Node000020" title=" " alt="" coords="827,439,743,458,742,453,826,434"/>
+<area shape="rect" id="Node000021" href="$class_particle.html#ac51bbd1a009ab89fb20bf57e0b52904c" title="Construct a new Particle object." alt="" coords="623,505,741,531"/>
+<area shape="poly" id="edge22_Node000001_Node000021" title=" " alt="" coords="873,444,831,471,782,497,742,510,740,505,780,492,828,466,870,439"/>
+<area shape="rect" id="Node000022" href="$forces_8hpp.html#aaf6fd8a2e3f6aaaec45d4cead961793a" title="Applies on the particle the strength of the walls (c.f. TP6)" alt="" coords="640,357,724,383"/>
+<area shape="poly" id="edge23_Node000001_Node000022" title=" " alt="" coords="826,405,724,382,725,377,827,400"/>
+<area shape="rect" id="Node000003" href="$class_universe.html#a2ff7ba16db9d91fec012f3b0df43b4e6" title="Adds a particle into the universe. Give it automaticly a name." alt="" coords="373,156,519,182"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="605,137,510,158,509,153,604,132"/>
+<area shape="rect" id="Node000004" href="$class_universe.html#a23678850af21d714481398fc8730d057" title="Adds a particle into the universe." alt="" coords="373,5,519,31"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="644,100,593,72,534,45,503,34,505,29,536,40,596,67,647,95"/>
+<area shape="rect" id="Node000005" href="$class_finite_universe.html#a7e4fba08b9d1730d1dc6a98e2756f041" title="Adds a particle to the gridded universe." alt="" coords="357,55,535,80"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="604,104,509,84,510,78,605,99"/>
+<area shape="rect" id="Node000007" href="$solar__system__tp2_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,207,55,232"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="593,125,481,133,357,146,229,166,103,197,56,213,54,208,102,192,228,161,357,141,480,127,593,120"/>
+<area shape="rect" id="Node000006" href="$class_gridded_universe.html#aab587a40aa54faf66fe762b2fc5f71e7" title="Adds a particle to the gridded universe." alt="" coords="110,55,302,80"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="341,70,302,70,302,65,341,65"/>
+<area shape="rect" id="Node000009" href="$forces_8hpp.html#a98da424bb69057444ed08d763a4c91cb" title="Computes the gravitational force applied by source on target particle." alt="" coords="130,207,282,232"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="634,278,586,261,535,247,469,236,402,229,282,223,282,217,402,224,469,231,536,242,588,256,636,273"/>
+<area shape="rect" id="Node000010" href="$forces_8hpp.html#ae49d2de1b78a18e17f253fb9d8814d1c" title="Computes the Lennard Jones force applied by source on target particle." alt="" coords="367,307,526,332"/>
+<area shape="poly" id="edge10_Node000008_Node000010" title=" " alt="" coords="596,306,527,314,526,308,596,301"/>
+<area shape="rect" id="Node000012" href="$particle__test_8cpp.html#ad5ad7da23adebad48183269dc0b53da5" title="Test the addToForce function." alt="" coords="419,257,474,283"/>
+<area shape="poly" id="edge12_Node000008_Node000012" title=" " alt="" coords="596,288,474,276,475,270,596,283"/>
+<area shape="poly" id="edge9_Node000009_Node000007" title=" " alt="" coords="114,222,55,222,55,217,114,217"/>
+<area shape="rect" id="Node000011" href="$src_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="181,324,231,350"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="351,329,231,338,230,332,351,324"/>
+<area shape="rect" id="Node000014" href="$particle__test_8cpp.html#a0dbdd6da9b272541ecc625e56f6d116d" title="Test the addToPosition function." alt="" coords="419,408,474,434"/>
+<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="589,423,474,423,474,418,589,417"/>
+<area shape="rect" id="Node000015" href="$class_universe.html#a22e629bac5b692a63b20bf4aeba72f1a" title="Updates particles positions in Stormer Verlet algorithm." alt="" coords="359,457,533,483"/>
+<area shape="poly" id="edge15_Node000013_Node000015" title=" " alt="" coords="605,439,510,459,509,454,604,434"/>
+<area shape="rect" id="Node000016" href="$class_universe.html#aa17a814ab1cc87fd4897874ce8b88201" title="Simule le mouvement des particules dans l&#39;univers en utilisant la méthode de Störmer&#45;Verlet." alt="" coords="118,383,294,424"/>
+<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="380,455,356,449,280,427,281,422,358,444,382,450"/>
+<area shape="rect" id="Node000017" href="$class_finite_universe.html#a5a7c8611593d07b6b5b9823704c384d8" title="Updates particles positions in Stormer Verlet algorithm. Handles cases about being outside of the fin..." alt="" coords="103,457,309,483"/>
+<area shape="poly" id="edge18_Node000015_Node000017" title=" " alt="" coords="343,473,309,473,309,468,343,468"/>
+<area shape="poly" id="edge17_Node000016_Node000007" title=" " alt="" coords="119,377,101,364,74,332,54,295,32,234,37,232,59,293,78,329,105,360,122,373"/>
+<area shape="rect" id="Node000019" href="$particle__test_8cpp.html#a49bce9dbd3401a31e9c9595f8f62bea2" title="Test the addToSpeed function." alt="" coords="419,555,474,580"/>
+<area shape="poly" id="edge20_Node000018_Node000019" title=" " alt="" coords="594,570,474,570,474,565,594,565"/>
+<area shape="poly" id="edge24_Node000022_Node000011" title=" " alt="" coords="624,369,231,341,231,336,625,364"/>
+</map>

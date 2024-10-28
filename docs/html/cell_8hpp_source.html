@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PROJET C++ (Jules Roques - Zephirin Faure):  Fichier source de include/cell.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">PROJET C++ (Jules Roques - Zephirin Faure)
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">cell.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="cell_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef _CELL_HPP_</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define _CELL_HPP_</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="vector_8hpp.html">vector.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="particle_8hpp.html">particle.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">class </span><a class="code" href="classExternBorderCell.html">ExternBorderCell</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">class </span><a class="code" href="classInternCell.html">InternCell</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">class </span><a class="code" href="classUniverse.html">Universe</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">class </span><a class="code" href="classGriddedUniverse.html">GriddedUniverse</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classCell.html">   27</a></span>&#160;<span class="keyword">class </span><a class="code" href="classCell.html">Cell</a> {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;   <span class="keywordtype">size_t</span> _dimension;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;   <a class="code" href="classGriddedUniverse.html">GriddedUniverse</a>* _universe; <span class="comment">// Containing universe</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;   <span class="comment">/* Coordinates of the cell in its universe.</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">      Can ve negative or out of gridded universe _dimensions</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">      for _limitsCells. */</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;   std::vector&lt;int&gt; _coordinates;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;   <span class="comment">/* Store in list (doubly linked list) because</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">      we will never try to get one neighbour alone,</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">      we will always iterate through all of them.</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">      But we will never insert in the middle or delete,</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">      so we could have use vector. */</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;   std::list&lt;InternCell*&gt; _neighbours;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;   <span class="keyword">virtual</span> <span class="keywordtype">void</span> applyForceOnParticle(<a class="code" href="classParticle.html">Particle</a>* <a class="code" href="particle__test_8cpp.html#aef6a060da4182a13792dcab155a3a1b5">p</a>) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;   <a class="code" href="classCell.html#a9bdf8e7d7571f16d89921ccd30b98d02">Cell</a>(<span class="keywordtype">size_t</span> dimension, <a class="code" href="classGriddedUniverse.html">GriddedUniverse</a>* universe, std::vector&lt;int&gt; coordinates);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;   <span class="comment">// Getters</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classCell.html#afcd0da3b9eda710a16f1096182822d7e">   56</a></span>&#160;   std::list&lt;InternCell*&gt; <a class="code" href="classCell.html#afcd0da3b9eda710a16f1096182822d7e">getNeighbours</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _neighbours; }</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classCell.html#a92cec561270ad506776d4d09500fc595">   57</a></span>&#160;   <a class="code" href="classGriddedUniverse.html">GriddedUniverse</a>*       <a class="code" href="classCell.html#a92cec561270ad506776d4d09500fc595">getUniverse</a>()<span class="keyword">   const </span>{ <span class="keywordflow">return</span> _universe;   }</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classCell.html#af823b00a0e6fc2a924fdbd983e6a09d6">   58</a></span>&#160;   <span class="keywordtype">size_t</span>                 <a class="code" href="classCell.html#af823b00a0e6fc2a924fdbd983e6a09d6">getDimension</a>()        { <span class="keywordflow">return</span> _dimension;  }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;   <span class="comment">// Public getters</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classCell.html#a469d9164046bda2ee9bebe35165f1184">   62</a></span>&#160;   <span class="keyword">const</span> std::vector&lt;int&gt;&amp; <a class="code" href="classCell.html#a469d9164046bda2ee9bebe35165f1184">getCoordinates</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _coordinates; }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="classCell.html#a41c239c9a4395bd64bb36babfef89a2f">addNeighbour</a>(<a class="code" href="classInternCell.html">InternCell</a>* neighbour);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classCell.html#a162b5a51de9739038c34872361357abb">   74</a></span>&#160;   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCell.html#a162b5a51de9739038c34872361357abb">applyForceOnNeighbours</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classCell.html#a752030f099026903980ffdb3a2f040ea">   79</a></span>&#160;   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCell.html#a752030f099026903980ffdb3a2f040ea">clearParticles</a>() = 0;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classCell.html#aae708d4f56371c9eea29ea43dd3d451d">   81</a></span>&#160;   <span class="keywordtype">size_t</span> <a class="code" href="classCell.html#aae708d4f56371c9eea29ea43dd3d451d">getNbNeighbours</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _neighbours.size(); }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;};</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// _CELL_HPP_</span></div>
+<div class="ttc" id="aclassCell_html"><div class="ttname"><a href="classCell.html">Cell</a></div><div class="ttdoc">Cells are elementary bricks forming a grid of the universe.</div><div class="ttdef"><b>Definition:</b> cell.hpp:27</div></div>
+<div class="ttc" id="aclassCell_html_a162b5a51de9739038c34872361357abb"><div class="ttname"><a href="classCell.html#a162b5a51de9739038c34872361357abb">Cell::applyForceOnNeighbours</a></div><div class="ttdeci">virtual void applyForceOnNeighbours() const =0</div><div class="ttdoc">applies forces on neighours particles (adds to existing forces)</div></div>
+<div class="ttc" id="aclassCell_html_a41c239c9a4395bd64bb36babfef89a2f"><div class="ttname"><a href="classCell.html#a41c239c9a4395bd64bb36babfef89a2f">Cell::addNeighbour</a></div><div class="ttdeci">void addNeighbour(InternCell *neighbour)</div><div class="ttdoc">Adds a cell to the neighbours.</div><div class="ttdef"><b>Definition:</b> cell.cpp:20</div></div>
+<div class="ttc" id="aclassCell_html_a469d9164046bda2ee9bebe35165f1184"><div class="ttname"><a href="classCell.html#a469d9164046bda2ee9bebe35165f1184">Cell::getCoordinates</a></div><div class="ttdeci">const std::vector&lt; int &gt; &amp; getCoordinates() const</div><div class="ttdef"><b>Definition:</b> cell.hpp:62</div></div>
+<div class="ttc" id="aclassCell_html_a752030f099026903980ffdb3a2f040ea"><div class="ttname"><a href="classCell.html#a752030f099026903980ffdb3a2f040ea">Cell::clearParticles</a></div><div class="ttdeci">virtual void clearParticles()=0</div><div class="ttdoc">Delete particles.</div></div>
+<div class="ttc" id="aclassCell_html_a92cec561270ad506776d4d09500fc595"><div class="ttname"><a href="classCell.html#a92cec561270ad506776d4d09500fc595">Cell::getUniverse</a></div><div class="ttdeci">GriddedUniverse * getUniverse() const</div><div class="ttdef"><b>Definition:</b> cell.hpp:57</div></div>
+<div class="ttc" id="aclassCell_html_a9bdf8e7d7571f16d89921ccd30b98d02"><div class="ttname"><a href="classCell.html#a9bdf8e7d7571f16d89921ccd30b98d02">Cell::Cell</a></div><div class="ttdeci">Cell(size_t dimension, GriddedUniverse *universe, std::vector&lt; int &gt; coordinates)</div><div class="ttdef"><b>Definition:</b> cell.cpp:14</div></div>
+<div class="ttc" id="aclassCell_html_aae708d4f56371c9eea29ea43dd3d451d"><div class="ttname"><a href="classCell.html#aae708d4f56371c9eea29ea43dd3d451d">Cell::getNbNeighbours</a></div><div class="ttdeci">size_t getNbNeighbours() const</div><div class="ttdef"><b>Definition:</b> cell.hpp:81</div></div>
+<div class="ttc" id="aclassCell_html_af823b00a0e6fc2a924fdbd983e6a09d6"><div class="ttname"><a href="classCell.html#af823b00a0e6fc2a924fdbd983e6a09d6">Cell::getDimension</a></div><div class="ttdeci">size_t getDimension()</div><div class="ttdef"><b>Definition:</b> cell.hpp:58</div></div>
+<div class="ttc" id="aclassCell_html_afcd0da3b9eda710a16f1096182822d7e"><div class="ttname"><a href="classCell.html#afcd0da3b9eda710a16f1096182822d7e">Cell::getNeighbours</a></div><div class="ttdeci">std::list&lt; InternCell * &gt; getNeighbours() const</div><div class="ttdef"><b>Definition:</b> cell.hpp:56</div></div>
+<div class="ttc" id="aclassExternBorderCell_html"><div class="ttname"><a href="classExternBorderCell.html">ExternBorderCell</a></div><div class="ttdoc">Limits Cells contains copies of particles of a foreign cell, neighbour for a PERIDIC point of view....</div><div class="ttdef"><b>Definition:</b> extern_border_cell.hpp:25</div></div>
+<div class="ttc" id="aclassGriddedUniverse_html"><div class="ttname"><a href="classGriddedUniverse.html">GriddedUniverse</a></div><div class="ttdoc">A GriddedUniverse is a finite universe, separated into cells. Extends Universe.</div><div class="ttdef"><b>Definition:</b> gridded_universe.hpp:22</div></div>
+<div class="ttc" id="aclassInternCell_html"><div class="ttname"><a href="classInternCell.html">InternCell</a></div><div class="ttdoc">Limits Cells are contains copies of the cellule of same coordinates, with a position offset.</div><div class="ttdef"><b>Definition:</b> intern_cell.hpp:22</div></div>
+<div class="ttc" id="aclassParticle_html"><div class="ttname"><a href="classParticle.html">Particle</a></div><div class="ttdef"><b>Definition:</b> particle.hpp:20</div></div>
+<div class="ttc" id="aclassUniverse_html"><div class="ttname"><a href="classUniverse.html">Universe</a></div><div class="ttdoc">Represents an universe containing particles. Can be in dimension 1, 2, or 3.</div><div class="ttdef"><b>Definition:</b> universe.hpp:26</div></div>
+<div class="ttc" id="aparticle_8hpp_html"><div class="ttname"><a href="particle_8hpp.html">particle.hpp</a></div></div>
+<div class="ttc" id="aparticle__test_8cpp_html_aef6a060da4182a13792dcab155a3a1b5"><div class="ttname"><a href="particle__test_8cpp.html#aef6a060da4182a13792dcab155a3a1b5">p</a></div><div class="ttdeci">Particle p(pos, speed, mass, name)</div></div>
+<div class="ttc" id="avector_8hpp_html"><div class="ttname"><a href="vector_8hpp.html">vector.hpp</a></div><div class="ttdoc">File for vector calculations.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>
