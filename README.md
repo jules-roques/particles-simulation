@@ -1,4 +1,4 @@
-# README
+# Simulation d'Interraction entre Particules &ndash; C++
 
 Ce projet vise à développer un programme en C++ pour simuler des systèmes de particules.
 
