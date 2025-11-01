@@ -8,13 +8,6 @@ Pour lire la documentation Doxygen complète, ouvrir le PDF dans le répertoire 
     open docs/html/index.html
 ```
 
-
-## Auteurs
-
-Jules Roques (roquesj)  
-Zephirin Faure (faurez)  
-
-
 ## Compilation
 
 Lancer les commandes suivantes depuis la racine du projet pour le compiler :
