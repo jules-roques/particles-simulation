@@ -1,4 +1,4 @@
-# README
+# Simulation d'Interraction entre Particules &ndash; C++
 
 Ce projet vise à développer un programme en C++ pour simuler des systèmes de particules.
 
@@ -7,13 +7,6 @@ Pour lire la documentation Doxygen complète, ouvrir le PDF dans le répertoire 
 ```bash
     open docs/html/index.html
 ```
-
-
-## Auteurs
-
-Jules Roques (roquesj)  
-Zephirin Faure (faurez)  
-
 
 ## Compilation
 
