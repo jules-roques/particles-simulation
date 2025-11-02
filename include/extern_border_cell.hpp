@@ -9,7 +9,6 @@
 #ifndef _EXTERN_BORDER_CELL_HPP_
 #define _EXTERN_BORDER_CELL_HPP_
 
-
 #include "cell.hpp"
 #include "xassert.hpp"
 
@@ -23,41 +22,41 @@ class GriddedUniverse;
  *        An offset is applied on the particles positions.
  */
 class ExternBorderCell : public Cell {
-private:
+ private:
+  /* Corresponding cell to copy */
+  InternCell* _copyCell;
 
-    /* Corresponding cell to copy */
-    InternCell *_copyCell;
+  /* Position offset applied to the particles */
+  Vector _offset;
 
-    /* Position offset applied to the particles */
-    Vector _offset;
+  /* Copies of particles with an offset */
+  std::list<Particle> _particles;
 
-    /* Copies of particles with an offset */
-    std::list<Particle> _particles;
+  /* Foreign neighbours are cells that are close
+     for a PERIODIC universe point of view,
+     but with foreign coordinates. */
+  std::list<InternCell*> _neighbours;
 
-    /* Foreign neighbours are cells that are close
-       for a PERIODIC universe point of view,
-       but with foreign coordinates. */
-    std::list<InternCell*> _neighbours;
+  void applyForceOnParticle(Particle* p) const override;
 
-    void applyForceOnParticle(Particle* p) const override;
+ public:
+  ExternBorderCell(size_t dimension, GriddedUniverse* universe,
+                   std::vector<int> coordinates, Vector offset,
+                   InternCell* copyCell)
+      : Cell(dimension, universe, coordinates),
+        _copyCell(copyCell),
+        _offset(offset) {
+    xassert(coordinates.size() == offset.getDimension(),
+            "Dimensions must match.");
+  }
 
-public:
-    ExternBorderCell(size_t dimension, GriddedUniverse* universe, std::vector<int> coordinates,
-              Vector offset, InternCell *copyCell)
-                : Cell(dimension, universe, coordinates),
-                 _copyCell(copyCell),
-                 _offset(offset) {
-        xassert(coordinates.size() == offset.getDimension(), "Dimensions must match.");
-    }
+  /**
+   * @brief Copies particles from the _copyCell
+   */
+  void copyParticles();
 
-    /**
-     * @brief Copies particles from the _copyCell
-     */
-    void copyParticles();
-
-
-    void applyForceOnNeighbours() const override;
-    void clearParticles()               override;
+  void applyForceOnNeighbours() const override;
+  void clearParticles() override;
 };
 
-#endif // _EXTERN_BORDER_CELL_HPP_
+#endif  // _EXTERN_BORDER_CELL_HPP_

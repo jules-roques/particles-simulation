@@ -8,52 +8,50 @@
  */
 
 // Collections
-#include <set>
-#include <list>
 #include <deque>
+#include <list>
+#include <set>
 #include <vector>
 
 // Personnal headers
+#include <forces.hpp>
 #include <particle.hpp>
 #include <universe.hpp>
-#include <forces.hpp>
 #include <visual_generator.hpp>
 
 // Other
 #include <chrono>
+#include <cmath>
+#include <cstdlib>
+#include <fstream>
 #include <iostream>
 #include <string>
-#include <fstream>
-#include <cstdlib>
-#include <cmath>
-
 
 int main(int argc, char** argv) {
+  // Creates the universe
+  Universe univ(3);
 
-    // Creates the universe
-    Universe univ(3);
+  // Adds particles
+  univ.addParticle({0, 0, 1}, {0, 0, 0}, 1, "Soleil");
+  univ.addParticle({0, 1, 0}, {-1, 0, 0}, 3.0e-6, "Terre");
+  univ.addParticle({0, 5.36, 0}, {-0.425, 0, 0}, 9.55e-4, "Jupiter");
+  univ.addParticle({34.75, 0, 0}, {0, 0.0296, 0}, 1e-14, "Haley");
 
-    // Adds particles
-    univ.addParticle({0, 0, 1},     {0, 0, 0},      1,       "Soleil");
-    univ.addParticle({0, 1, 0},     {-1, 0, 0},     3.0e-6,  "Terre");
-    univ.addParticle({0, 5.36, 0},  {-0.425, 0, 0}, 9.55e-4, "Jupiter");
-    univ.addParticle({34.75, 0, 0}, {0, 0.0296, 0}, 1e-14,   "Haley");
+  // Adds interaction between them
+  univ.addInteraction(gravitationalInteraction);
 
-    // Adds interaction between them
-    univ.addInteraction(gravitationalInteraction);
-    
-    double timeStep = 0.1;//0.015;
-    double finalTime = 468.5;
+  double timeStep = 0.1;  // 0.015;
+  double finalTime = 468.5;
 
-    // Simulation calculation
-    std::cerr << "System evolution calculation ";
-    univ.simulateStormerVerlet(timeStep, finalTime);
+  // Simulation calculation
+  std::cerr << "System evolution calculation ";
+  univ.simulateStormerVerlet(timeStep, finalTime);
 
-    // generate video
-    VisualGenerator vg(&univ);
-    vg.setPointSize(2);
-    vg.setPointType(CIRCLE_F);
-    vg.generateVideo(50);
-    
-    return EXIT_SUCCESS;
+  // generate video
+  VisualGenerator vg(&univ);
+  vg.setPointSize(2);
+  vg.setPointType(CIRCLE_F);
+  vg.generateVideo(50);
+
+  return EXIT_SUCCESS;
 }

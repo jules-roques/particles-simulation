@@ -14,158 +14,149 @@
 /* Enum type to define how
    particles react when overpassing
    bounds of universe */
-enum OOBBehavior {
-    PERIODIC,
-    REFLEXION,
-    ABSORPTION
-};
+enum OOBBehavior { PERIODIC, REFLEXION, ABSORPTION };
 
 /**
  * @brief Universe with bounds
  */
 class FiniteUniverse : public Universe {
+ private:
+  // Bounds of the universe
+  Vector _lowerBound;
+  Vector _upperBound;
 
-private:
+  /* How particles will react passing bounds (oob = out of bouds) */
+  OOBBehavior _oobbehavior = ABSORPTION;  // ABSORPTION by default
 
-    // Bounds of the universe
-    Vector _lowerBound;
-    Vector _upperBound;
+  /* Repulsing force from the walls if needed */
+  ExternalForce _wallsForce;
+  bool _applyWallsForce = false;
 
-    /* How particles will react passing bounds (oob = out of bouds) */
-    OOBBehavior _oobbehavior = ABSORPTION; // ABSORPTION by default
+  /**
+   * @brief Applies repulsing force from walls
+   */
+  void applyWallsForces();
 
-    /* Repulsing force from the walls if needed */
-    ExternalForce _wallsForce;
-    bool _applyWallsForce = false;
+  /**
+   * @brief Applies the force implied by the foreign
+   *        neighbours on the particles.
+   *        Foreign neighbours are cells that are close
+   *        for a PERIODIC universe point of view,
+   *        but with foreign coordinates.
+   */
+  virtual void applyForeignNeighboursForces();
 
-    /**
-     * @brief Applies repulsing force from walls
-     */
-    void applyWallsForces();
+ protected:
+  // Getters
+  const Vector& getLowerBound() const { return _lowerBound; }
+  const Vector& getUpperBound() const { return _upperBound; }
+  std::pair<Vector, Vector> getBounds() const override;
 
-    /**
-     * @brief Applies the force implied by the foreign 
-     *        neighbours on the particles.
-     *        Foreign neighbours are cells that are close
-     *        for a PERIODIC universe point of view,
-     *        but with foreign coordinates.
-     */
-    virtual void applyForeignNeighboursForces();
+  /**
+   * @brief Removes particles outside of the bounds
+   *        of the finite universe
+   */
+  void removeOutOfBoundsParticles();
 
-protected:
+  /**
+   * @brief Reflect particles outside of the bounds
+   *        of the finite universe
+   */
+  void reflectOutOfBoundsParticles();
 
-    // Getters
-    const Vector&             getLowerBound() const { return _lowerBound; }
-    const Vector&             getUpperBound() const { return _upperBound; }
-    std::pair<Vector, Vector> getBounds()     const override;
+  /**
+   * @brief Teleport particles outside of the bounds
+   *        of the finite universe to the other side
+   */
+  void teleportOutOfBoundsParticles();
 
-    /**
-     * @brief Removes particles outside of the bounds
-     *        of the finite universe
-     */
-    void removeOutOfBoundsParticles();
+  /**
+   * @brief Handle out of bounds particles
+   */
+  void handleOutOfBoundsParticles();
 
-    /**
-     * @brief Reflect particles outside of the bounds
-     *        of the finite universe
-     */
-    void reflectOutOfBoundsParticles();
+  OOBBehavior getoobbehavior() const { return _oobbehavior; }
 
-    /**
-     * @brief Teleport particles outside of the bounds
-     *        of the finite universe to the other side
-     */
-    void teleportOutOfBoundsParticles();
+  void setApplyWallsForces(bool apply) { _applyWallsForce = apply; }
 
-    /**
-     * @brief Handle out of bounds particles
-     */
-    void handleOutOfBoundsParticles();
+  /**
+   * @brief Applies external forces on particles in the universe.
+   *        Linear complexity.
+   *        Deal with limits forces.
+   */
+  void applyExternalForces() override;
 
-    OOBBehavior getoobbehavior() const { return _oobbehavior; }
+  /**
+   * @brief Applies forces between particles in the universe.
+   *        Quadratic complexity.
+   */
+  void applyInteractionForces() override;
 
-    void setApplyWallsForces(bool apply) { _applyWallsForce = apply; }
+  /**
+   * @brief Applies forces between particles in the universe,
+   *        but not limit interractions (like for PERIODIC)
+   */
+  virtual void applyInternInterractionsForces();
 
-    /**
-    * @brief Applies external forces on particles in the universe.
-    *        Linear complexity.
-    *        Deal with limits forces.
-    */
-    void applyExternalForces() override;
+  /**
+   * @brief Deal with limits forces, for exple
+   *        when the universe is PERIODIC.
+   */
+  void applyLimitinterractionForces();
 
-    /**
-    * @brief Applies forces between particles in the universe.
-    *        Quadratic complexity.
-    */
-   void applyInteractionForces() override;
+ public:
+  FiniteUniverse(Vector lowerBound, Vector upperBound);
 
-    /**
-    * @brief Applies forces between particles in the universe,
-    *        but not limit interractions (like for PERIODIC)
-    */
-   virtual void applyInternInterractionsForces();
+  /* So the following function addParticle don't hide
+     The Universe::addParticle function with different signature */
+  using Universe::addParticle;
+  /**
+   * @brief Adds a particle to the gridded universe
+   * @param p the particle to add
+   */
+  virtual void addParticle(Vector posCoords, Vector speedCoords, double mass,
+                           std::string name) override;
 
-    /**
-     * @brief Deal with limits forces, for exple
-     *        when the universe is PERIODIC.
-     */
-   void applyLimitinterractionForces();
+  /**
+   * @brief Set the Limit Behavior of particles.
+   *        REFLEXION makes particle stay in,
+   *        ABSORPTION delete particles,
+   *        PERIODIC teleports particles to the other side.
+   * @param lb
+   */
+  void setOOBBehavior(OOBBehavior lb);
 
-public:
+  /**
+   * @brief Says if particle is in the bounds of the universe
+   * @param p
+   * @return true if particle in the bounds of the universe
+   * @return false if not
+   */
+  bool isInBounds(const Particle& p);
 
-    FiniteUniverse(Vector lowerBound, Vector upperBound);
+  /**
+   * @brief Updates particles positions
+   *        in Stormer Verlet algorithm.
+   *        Handles cases about
+   *        being outside of the finite universe.
+   */
+  virtual void updatePositions(double timeStep) override;
 
-    /* So the following function addParticle don't hide
-       The Universe::addParticle function with different signature */
-    using Universe::addParticle;
-    /**
-     * @brief Adds a particle to the gridded universe
-     * @param p the particle to add
-     */
-    virtual void addParticle(Vector posCoords,
-                     Vector speedCoords,
-                     double mass, std::string name) override;
+  /**
+   * @brief Activate reflexion mode with a repulsing force
+   *        from the walls
+   * @param epsilon
+   * @param sigma
+   */
+  void activateReflexionWithForces(double epsilon, double sigma);
 
-    /**
-     * @brief Set the Limit Behavior of particles.
-     *        REFLEXION makes particle stay in,
-     *        ABSORPTION delete particles,
-     *        PERIODIC teleports particles to the other side.
-     * @param lb 
-     */
-    void setOOBBehavior(OOBBehavior lb);
-
-    /**
-     * @brief Says if particle is in the bounds of the universe
-     * @param p 
-     * @return true if particle in the bounds of the universe
-     * @return false if not
-     */
-    bool isInBounds(const Particle& p);
-
-    /**
-     * @brief Updates particles positions
-     *        in Stormer Verlet algorithm.
-     *        Handles cases about
-     *        being outside of the finite universe.
-     */
-    virtual void updatePositions(double timeStep) override;
-
-    /**
-     * @brief Activate reflexion mode with a repulsing force
-     *        from the walls
-     * @param epsilon 
-     * @param sigma 
-     */
-    void activateReflexionWithForces(double epsilon, double sigma);
-
-    /**
-     * @brief Overrides the << operator
-     * @param strm 
-     * @param universe 
-     * @return std::ostream& 
-     */
-    friend std::ostream& operator<<(std::ostream& strm, FiniteUniverse universe);
+  /**
+   * @brief Overrides the << operator
+   * @param strm
+   * @param universe
+   * @return std::ostream&
+   */
+  friend std::ostream& operator<<(std::ostream& strm, FiniteUniverse universe);
 };
 
-#endif // _FINITE_UNIVERSE_HPP_
+#endif  // _FINITE_UNIVERSE_HPP_

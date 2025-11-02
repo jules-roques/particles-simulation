@@ -6,43 +6,38 @@
  * @date 2024-04-22
  */
 
-
 #ifndef _FORCE_HPP_
 #define _FORCE_HPP_
 
-#include "vector.hpp"
 #include <functional>
-class Particle;
 
+#include "vector.hpp"
+class Particle;
 
 /**
  * @brief Stores a function that rules a force applied on particles
  */
 class ExternalForce {
+ private:
+  /* Function containing the force */
+  std::function<void(Particle&)> _forceFunction;
 
-private:
+ public:
+  ExternalForce() {}
 
-    /* Function containing the force */
-    std::function<void(Particle&)> _forceFunction;
+  ExternalForce(std::function<void(Particle&)> forceFunction)
+      : _forceFunction(forceFunction) {}
 
-public:
-    ExternalForce() {}
+  void setForceFunction(std::function<void(Particle&)> forceFunction) {
+    _forceFunction = forceFunction;
+  }
 
-    ExternalForce(std::function<void(Particle&)> forceFunction)
-            : _forceFunction(forceFunction) {}
-
-    void setForceFunction(std::function<void(Particle&)> forceFunction) {
-        _forceFunction = forceFunction;
-    }
-
-    /**
-     * @brief Computes and add the force applied on the given particle
-     * @param target
-     * @return Vector 
-     */
-    void applyOn(Particle& target) const {
-        _forceFunction(target);
-    }
+  /**
+   * @brief Computes and add the force applied on the given particle
+   * @param target
+   * @return Vector
+   */
+  void applyOn(Particle& target) const { _forceFunction(target); }
 };
 
-#endif // _FORCE_HPP_
+#endif  // _FORCE_HPP_
